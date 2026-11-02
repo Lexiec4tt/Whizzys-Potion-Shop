@@ -9,18 +9,16 @@ namespace Whizzys_Potion_Shop
     public abstract class Customer
     {
         protected static readonly Random _random = new Random();
-        public int CustomerID { get; set; }
-        public string CustomerName { get; set; }
-        public int Patience { get; set; }
-        public bool IsServed { get; set; }
+        public int CustomerID { get; protected set; }
+        public string CustomerName { get; protected set; }
+        public int Patience { get; protected set; }
         public List<int> PreferredItems { get; protected set; }
-        public bool HasIllIntentions { get; set; } 
+        public bool HasIllIntentions { get; private set; } 
 
         public Customer(int customerID, string customerName)
         {
             CustomerID = customerID;
             CustomerName = customerName;
-            IsServed = false;
             HasIllIntentions = SetIllIntentions();
         }
 
@@ -54,11 +52,10 @@ namespace Whizzys_Potion_Shop
     {
         public Apprentice(int customerID, string customerName) : base(customerID, customerName)
         {
-            Patience = 3; // Apprentices have a patience level of 3
+            Patience = 6; // Apprentices have a patience level of 6
             PreferredItems = new List<int> { 1, 2 };
         }
         
-
     }
 
     public class Adventurer : Customer

@@ -46,8 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BrewingStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrewingStation.Designer.cs">
+      <DependentUpon>BrewingStation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerOrder.cs" />
+    <Compile Include="DialogueBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogueBox.Designer.cs">
+      <DependentUpon>DialogueBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingredients-Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingredients-Window.Designer.cs">
+      <DependentUpon>Ingredients-Window.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ingredients.cs" />
     <Compile Include="loadSaves.cs">
       <SubType>Form</SubType>
@@ -103,6 +121,21 @@
     <Compile Include="topHUD.Designer.cs">
       <DependentUpon>topHUD.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpgradeStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpgradeStore.Designer.cs">
+      <DependentUpon>UpgradeStore.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BrewingStation.resx">
+      <DependentUpon>BrewingStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogueBox.resx">
+      <DependentUpon>DialogueBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingredients-Window.resx">
+      <DependentUpon>Ingredients-Window.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loadSaves.resx">
       <DependentUpon>loadSaves.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="topHUD.resx">
       <DependentUpon>topHUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpgradeStore.resx">
+      <DependentUpon>UpgradeStore.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

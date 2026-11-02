@@ -1,4 +1,4 @@
-﻿namespace Test1
+﻿namespace Whizzy_Potion_Shop
 {
     partial class UpgradeStore
     {

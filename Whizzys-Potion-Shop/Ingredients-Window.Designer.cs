@@ -1,4 +1,4 @@
-﻿namespace main_game
+﻿namespace Whizzys_Potion_Shop
 {
     public partial class Ingredients_Window
     {
@@ -38,7 +38,7 @@
             // cauldron
             // 
             this.cauldron.BackColor = System.Drawing.Color.Transparent;
-            this.cauldron.Image = global::main_game.Properties.Resources.pot_cropped;
+            this.cauldron.Image = global::Whizzys_Potion_Shop.Properties.Resources.pot_cropped;
             this.cauldron.Location = new System.Drawing.Point(369, 446);
             this.cauldron.Name = "cauldron";
             this.cauldron.Size = new System.Drawing.Size(522, 620);
@@ -51,9 +51,9 @@
             // DragonsBlood
             // 
             this.DragonsBlood.BackColor = System.Drawing.Color.Transparent;
-            this.DragonsBlood.BackgroundImage = global::main_game.Properties.Resources.Dragon_s_Blood;
+            this.DragonsBlood.BackgroundImage = global::Whizzys_Potion_Shop.Properties.Resources.Dragon_s_Blood;
             this.DragonsBlood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DragonsBlood.Image = global::main_game.Properties.Resources.Dragon_s_Blood;
+            this.DragonsBlood.Image = global::Whizzys_Potion_Shop.Properties.Resources.Dragon_s_Blood;
             this.DragonsBlood.Location = new System.Drawing.Point(897, 446);
             this.DragonsBlood.Name = "DragonsBlood";
             this.DragonsBlood.Size = new System.Drawing.Size(100, 100);
@@ -66,7 +66,7 @@
             // brewButton
             // 
             this.brewButton.BackColor = System.Drawing.Color.Transparent;
-            this.brewButton.BackgroundImage = global::main_game.Properties.Resources.brew_button;
+            this.brewButton.BackgroundImage = global::Whizzys_Potion_Shop.Properties.Resources.brew_button;
             this.brewButton.Enabled = false;
             this.brewButton.FlatAppearance.BorderSize = 0;
             this.brewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -82,7 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::main_game.Properties.Resources.mr;
+            this.BackgroundImage = global::Whizzys_Potion_Shop.Properties.Resources.mr;
             this.ClientSize = new System.Drawing.Size(1210, 673);
             this.Controls.Add(this.brewButton);
             this.Controls.Add(this.DragonsBlood);

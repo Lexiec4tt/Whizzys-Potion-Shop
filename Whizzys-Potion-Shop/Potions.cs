@@ -12,7 +12,7 @@ namespace Whizzys_Potion_Shop
         protected string description = "";
         protected double cost;
         protected double brewingTime;
-        protected int potionID;
+        public int potionID { get; protected set; }
 
         public Dictionary<string, int> recipe = new Dictionary<string, int>()
         {

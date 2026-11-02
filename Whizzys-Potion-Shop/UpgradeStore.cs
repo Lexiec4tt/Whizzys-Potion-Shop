@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Test1
+namespace Whizzy_Potion_Shop
 {
     public partial class UpgradeStore : Form
     {
