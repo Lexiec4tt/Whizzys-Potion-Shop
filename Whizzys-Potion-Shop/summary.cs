@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Whizzys_Potion_Shop
 {
-    public partial class Form1 : Form
+    public partial class summary : Form
     {
-        public Form1()
+        public summary()
         {
             InitializeComponent();
         }
