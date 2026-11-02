@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 namespace Whizzys_Potion_Shop
 {
@@ -51,9 +48,14 @@ namespace Whizzys_Potion_Shop
             return _random.Next(2) == 0; // Randomly set ill intentions to true or false
         }
 
-        public void EvaluatePotion()
+        public void EvaluatePotion(int potion)
         {
             //something something
+        }
+
+        public int RandomPotion(int[] potions)
+        {
+            return _random.Next(0, potions.Length); // Randomly select a potion from the array
         }
 
     }
@@ -66,7 +68,10 @@ namespace Whizzys_Potion_Shop
         }
         public override void PlaceOrder()
         {
-            
+            int[] potionArray = { 1, 2, 3, 4, 5, 6 };
+            int potionIndex = RandomPotion(potionArray);
+            int selectedPotion = potionArray[potionIndex];
+
             // Additional logic for placing an order
         }
 
