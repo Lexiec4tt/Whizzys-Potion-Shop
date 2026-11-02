@@ -65,7 +65,7 @@ namespace Whizzys_Potion_Shop
     {
         public DragonsBlood()
         {
-            ingredientName = "Dragon’s Blood";
+            ingredientName = "Dragon's Blood";
             cost = 75;
         }
     };
@@ -110,7 +110,7 @@ namespace Whizzys_Potion_Shop
     {
         public RabbitsFoot()
         {
-            ingredientName = "Rabbit’s Foot";
+            ingredientName = "Rabbit's Foot";
             cost = 50;
         }
     };

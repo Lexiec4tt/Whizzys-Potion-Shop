@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Whizzys_Potion_Shop
 {
-
     internal class modules
     {
-        static Stack<Potion> potionInventory = new Stack<Potion>();
+        private static Stack<Potion> potionInventory = new Stack<Potion>();
 
         public static Potion Brew(ref Dictionary<string, int> ingredientSet, ref int[] potionCount)
         {
@@ -60,63 +59,29 @@ namespace Whizzys_Potion_Shop
             return newPotion;
         }
 
-        public static void AddIngredient(ref Dictionary<string, int> ingredientSet, int ingredientID)
+        public static void AddIngredient(Dictionary<string, int> ingredientSet, int ingredientID)
         {
-            if (ingredientID == 1)
+            string[] ingredients =
+                {
+                    "Moon Water",
+                    "Sun Bloom",
+                    "Valerian Root",
+                    "Harpy Feather",
+                    "Dragon's Blood",
+                    "Rosemary",
+                    "Mandrake",
+                    "Hound Fur",
+                    "Pink Salt",
+                    "Rabbit's Foot",
+                    "Honey",
+                    "Rainbowshroom",
+                    "Wolfsbane",
+                    "Spring Water"
+                };
+
+            if (ingredientID >= 1 && ingredientID <= ingredients.Length)
             {
-                ingredientSet["Moon Water"] += 1;
-            }
-            else if (ingredientID == 2)
-            {
-                ingredientSet["Sun Bloom"] += 1;
-            }
-            else if (ingredientID == 3)
-            {
-                ingredientSet["Valerian Root"] += 1;
-            }
-            else if (ingredientID == 4)
-            {
-                ingredientSet["Harpy Feather"] += 1;
-            }
-            else if (ingredientID == 5)
-            {
-                ingredientSet["Dragon's Blood"] += 1;
-            }
-            else if (ingredientID == 6)
-            {
-                ingredientSet["Rosemary"] += 1;
-            }
-            else if (ingredientID == 7)
-            {
-                ingredientSet["Mandrake"] += 1;
-            }
-            else if (ingredientID == 8)
-            {
-                ingredientSet["Hound Fur"] += 1;
-            }
-            else if (ingredientID == 9)
-            {
-                ingredientSet["Pink Salt"] += 1;
-            }
-            else if (ingredientID == 10)
-            {
-                ingredientSet["Rabbit's Foot"] += 1;
-            }
-            else if (ingredientID == 11)
-            {
-                ingredientSet["Honey"] += 1;
-            }
-            else if (ingredientID == 12)
-            {
-                ingredientSet["Rainbowshroom"] += 1;
-            }
-            else if (ingredientID == 13)
-            {
-                ingredientSet["Wolfsbane"] += 1;
-            }
-            else if (ingredientID == 14)
-            {
-                ingredientSet["Spring Water"] += 1;
+                ingredientSet[ingredients[ingredientID - 1]]++;
             }
         }
     }

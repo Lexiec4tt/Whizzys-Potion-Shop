@@ -86,6 +86,7 @@
             this.mandrakeCounter = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.rbshroomCounter = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cauldron)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pinkSalt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rosemary)).BeginInit();
@@ -121,187 +122,217 @@
             // 
             this.cauldron.BackColor = System.Drawing.Color.Transparent;
             this.cauldron.Image = ((System.Drawing.Image)(resources.GetObject("cauldron.Image")));
-            this.cauldron.Location = new System.Drawing.Point(485, 526);
+            this.cauldron.Location = new System.Drawing.Point(418, 532);
             this.cauldron.Margin = new System.Windows.Forms.Padding(4);
             this.cauldron.Name = "cauldron";
             this.cauldron.Size = new System.Drawing.Size(684, 342);
             this.cauldron.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cauldron.TabIndex = 0;
             this.cauldron.TabStop = false;
+            this.cauldron.DragDrop += new System.Windows.Forms.DragEventHandler(this.cauldron_DragDrop);
+            this.cauldron.DragEnter += new System.Windows.Forms.DragEventHandler(this.cauldron_DragEnter);
             // 
             // pinkSalt
             // 
             this.pinkSalt.BackColor = System.Drawing.Color.Transparent;
             this.pinkSalt.Image = ((System.Drawing.Image)(resources.GetObject("pinkSalt.Image")));
-            this.pinkSalt.Location = new System.Drawing.Point(1017, 180);
+            this.pinkSalt.Location = new System.Drawing.Point(970, 186);
             this.pinkSalt.Margin = new System.Windows.Forms.Padding(4);
             this.pinkSalt.Name = "pinkSalt";
             this.pinkSalt.Size = new System.Drawing.Size(137, 113);
             this.pinkSalt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pinkSalt.TabIndex = 1;
             this.pinkSalt.TabStop = false;
+            this.pinkSalt.Tag = "9";
+            this.pinkSalt.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pinkSalt_MouseDown);
             // 
             // Rosemary
             // 
             this.Rosemary.BackColor = System.Drawing.Color.Transparent;
             this.Rosemary.Image = ((System.Drawing.Image)(resources.GetObject("Rosemary.Image")));
-            this.Rosemary.Location = new System.Drawing.Point(1163, 180);
+            this.Rosemary.Location = new System.Drawing.Point(1116, 186);
             this.Rosemary.Margin = new System.Windows.Forms.Padding(4);
             this.Rosemary.Name = "Rosemary";
             this.Rosemary.Size = new System.Drawing.Size(137, 113);
             this.Rosemary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Rosemary.TabIndex = 2;
             this.Rosemary.TabStop = false;
+            this.Rosemary.Tag = "6";
+            this.Rosemary.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Rosemary_MouseDown);
             // 
             // valRoot
             // 
             this.valRoot.BackColor = System.Drawing.Color.Transparent;
             this.valRoot.Image = ((System.Drawing.Image)(resources.GetObject("valRoot.Image")));
-            this.valRoot.Location = new System.Drawing.Point(1308, 180);
+            this.valRoot.Location = new System.Drawing.Point(1261, 186);
             this.valRoot.Margin = new System.Windows.Forms.Padding(4);
             this.valRoot.Name = "valRoot";
             this.valRoot.Size = new System.Drawing.Size(137, 113);
             this.valRoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.valRoot.TabIndex = 3;
             this.valRoot.TabStop = false;
+            this.valRoot.Tag = "3";
+            this.valRoot.MouseDown += new System.Windows.Forms.MouseEventHandler(this.valRoot_MouseDown);
             // 
             // harpyFeathers
             // 
             this.harpyFeathers.BackColor = System.Drawing.Color.Transparent;
             this.harpyFeathers.Image = ((System.Drawing.Image)(resources.GetObject("harpyFeathers.Image")));
-            this.harpyFeathers.Location = new System.Drawing.Point(1453, 180);
+            this.harpyFeathers.Location = new System.Drawing.Point(1406, 186);
             this.harpyFeathers.Margin = new System.Windows.Forms.Padding(4);
             this.harpyFeathers.Name = "harpyFeathers";
             this.harpyFeathers.Size = new System.Drawing.Size(137, 113);
             this.harpyFeathers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.harpyFeathers.TabIndex = 4;
             this.harpyFeathers.TabStop = false;
+            this.harpyFeathers.Tag = "4";
+            this.harpyFeathers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.harpyFeathers_MouseDown);
             // 
             // rabbitsFoot
             // 
             this.rabbitsFoot.BackColor = System.Drawing.Color.Transparent;
             this.rabbitsFoot.Image = ((System.Drawing.Image)(resources.GetObject("rabbitsFoot.Image")));
-            this.rabbitsFoot.Location = new System.Drawing.Point(1018, 391);
+            this.rabbitsFoot.Location = new System.Drawing.Point(971, 397);
             this.rabbitsFoot.Margin = new System.Windows.Forms.Padding(4);
             this.rabbitsFoot.Name = "rabbitsFoot";
             this.rabbitsFoot.Size = new System.Drawing.Size(137, 76);
             this.rabbitsFoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.rabbitsFoot.TabIndex = 5;
             this.rabbitsFoot.TabStop = false;
+            this.rabbitsFoot.Tag = "10";
+            this.rabbitsFoot.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rabbitsFoot_MouseDown);
             // 
             // houndFur
             // 
             this.houndFur.BackColor = System.Drawing.Color.Transparent;
             this.houndFur.Image = ((System.Drawing.Image)(resources.GetObject("houndFur.Image")));
-            this.houndFur.Location = new System.Drawing.Point(1163, 391);
+            this.houndFur.Location = new System.Drawing.Point(1116, 397);
             this.houndFur.Margin = new System.Windows.Forms.Padding(4);
             this.houndFur.Name = "houndFur";
             this.houndFur.Size = new System.Drawing.Size(137, 76);
             this.houndFur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.houndFur.TabIndex = 6;
             this.houndFur.TabStop = false;
+            this.houndFur.Tag = "8";
+            this.houndFur.MouseDown += new System.Windows.Forms.MouseEventHandler(this.houndFur_MouseDown);
             // 
             // Wolfsbane
             // 
             this.Wolfsbane.BackColor = System.Drawing.Color.Transparent;
             this.Wolfsbane.Image = ((System.Drawing.Image)(resources.GetObject("Wolfsbane.Image")));
-            this.Wolfsbane.Location = new System.Drawing.Point(1308, 391);
+            this.Wolfsbane.Location = new System.Drawing.Point(1261, 397);
             this.Wolfsbane.Margin = new System.Windows.Forms.Padding(4);
             this.Wolfsbane.Name = "Wolfsbane";
             this.Wolfsbane.Size = new System.Drawing.Size(137, 76);
             this.Wolfsbane.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Wolfsbane.TabIndex = 7;
             this.Wolfsbane.TabStop = false;
+            this.Wolfsbane.Tag = "13";
+            this.Wolfsbane.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Wolfsbane_MouseDown);
             // 
             // Honey
             // 
             this.Honey.BackColor = System.Drawing.Color.Transparent;
             this.Honey.Image = ((System.Drawing.Image)(resources.GetObject("Honey.Image")));
-            this.Honey.Location = new System.Drawing.Point(1453, 391);
+            this.Honey.Location = new System.Drawing.Point(1406, 397);
             this.Honey.Margin = new System.Windows.Forms.Padding(4);
             this.Honey.Name = "Honey";
             this.Honey.Size = new System.Drawing.Size(137, 76);
             this.Honey.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Honey.TabIndex = 8;
             this.Honey.TabStop = false;
+            this.Honey.Tag = "11";
+            this.Honey.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Honey_MouseDown);
             // 
             // DragonBlood
             // 
             this.DragonBlood.BackColor = System.Drawing.Color.Transparent;
             this.DragonBlood.Image = ((System.Drawing.Image)(resources.GetObject("DragonBlood.Image")));
-            this.DragonBlood.Location = new System.Drawing.Point(1077, 526);
+            this.DragonBlood.Location = new System.Drawing.Point(1119, 532);
             this.DragonBlood.Margin = new System.Windows.Forms.Padding(4);
             this.DragonBlood.Name = "DragonBlood";
             this.DragonBlood.Size = new System.Drawing.Size(137, 113);
             this.DragonBlood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.DragonBlood.TabIndex = 9;
             this.DragonBlood.TabStop = false;
+            this.DragonBlood.Tag = "5";
+            this.DragonBlood.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DragonBlood_MouseDown);
             // 
             // MoonWater
             // 
             this.MoonWater.BackColor = System.Drawing.Color.Transparent;
             this.MoonWater.Image = ((System.Drawing.Image)(resources.GetObject("MoonWater.Image")));
-            this.MoonWater.Location = new System.Drawing.Point(1255, 526);
+            this.MoonWater.Location = new System.Drawing.Point(1260, 532);
             this.MoonWater.Margin = new System.Windows.Forms.Padding(4);
             this.MoonWater.Name = "MoonWater";
             this.MoonWater.Size = new System.Drawing.Size(137, 113);
             this.MoonWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.MoonWater.TabIndex = 10;
             this.MoonWater.TabStop = false;
+            this.MoonWater.Tag = "1";
+            this.MoonWater.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MoonWater_MouseDown);
             // 
             // SpringWater
             // 
             this.SpringWater.BackColor = System.Drawing.Color.Transparent;
             this.SpringWater.Image = ((System.Drawing.Image)(resources.GetObject("SpringWater.Image")));
-            this.SpringWater.Location = new System.Drawing.Point(1452, 526);
+            this.SpringWater.Location = new System.Drawing.Point(1405, 532);
             this.SpringWater.Margin = new System.Windows.Forms.Padding(4);
             this.SpringWater.Name = "SpringWater";
             this.SpringWater.Size = new System.Drawing.Size(137, 113);
             this.SpringWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SpringWater.TabIndex = 11;
             this.SpringWater.TabStop = false;
+            this.SpringWater.Tag = "14";
+            this.SpringWater.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SpringWater_MouseDown);
             // 
             // SunBloom
             // 
             this.SunBloom.BackColor = System.Drawing.Color.Transparent;
             this.SunBloom.Image = ((System.Drawing.Image)(resources.GetObject("SunBloom.Image")));
-            this.SunBloom.Location = new System.Drawing.Point(1453, 710);
+            this.SunBloom.Location = new System.Drawing.Point(1406, 716);
             this.SunBloom.Margin = new System.Windows.Forms.Padding(4);
             this.SunBloom.Name = "SunBloom";
             this.SunBloom.Size = new System.Drawing.Size(137, 113);
             this.SunBloom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SunBloom.TabIndex = 12;
             this.SunBloom.TabStop = false;
+            this.SunBloom.Tag = "2";
+            this.SunBloom.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SunBloom_MouseDown);
             // 
             // Mandrake
             // 
             this.Mandrake.BackColor = System.Drawing.Color.Transparent;
             this.Mandrake.Image = ((System.Drawing.Image)(resources.GetObject("Mandrake.Image")));
-            this.Mandrake.Location = new System.Drawing.Point(1308, 710);
+            this.Mandrake.Location = new System.Drawing.Point(1261, 716);
             this.Mandrake.Margin = new System.Windows.Forms.Padding(4);
             this.Mandrake.Name = "Mandrake";
             this.Mandrake.Size = new System.Drawing.Size(137, 113);
             this.Mandrake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Mandrake.TabIndex = 13;
             this.Mandrake.TabStop = false;
+            this.Mandrake.Tag = "7";
+            this.Mandrake.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mandrake_MouseDown);
             // 
             // RBShroom
             // 
             this.RBShroom.BackColor = System.Drawing.Color.Transparent;
             this.RBShroom.Image = ((System.Drawing.Image)(resources.GetObject("RBShroom.Image")));
-            this.RBShroom.Location = new System.Drawing.Point(1163, 710);
+            this.RBShroom.Location = new System.Drawing.Point(1116, 716);
             this.RBShroom.Margin = new System.Windows.Forms.Padding(4);
             this.RBShroom.Name = "RBShroom";
             this.RBShroom.Size = new System.Drawing.Size(137, 113);
             this.RBShroom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RBShroom.TabIndex = 14;
             this.RBShroom.TabStop = false;
+            this.RBShroom.Tag = "12";
+            this.RBShroom.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RBShroom_MouseDown);
             // 
             // saltSign
             // 
             this.saltSign.BackColor = System.Drawing.Color.Transparent;
             this.saltSign.Image = ((System.Drawing.Image)(resources.GetObject("saltSign.Image")));
-            this.saltSign.Location = new System.Drawing.Point(1011, 73);
+            this.saltSign.Location = new System.Drawing.Point(971, 79);
             this.saltSign.Margin = new System.Windows.Forms.Padding(4);
             this.saltSign.Name = "saltSign";
             this.saltSign.Size = new System.Drawing.Size(144, 143);
@@ -313,7 +344,7 @@
             // 
             this.rosemarySign.BackColor = System.Drawing.Color.Transparent;
             this.rosemarySign.Image = ((System.Drawing.Image)(resources.GetObject("rosemarySign.Image")));
-            this.rosemarySign.Location = new System.Drawing.Point(1163, 73);
+            this.rosemarySign.Location = new System.Drawing.Point(1116, 79);
             this.rosemarySign.Margin = new System.Windows.Forms.Padding(4);
             this.rosemarySign.Name = "rosemarySign";
             this.rosemarySign.Size = new System.Drawing.Size(144, 143);
@@ -325,7 +356,7 @@
             // 
             this.valRootSign.BackColor = System.Drawing.Color.Transparent;
             this.valRootSign.Image = ((System.Drawing.Image)(resources.GetObject("valRootSign.Image")));
-            this.valRootSign.Location = new System.Drawing.Point(1305, 73);
+            this.valRootSign.Location = new System.Drawing.Point(1258, 79);
             this.valRootSign.Margin = new System.Windows.Forms.Padding(4);
             this.valRootSign.Name = "valRootSign";
             this.valRootSign.Size = new System.Drawing.Size(144, 143);
@@ -337,7 +368,7 @@
             // 
             this.harpySign.BackColor = System.Drawing.Color.Transparent;
             this.harpySign.Image = ((System.Drawing.Image)(resources.GetObject("harpySign.Image")));
-            this.harpySign.Location = new System.Drawing.Point(1448, 73);
+            this.harpySign.Location = new System.Drawing.Point(1401, 79);
             this.harpySign.Margin = new System.Windows.Forms.Padding(4);
             this.harpySign.Name = "harpySign";
             this.harpySign.Size = new System.Drawing.Size(144, 143);
@@ -349,7 +380,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1017, 289);
+            this.pictureBox1.Location = new System.Drawing.Point(970, 295);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(144, 124);
@@ -361,7 +392,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1159, 289);
+            this.pictureBox2.Location = new System.Drawing.Point(1112, 295);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(144, 124);
@@ -373,7 +404,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1308, 289);
+            this.pictureBox3.Location = new System.Drawing.Point(1261, 295);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(144, 124);
@@ -385,7 +416,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1452, 289);
+            this.pictureBox4.Location = new System.Drawing.Point(1405, 295);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(144, 124);
@@ -397,7 +428,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1075, 475);
+            this.pictureBox5.Location = new System.Drawing.Point(1117, 481);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(140, 103);
@@ -410,7 +441,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1255, 475);
+            this.pictureBox6.Location = new System.Drawing.Point(1260, 481);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(137, 107);
@@ -422,7 +453,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(1452, 475);
+            this.pictureBox7.Location = new System.Drawing.Point(1405, 481);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(137, 107);
@@ -434,7 +465,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(1163, 646);
+            this.pictureBox8.Location = new System.Drawing.Point(1116, 652);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(140, 109);
@@ -446,7 +477,7 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(1308, 646);
+            this.pictureBox9.Location = new System.Drawing.Point(1261, 652);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(140, 109);
@@ -458,7 +489,7 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(1452, 646);
+            this.pictureBox10.Location = new System.Drawing.Point(1405, 652);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(140, 109);
@@ -472,7 +503,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1036, 114);
+            this.label1.Location = new System.Drawing.Point(996, 120);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 30);
@@ -485,7 +516,7 @@
             this.pinkSaltCounter.BackColor = System.Drawing.Color.Transparent;
             this.pinkSaltCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pinkSaltCounter.ForeColor = System.Drawing.Color.White;
-            this.pinkSaltCounter.Location = new System.Drawing.Point(1061, 144);
+            this.pinkSaltCounter.Location = new System.Drawing.Point(1014, 150);
             this.pinkSaltCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pinkSaltCounter.Name = "pinkSaltCounter";
             this.pinkSaltCounter.Size = new System.Drawing.Size(53, 33);
@@ -500,7 +531,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1455, 114);
+            this.label2.Location = new System.Drawing.Point(1408, 120);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 26);
@@ -513,7 +544,7 @@
             this.rosemaryCounter.BackColor = System.Drawing.Color.Transparent;
             this.rosemaryCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rosemaryCounter.ForeColor = System.Drawing.Color.White;
-            this.rosemaryCounter.Location = new System.Drawing.Point(1204, 144);
+            this.rosemaryCounter.Location = new System.Drawing.Point(1157, 150);
             this.rosemaryCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rosemaryCounter.Name = "rosemaryCounter";
             this.rosemaryCounter.Size = new System.Drawing.Size(53, 33);
@@ -526,7 +557,7 @@
             this.varRootCounter.BackColor = System.Drawing.Color.Transparent;
             this.varRootCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.varRootCounter.ForeColor = System.Drawing.Color.White;
-            this.varRootCounter.Location = new System.Drawing.Point(1351, 144);
+            this.varRootCounter.Location = new System.Drawing.Point(1304, 150);
             this.varRootCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.varRootCounter.Name = "varRootCounter";
             this.varRootCounter.Size = new System.Drawing.Size(53, 33);
@@ -539,7 +570,7 @@
             this.harpyCounter.BackColor = System.Drawing.Color.Transparent;
             this.harpyCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.harpyCounter.ForeColor = System.Drawing.Color.White;
-            this.harpyCounter.Location = new System.Drawing.Point(1497, 144);
+            this.harpyCounter.Location = new System.Drawing.Point(1450, 150);
             this.harpyCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.harpyCounter.Name = "harpyCounter";
             this.harpyCounter.Size = new System.Drawing.Size(53, 33);
@@ -552,7 +583,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1025, 324);
+            this.label6.Location = new System.Drawing.Point(978, 330);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(124, 30);
@@ -565,7 +596,7 @@
             this.rabbitCounter.BackColor = System.Drawing.Color.Transparent;
             this.rabbitCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rabbitCounter.ForeColor = System.Drawing.Color.White;
-            this.rabbitCounter.Location = new System.Drawing.Point(1061, 354);
+            this.rabbitCounter.Location = new System.Drawing.Point(1014, 360);
             this.rabbitCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rabbitCounter.Name = "rabbitCounter";
             this.rabbitCounter.Size = new System.Drawing.Size(53, 33);
@@ -578,7 +609,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(1176, 324);
+            this.label8.Location = new System.Drawing.Point(1129, 330);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(105, 30);
@@ -591,7 +622,7 @@
             this.houndFurCounter.BackColor = System.Drawing.Color.Transparent;
             this.houndFurCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.houndFurCounter.ForeColor = System.Drawing.Color.White;
-            this.houndFurCounter.Location = new System.Drawing.Point(1204, 352);
+            this.houndFurCounter.Location = new System.Drawing.Point(1157, 358);
             this.houndFurCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.houndFurCounter.Name = "houndFurCounter";
             this.houndFurCounter.Size = new System.Drawing.Size(53, 33);
@@ -604,7 +635,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(1329, 324);
+            this.label10.Location = new System.Drawing.Point(1282, 330);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 30);
@@ -617,7 +648,7 @@
             this.wolfsbaneCounter.BackColor = System.Drawing.Color.Transparent;
             this.wolfsbaneCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wolfsbaneCounter.ForeColor = System.Drawing.Color.White;
-            this.wolfsbaneCounter.Location = new System.Drawing.Point(1351, 354);
+            this.wolfsbaneCounter.Location = new System.Drawing.Point(1304, 360);
             this.wolfsbaneCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wolfsbaneCounter.Name = "wolfsbaneCounter";
             this.wolfsbaneCounter.Size = new System.Drawing.Size(53, 33);
@@ -630,7 +661,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(1491, 324);
+            this.label12.Location = new System.Drawing.Point(1444, 330);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(67, 30);
@@ -643,7 +674,7 @@
             this.honeyCounter.BackColor = System.Drawing.Color.Transparent;
             this.honeyCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.honeyCounter.ForeColor = System.Drawing.Color.White;
-            this.honeyCounter.Location = new System.Drawing.Point(1497, 352);
+            this.honeyCounter.Location = new System.Drawing.Point(1450, 358);
             this.honeyCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.honeyCounter.Name = "honeyCounter";
             this.honeyCounter.Size = new System.Drawing.Size(53, 33);
@@ -656,7 +687,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(1311, 116);
+            this.label14.Location = new System.Drawing.Point(1264, 122);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(131, 30);
@@ -669,7 +700,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(1184, 114);
+            this.label15.Location = new System.Drawing.Point(1137, 120);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(97, 30);
@@ -682,7 +713,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(1081, 510);
+            this.label16.Location = new System.Drawing.Point(1123, 516);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(124, 26);
@@ -695,7 +726,7 @@
             this.dbCounter.BackColor = System.Drawing.Color.Transparent;
             this.dbCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbCounter.ForeColor = System.Drawing.Color.White;
-            this.dbCounter.Location = new System.Drawing.Point(1116, 538);
+            this.dbCounter.Location = new System.Drawing.Point(1158, 544);
             this.dbCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dbCounter.Name = "dbCounter";
             this.dbCounter.Size = new System.Drawing.Size(53, 33);
@@ -708,7 +739,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(1261, 510);
+            this.label18.Location = new System.Drawing.Point(1266, 516);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(120, 30);
@@ -721,7 +752,7 @@
             this.mwCounter.BackColor = System.Drawing.Color.Transparent;
             this.mwCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mwCounter.ForeColor = System.Drawing.Color.White;
-            this.mwCounter.Location = new System.Drawing.Point(1299, 538);
+            this.mwCounter.Location = new System.Drawing.Point(1304, 544);
             this.mwCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mwCounter.Name = "mwCounter";
             this.mwCounter.Size = new System.Drawing.Size(53, 33);
@@ -734,7 +765,7 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(1455, 510);
+            this.label20.Location = new System.Drawing.Point(1408, 516);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(130, 30);
@@ -747,7 +778,7 @@
             this.swCounter.BackColor = System.Drawing.Color.Transparent;
             this.swCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.swCounter.ForeColor = System.Drawing.Color.White;
-            this.swCounter.Location = new System.Drawing.Point(1497, 538);
+            this.swCounter.Location = new System.Drawing.Point(1450, 544);
             this.swCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.swCounter.Name = "swCounter";
             this.swCounter.Size = new System.Drawing.Size(53, 33);
@@ -760,7 +791,7 @@
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(1472, 681);
+            this.label22.Location = new System.Drawing.Point(1425, 687);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(99, 30);
@@ -773,7 +804,7 @@
             this.sunBloomCounter.BackColor = System.Drawing.Color.Transparent;
             this.sunBloomCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sunBloomCounter.ForeColor = System.Drawing.Color.White;
-            this.sunBloomCounter.Location = new System.Drawing.Point(1497, 710);
+            this.sunBloomCounter.Location = new System.Drawing.Point(1450, 716);
             this.sunBloomCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sunBloomCounter.Name = "sunBloomCounter";
             this.sunBloomCounter.Size = new System.Drawing.Size(53, 33);
@@ -786,7 +817,7 @@
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(1325, 682);
+            this.label24.Location = new System.Drawing.Point(1278, 688);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(99, 30);
@@ -799,7 +830,7 @@
             this.mandrakeCounter.BackColor = System.Drawing.Color.Transparent;
             this.mandrakeCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mandrakeCounter.ForeColor = System.Drawing.Color.White;
-            this.mandrakeCounter.Location = new System.Drawing.Point(1351, 712);
+            this.mandrakeCounter.Location = new System.Drawing.Point(1304, 718);
             this.mandrakeCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mandrakeCounter.Name = "mandrakeCounter";
             this.mandrakeCounter.Size = new System.Drawing.Size(53, 33);
@@ -812,7 +843,7 @@
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(1168, 683);
+            this.label26.Location = new System.Drawing.Point(1121, 689);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(121, 24);
@@ -825,12 +856,20 @@
             this.rbshroomCounter.BackColor = System.Drawing.Color.Transparent;
             this.rbshroomCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbshroomCounter.ForeColor = System.Drawing.Color.White;
-            this.rbshroomCounter.Location = new System.Drawing.Point(1204, 710);
+            this.rbshroomCounter.Location = new System.Drawing.Point(1157, 716);
             this.rbshroomCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rbshroomCounter.Name = "rbshroomCounter";
             this.rbshroomCounter.Size = new System.Drawing.Size(67, 33);
             this.rbshroomCounter.TabIndex = 32;
             this.rbshroomCounter.Text = "$100";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(613, 237);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 16);
+            this.label3.TabIndex = 35;
             // 
             // BrewingStation
             // 
@@ -839,6 +878,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1605, 838);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.Honey);
             this.Controls.Add(this.Wolfsbane);
             this.Controls.Add(this.houndFur);
@@ -995,5 +1035,6 @@
         private System.Windows.Forms.Label mandrakeCounter;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label rbshroomCounter;
+        private System.Windows.Forms.Label label3;
     }
 }
