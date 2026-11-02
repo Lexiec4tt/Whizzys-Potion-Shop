@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace main_game
+namespace Whizzys_Potion_Shop
 {
     public abstract class Potion
     {
