@@ -9,7 +9,7 @@ namespace Whizzys_Potion_Shop
 
     internal class modules
     {
-        Stack<Potion> potionInventory;
+        static Stack<Potion> potionInventory = new Stack<Potion>();
 
         public static Potion Brew(ref Dictionary<string, int> ingredientSet, ref int[] potionCount)
         {
