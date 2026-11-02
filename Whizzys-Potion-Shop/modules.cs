@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Whizzys_Potion_Shop
 {
+
     internal class modules
     {
+        Stack<Potion> potionInventory;
+
         public static Potion Brew(ref Dictionary<string, int> ingredientSet, ref int[] potionCount)
         {
             Potion newPotion;
@@ -53,6 +56,7 @@ namespace Whizzys_Potion_Shop
                 ingredientSet[key] = 0;
             }
 
+            potionInventory.Push(newPotion);
             return newPotion;
         }
 
