@@ -87,6 +87,7 @@
             this.label26 = new System.Windows.Forms.Label();
             this.rbshroomCounter = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.brewButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cauldron)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pinkSalt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rosemary)).BeginInit();
@@ -871,6 +872,23 @@
             this.label3.Size = new System.Drawing.Size(0, 16);
             this.label3.TabIndex = 35;
             // 
+            // brewButton
+            // 
+            this.brewButton.BackColor = System.Drawing.Color.Transparent;
+            this.brewButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("brewButton.BackgroundImage")));
+            this.brewButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.brewButton.Enabled = false;
+            this.brewButton.FlatAppearance.BorderSize = 0;
+            this.brewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.brewButton.Location = new System.Drawing.Point(659, 510);
+            this.brewButton.Name = "brewButton";
+            this.brewButton.Size = new System.Drawing.Size(244, 67);
+            this.brewButton.TabIndex = 36;
+            this.brewButton.UseVisualStyleBackColor = false;
+            this.brewButton.Visible = false;
+            this.brewButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.brewButton_KeyDown);
+            this.brewButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.brewButton_MouseDown);
+            // 
             // BrewingStation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -878,6 +896,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1605, 838);
+            this.Controls.Add(this.brewButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Honey);
             this.Controls.Add(this.Wolfsbane);
@@ -1036,5 +1055,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label rbshroomCounter;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button brewButton;
     }
 }

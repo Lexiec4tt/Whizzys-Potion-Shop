@@ -8,11 +8,12 @@ namespace Whizzys_Potion_Shop
 {
     internal class modules
     {
-        private static Stack<Potion> potionInventory = new Stack<Potion>();
+        public static Stack<Potion> potionInventory = new Stack<Potion>();
 
-        public static Potion Brew(ref Dictionary<string, int> ingredientSet, ref int[] potionCount)
+        public static Potion Brew(Dictionary<string, int> ingredientSet, int[] potionCount)
         {
             Potion newPotion;
+
             if (new SleepPotion().EvaluatePotionIngredients(ingredientSet))
             {
                 newPotion = new SleepPotion();
@@ -50,7 +51,7 @@ namespace Whizzys_Potion_Shop
             }
 
             // Clears the ingredients tray
-            foreach (string key in ingredientSet.Keys)
+            foreach (string key in ingredientSet.Keys.ToArray())
             {
                 ingredientSet[key] = 0;
             }

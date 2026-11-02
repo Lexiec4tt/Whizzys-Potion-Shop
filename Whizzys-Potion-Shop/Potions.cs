@@ -20,12 +20,12 @@ namespace Whizzys_Potion_Shop
             {"Sun Bloom", 0 },
             {"Valerian Root", 0 },
             {"Harpy Feather", 0 },
-            {"Dragon’s Blood", 0 },
+            {"Dragon's Blood", 0 },
             {"Rosemary", 0 },
             {"Mandrake", 0 },
             {"Hound Fur", 0 },
             {"Pink Salt", 0 },
-            {"Rabbit’s Foot", 0 },
+            {"Rabbit's Foot", 0 },
             {"Honey", 0 },
             {"Rainbowshroom", 0 },
             {"Wolfsbane", 0 },
@@ -145,9 +145,9 @@ namespace Whizzys_Potion_Shop
         public UnstablePotion()
         {
             name = "Unstable Potion";
-            description = "???";           
+            description = "???";
             brewingTime = 3;
             potionID = 7;
-        } 
+        }
     };
 }

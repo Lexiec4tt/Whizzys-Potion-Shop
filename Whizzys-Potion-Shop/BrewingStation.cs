@@ -30,6 +30,8 @@ namespace Whizzys_Potion_Shop
             {"Spring Water", 0 }
         };
 
+        private int[] potionCount = new int[7];
+
         public BrewingStation()
         {
             InitializeComponent();
@@ -99,6 +101,9 @@ namespace Whizzys_Potion_Shop
                 int ingredientTag = (int)e.Data.GetData(typeof(int));
 
                 modules.AddIngredient(cauldronIngredCount, ingredientTag);
+
+                brewButton.Enabled = true;
+                brewButton.Visible = true;
             }
         }
 
@@ -268,6 +273,20 @@ namespace Whizzys_Potion_Shop
                 data.SetData(typeof(int), Convert.ToInt32(ingredient.Tag));
 
                 ingredient.DoDragDrop(data, DragDropEffects.Copy);
+            }
+        }
+
+        private void brewButton_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void brewButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                modules.Brew(cauldronIngredCount, potionCount);
+                brewButton.Enabled = false;
+                brewButton.Visible = false;
             }
         }
     }
