@@ -60,12 +60,6 @@
     <Compile Include="DialogueBox.Designer.cs">
       <DependentUpon>DialogueBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ingredients-Window.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ingredients-Window.Designer.cs">
-      <DependentUpon>Ingredients-Window.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ingredients.cs" />
     <Compile Include="loadSaves.cs">
       <SubType>Form</SubType>
@@ -133,9 +127,6 @@
     <EmbeddedResource Include="DialogueBox.resx">
       <DependentUpon>DialogueBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ingredients-Window.resx">
-      <DependentUpon>Ingredients-Window.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="loadSaves.resx">
       <DependentUpon>loadSaves.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +147,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="settings.resx">
       <DependentUpon>settings.cs</DependentUpon>
@@ -184,6 +176,32 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\brew_button.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Dragon_s Blood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\image %286%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\mr.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\OOP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\pot-cropped.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\pot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\pot1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

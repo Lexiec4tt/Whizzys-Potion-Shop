@@ -46,7 +46,7 @@ namespace Whizzys_Potion_Shop
             }
             else
             {
-                newPotion = new ExPotion();
+                newPotion = new UnstablePotion();
                 potionCount[6] += 1;
             }
 
