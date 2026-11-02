@@ -10,6 +10,8 @@ namespace Whizzys_Potion_Shop
         private static Random random = new Random();
 
         private int customerIdCounter = 0;
+
+        private int orderIdCounter = 0;
         private string[] wizardNames =
         {
             "Aldric", "Elowen", "Merlin", "Theodora",
@@ -39,12 +41,44 @@ namespace Whizzys_Potion_Shop
                 CurrentCustomer = new Adventurer(++customerIdCounter, adventurerNames[random.Next(adventurerNames.Length)]);
         }
 
-        public void CreateOrder(List<int> unlockedPotions, int orderID)
+        public void GenerateCustomerOrder(List<int> unlockedPotions)
         {
-            CurrentOrder = new CustomerOrder(orderID, CurrentCustomer);
+            GenerateCustomer();
+
+            CurrentOrder = new CustomerOrder(++orderIdCounter, CurrentCustomer);
             CurrentOrder.GenerateRandomOrder(unlockedPotions);
         }
 
+        public bool DeliverPotion(Potion potion)
+        {
+            bool accepted = CurrentOrder.EvaluatePotions(potion);
+
+            if (!accepted)
+            {
+                bool stillWaiting = (CurrentCustomer.DecreasePatience() > 0);
+
+                if (!stillWaiting)
+                {
+                    ClearOrder();
+                }
+
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool IsOrderComplete()
+        {
+
+            return CurrentOrder.Items.Count == 0;
+        }
+
+        public void ClearOrder()
+        {
+            CurrentCustomer = null;
+            CurrentOrder = null;
+        }
     }
 
 }

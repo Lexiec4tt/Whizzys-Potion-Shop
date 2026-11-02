@@ -24,7 +24,14 @@ namespace Whizzys_Potion_Shop
             HasIllIntentions = SetIllIntentions();
         }
 
-
+        public int DecreasePatience()
+        {
+            if (Patience > 0)
+            {
+                Patience--;
+            }
+            return Patience;
+        }
 
         protected bool SetIllIntentions()
         {
