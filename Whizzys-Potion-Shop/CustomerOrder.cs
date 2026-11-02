@@ -11,17 +11,28 @@ namespace Whizzys_Potion_Shop {
         public List<OrderItem> Items = new List<OrderItem>();
         private static readonly Random random = new Random();
 
-        public CustomerOrder( int orderID, Customer customer)
-		    {
-			    this.customerID = customer.CustomerID;
-			    this.orderID = orderID;
-                this.PreferredItems = new List<int>(customer.PreferredItems); ;
+        public CustomerOrder( int orderID, Customer customer){
+			this.customerID = customer.CustomerID;
+			this.orderID = orderID;
+            this.PreferredItems = new List<int>(customer.PreferredItems);
         }
 
-
-        public void EvaluatePotions(List<string> potions)
+        public bool EvaluatePotions(Potion potion)
         {
-            //something something
+            foreach (OrderItem item in Items)
+            {
+                if (item.potionID == potion.potionID && item.quantity > 0)
+                {
+                    item.quantity--;
+                    return true;
+                }
+                else if (item.potionID == potion.potionID && item.quantity <= 0)
+                {
+                    Items.RemoveAt(Items.IndexOf(item));
+                    return true;
+                }
+            }
+            return false;
         }
 
         public void GenerateRandomOrder(List<int> unlockedPotions)
