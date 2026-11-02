@@ -1,4 +1,4 @@
-﻿namespace Test1
+﻿namespace Whizzys_Potion_Shop
 {
     partial class summary
     {

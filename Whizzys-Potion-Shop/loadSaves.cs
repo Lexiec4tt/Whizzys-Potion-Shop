@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Test1
+namespace Whizzys_Potion_Shop
 {
     public partial class savefiles : Form
     {
+
         public savefiles()
         {
             InitializeComponent();

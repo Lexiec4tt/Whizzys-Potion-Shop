@@ -1,4 +1,4 @@
-﻿namespace Test1
+﻿namespace Whizzys_Potion_Shop
 {
     partial class StartScreen
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartScreen));
-            this.topHUD1 = new Test1.topHUD();
+            this.topHUD1 = new Whizzys_Potion_Shop.topHUD();
             this.menuBtn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.menuBtn)).BeginInit();
             this.SuspendLayout();
