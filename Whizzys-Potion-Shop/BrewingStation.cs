@@ -43,6 +43,11 @@ namespace Whizzys_Potion_Shop
             }
         }
 
+        private void pinkSaltCounter_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //
     }
 }

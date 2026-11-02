@@ -119,290 +119,349 @@
             // 
             // cauldron
             // 
+            this.cauldron.BackColor = System.Drawing.Color.Transparent;
             this.cauldron.Image = ((System.Drawing.Image)(resources.GetObject("cauldron.Image")));
-            this.cauldron.Location = new System.Drawing.Point(364, 427);
+            this.cauldron.Location = new System.Drawing.Point(485, 526);
+            this.cauldron.Margin = new System.Windows.Forms.Padding(4);
             this.cauldron.Name = "cauldron";
-            this.cauldron.Size = new System.Drawing.Size(513, 278);
+            this.cauldron.Size = new System.Drawing.Size(684, 342);
             this.cauldron.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cauldron.TabIndex = 0;
             this.cauldron.TabStop = false;
             // 
             // pinkSalt
             // 
+            this.pinkSalt.BackColor = System.Drawing.Color.Transparent;
             this.pinkSalt.Image = ((System.Drawing.Image)(resources.GetObject("pinkSalt.Image")));
-            this.pinkSalt.Location = new System.Drawing.Point(763, 146);
+            this.pinkSalt.Location = new System.Drawing.Point(1017, 180);
+            this.pinkSalt.Margin = new System.Windows.Forms.Padding(4);
             this.pinkSalt.Name = "pinkSalt";
-            this.pinkSalt.Size = new System.Drawing.Size(103, 92);
+            this.pinkSalt.Size = new System.Drawing.Size(137, 113);
             this.pinkSalt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pinkSalt.TabIndex = 1;
             this.pinkSalt.TabStop = false;
             // 
             // Rosemary
             // 
+            this.Rosemary.BackColor = System.Drawing.Color.Transparent;
             this.Rosemary.Image = ((System.Drawing.Image)(resources.GetObject("Rosemary.Image")));
-            this.Rosemary.Location = new System.Drawing.Point(872, 146);
+            this.Rosemary.Location = new System.Drawing.Point(1163, 180);
+            this.Rosemary.Margin = new System.Windows.Forms.Padding(4);
             this.Rosemary.Name = "Rosemary";
-            this.Rosemary.Size = new System.Drawing.Size(103, 92);
+            this.Rosemary.Size = new System.Drawing.Size(137, 113);
             this.Rosemary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Rosemary.TabIndex = 2;
             this.Rosemary.TabStop = false;
             // 
             // valRoot
             // 
+            this.valRoot.BackColor = System.Drawing.Color.Transparent;
             this.valRoot.Image = ((System.Drawing.Image)(resources.GetObject("valRoot.Image")));
-            this.valRoot.Location = new System.Drawing.Point(981, 146);
+            this.valRoot.Location = new System.Drawing.Point(1308, 180);
+            this.valRoot.Margin = new System.Windows.Forms.Padding(4);
             this.valRoot.Name = "valRoot";
-            this.valRoot.Size = new System.Drawing.Size(103, 92);
+            this.valRoot.Size = new System.Drawing.Size(137, 113);
             this.valRoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.valRoot.TabIndex = 3;
             this.valRoot.TabStop = false;
             // 
             // harpyFeathers
             // 
+            this.harpyFeathers.BackColor = System.Drawing.Color.Transparent;
             this.harpyFeathers.Image = ((System.Drawing.Image)(resources.GetObject("harpyFeathers.Image")));
-            this.harpyFeathers.Location = new System.Drawing.Point(1090, 146);
+            this.harpyFeathers.Location = new System.Drawing.Point(1453, 180);
+            this.harpyFeathers.Margin = new System.Windows.Forms.Padding(4);
             this.harpyFeathers.Name = "harpyFeathers";
-            this.harpyFeathers.Size = new System.Drawing.Size(103, 92);
+            this.harpyFeathers.Size = new System.Drawing.Size(137, 113);
             this.harpyFeathers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.harpyFeathers.TabIndex = 4;
             this.harpyFeathers.TabStop = false;
             // 
             // rabbitsFoot
             // 
+            this.rabbitsFoot.BackColor = System.Drawing.Color.Transparent;
             this.rabbitsFoot.Image = ((System.Drawing.Image)(resources.GetObject("rabbitsFoot.Image")));
-            this.rabbitsFoot.Location = new System.Drawing.Point(763, 300);
+            this.rabbitsFoot.Location = new System.Drawing.Point(1018, 391);
+            this.rabbitsFoot.Margin = new System.Windows.Forms.Padding(4);
             this.rabbitsFoot.Name = "rabbitsFoot";
-            this.rabbitsFoot.Size = new System.Drawing.Size(103, 80);
+            this.rabbitsFoot.Size = new System.Drawing.Size(137, 76);
             this.rabbitsFoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.rabbitsFoot.TabIndex = 5;
             this.rabbitsFoot.TabStop = false;
             // 
             // houndFur
             // 
+            this.houndFur.BackColor = System.Drawing.Color.Transparent;
             this.houndFur.Image = ((System.Drawing.Image)(resources.GetObject("houndFur.Image")));
-            this.houndFur.Location = new System.Drawing.Point(872, 300);
+            this.houndFur.Location = new System.Drawing.Point(1163, 391);
+            this.houndFur.Margin = new System.Windows.Forms.Padding(4);
             this.houndFur.Name = "houndFur";
-            this.houndFur.Size = new System.Drawing.Size(103, 80);
+            this.houndFur.Size = new System.Drawing.Size(137, 76);
             this.houndFur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.houndFur.TabIndex = 6;
             this.houndFur.TabStop = false;
             // 
             // Wolfsbane
             // 
+            this.Wolfsbane.BackColor = System.Drawing.Color.Transparent;
             this.Wolfsbane.Image = ((System.Drawing.Image)(resources.GetObject("Wolfsbane.Image")));
-            this.Wolfsbane.Location = new System.Drawing.Point(981, 300);
+            this.Wolfsbane.Location = new System.Drawing.Point(1308, 391);
+            this.Wolfsbane.Margin = new System.Windows.Forms.Padding(4);
             this.Wolfsbane.Name = "Wolfsbane";
-            this.Wolfsbane.Size = new System.Drawing.Size(103, 80);
+            this.Wolfsbane.Size = new System.Drawing.Size(137, 76);
             this.Wolfsbane.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Wolfsbane.TabIndex = 7;
             this.Wolfsbane.TabStop = false;
             // 
             // Honey
             // 
+            this.Honey.BackColor = System.Drawing.Color.Transparent;
             this.Honey.Image = ((System.Drawing.Image)(resources.GetObject("Honey.Image")));
-            this.Honey.Location = new System.Drawing.Point(1090, 300);
+            this.Honey.Location = new System.Drawing.Point(1453, 391);
+            this.Honey.Margin = new System.Windows.Forms.Padding(4);
             this.Honey.Name = "Honey";
-            this.Honey.Size = new System.Drawing.Size(103, 80);
+            this.Honey.Size = new System.Drawing.Size(137, 76);
             this.Honey.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Honey.TabIndex = 8;
             this.Honey.TabStop = false;
             // 
             // DragonBlood
             // 
+            this.DragonBlood.BackColor = System.Drawing.Color.Transparent;
             this.DragonBlood.Image = ((System.Drawing.Image)(resources.GetObject("DragonBlood.Image")));
-            this.DragonBlood.Location = new System.Drawing.Point(808, 427);
+            this.DragonBlood.Location = new System.Drawing.Point(1077, 526);
+            this.DragonBlood.Margin = new System.Windows.Forms.Padding(4);
             this.DragonBlood.Name = "DragonBlood";
-            this.DragonBlood.Size = new System.Drawing.Size(103, 92);
+            this.DragonBlood.Size = new System.Drawing.Size(137, 113);
             this.DragonBlood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.DragonBlood.TabIndex = 9;
             this.DragonBlood.TabStop = false;
             // 
             // MoonWater
             // 
+            this.MoonWater.BackColor = System.Drawing.Color.Transparent;
             this.MoonWater.Image = ((System.Drawing.Image)(resources.GetObject("MoonWater.Image")));
-            this.MoonWater.Location = new System.Drawing.Point(941, 427);
+            this.MoonWater.Location = new System.Drawing.Point(1255, 526);
+            this.MoonWater.Margin = new System.Windows.Forms.Padding(4);
             this.MoonWater.Name = "MoonWater";
-            this.MoonWater.Size = new System.Drawing.Size(103, 92);
+            this.MoonWater.Size = new System.Drawing.Size(137, 113);
             this.MoonWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.MoonWater.TabIndex = 10;
             this.MoonWater.TabStop = false;
             // 
             // SpringWater
             // 
+            this.SpringWater.BackColor = System.Drawing.Color.Transparent;
             this.SpringWater.Image = ((System.Drawing.Image)(resources.GetObject("SpringWater.Image")));
-            this.SpringWater.Location = new System.Drawing.Point(1089, 427);
+            this.SpringWater.Location = new System.Drawing.Point(1452, 526);
+            this.SpringWater.Margin = new System.Windows.Forms.Padding(4);
             this.SpringWater.Name = "SpringWater";
-            this.SpringWater.Size = new System.Drawing.Size(103, 92);
+            this.SpringWater.Size = new System.Drawing.Size(137, 113);
             this.SpringWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SpringWater.TabIndex = 11;
             this.SpringWater.TabStop = false;
             // 
             // SunBloom
             // 
+            this.SunBloom.BackColor = System.Drawing.Color.Transparent;
             this.SunBloom.Image = ((System.Drawing.Image)(resources.GetObject("SunBloom.Image")));
-            this.SunBloom.Location = new System.Drawing.Point(1090, 577);
+            this.SunBloom.Location = new System.Drawing.Point(1453, 710);
+            this.SunBloom.Margin = new System.Windows.Forms.Padding(4);
             this.SunBloom.Name = "SunBloom";
-            this.SunBloom.Size = new System.Drawing.Size(103, 92);
+            this.SunBloom.Size = new System.Drawing.Size(137, 113);
             this.SunBloom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SunBloom.TabIndex = 12;
             this.SunBloom.TabStop = false;
             // 
             // Mandrake
             // 
+            this.Mandrake.BackColor = System.Drawing.Color.Transparent;
             this.Mandrake.Image = ((System.Drawing.Image)(resources.GetObject("Mandrake.Image")));
-            this.Mandrake.Location = new System.Drawing.Point(981, 577);
+            this.Mandrake.Location = new System.Drawing.Point(1308, 710);
+            this.Mandrake.Margin = new System.Windows.Forms.Padding(4);
             this.Mandrake.Name = "Mandrake";
-            this.Mandrake.Size = new System.Drawing.Size(103, 92);
+            this.Mandrake.Size = new System.Drawing.Size(137, 113);
             this.Mandrake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Mandrake.TabIndex = 13;
             this.Mandrake.TabStop = false;
             // 
             // RBShroom
             // 
+            this.RBShroom.BackColor = System.Drawing.Color.Transparent;
             this.RBShroom.Image = ((System.Drawing.Image)(resources.GetObject("RBShroom.Image")));
-            this.RBShroom.Location = new System.Drawing.Point(872, 577);
+            this.RBShroom.Location = new System.Drawing.Point(1163, 710);
+            this.RBShroom.Margin = new System.Windows.Forms.Padding(4);
             this.RBShroom.Name = "RBShroom";
-            this.RBShroom.Size = new System.Drawing.Size(103, 92);
+            this.RBShroom.Size = new System.Drawing.Size(137, 113);
             this.RBShroom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RBShroom.TabIndex = 14;
             this.RBShroom.TabStop = false;
             // 
             // saltSign
             // 
+            this.saltSign.BackColor = System.Drawing.Color.Transparent;
             this.saltSign.Image = ((System.Drawing.Image)(resources.GetObject("saltSign.Image")));
-            this.saltSign.Location = new System.Drawing.Point(758, 59);
+            this.saltSign.Location = new System.Drawing.Point(1011, 73);
+            this.saltSign.Margin = new System.Windows.Forms.Padding(4);
             this.saltSign.Name = "saltSign";
-            this.saltSign.Size = new System.Drawing.Size(108, 116);
+            this.saltSign.Size = new System.Drawing.Size(144, 143);
             this.saltSign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.saltSign.TabIndex = 15;
             this.saltSign.TabStop = false;
             // 
             // rosemarySign
             // 
+            this.rosemarySign.BackColor = System.Drawing.Color.Transparent;
             this.rosemarySign.Image = ((System.Drawing.Image)(resources.GetObject("rosemarySign.Image")));
-            this.rosemarySign.Location = new System.Drawing.Point(872, 59);
+            this.rosemarySign.Location = new System.Drawing.Point(1163, 73);
+            this.rosemarySign.Margin = new System.Windows.Forms.Padding(4);
             this.rosemarySign.Name = "rosemarySign";
-            this.rosemarySign.Size = new System.Drawing.Size(108, 116);
+            this.rosemarySign.Size = new System.Drawing.Size(144, 143);
             this.rosemarySign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.rosemarySign.TabIndex = 16;
             this.rosemarySign.TabStop = false;
             // 
             // valRootSign
             // 
+            this.valRootSign.BackColor = System.Drawing.Color.Transparent;
             this.valRootSign.Image = ((System.Drawing.Image)(resources.GetObject("valRootSign.Image")));
-            this.valRootSign.Location = new System.Drawing.Point(979, 59);
+            this.valRootSign.Location = new System.Drawing.Point(1305, 73);
+            this.valRootSign.Margin = new System.Windows.Forms.Padding(4);
             this.valRootSign.Name = "valRootSign";
-            this.valRootSign.Size = new System.Drawing.Size(108, 116);
+            this.valRootSign.Size = new System.Drawing.Size(144, 143);
             this.valRootSign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.valRootSign.TabIndex = 17;
             this.valRootSign.TabStop = false;
             // 
             // harpySign
             // 
+            this.harpySign.BackColor = System.Drawing.Color.Transparent;
             this.harpySign.Image = ((System.Drawing.Image)(resources.GetObject("harpySign.Image")));
-            this.harpySign.Location = new System.Drawing.Point(1086, 59);
+            this.harpySign.Location = new System.Drawing.Point(1448, 73);
+            this.harpySign.Margin = new System.Windows.Forms.Padding(4);
             this.harpySign.Name = "harpySign";
-            this.harpySign.Size = new System.Drawing.Size(108, 116);
+            this.harpySign.Size = new System.Drawing.Size(144, 143);
             this.harpySign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.harpySign.TabIndex = 18;
             this.harpySign.TabStop = false;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(763, 235);
+            this.pictureBox1.Location = new System.Drawing.Point(1017, 289);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(108, 101);
+            this.pictureBox1.Size = new System.Drawing.Size(144, 124);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(869, 235);
+            this.pictureBox2.Location = new System.Drawing.Point(1159, 289);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(108, 101);
+            this.pictureBox2.Size = new System.Drawing.Size(144, 124);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(981, 235);
+            this.pictureBox3.Location = new System.Drawing.Point(1308, 289);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(108, 101);
+            this.pictureBox3.Size = new System.Drawing.Size(144, 124);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 21;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1089, 235);
+            this.pictureBox4.Location = new System.Drawing.Point(1452, 289);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(108, 101);
+            this.pictureBox4.Size = new System.Drawing.Size(144, 124);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 22;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(806, 386);
+            this.pictureBox5.Location = new System.Drawing.Point(1075, 475);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(105, 101);
+            this.pictureBox5.Size = new System.Drawing.Size(140, 103);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 23;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(941, 386);
+            this.pictureBox6.Location = new System.Drawing.Point(1255, 475);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(103, 101);
+            this.pictureBox6.Size = new System.Drawing.Size(137, 107);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 24;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox7
             // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(1089, 386);
+            this.pictureBox7.Location = new System.Drawing.Point(1452, 475);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(103, 101);
+            this.pictureBox7.Size = new System.Drawing.Size(137, 107);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 25;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox8
             // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(872, 525);
+            this.pictureBox8.Location = new System.Drawing.Point(1163, 646);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(105, 101);
+            this.pictureBox8.Size = new System.Drawing.Size(140, 109);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 26;
             this.pictureBox8.TabStop = false;
             // 
             // pictureBox9
             // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(981, 525);
+            this.pictureBox9.Location = new System.Drawing.Point(1308, 646);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(105, 101);
+            this.pictureBox9.Size = new System.Drawing.Size(140, 109);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 27;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox10
             // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(1089, 525);
+            this.pictureBox10.Location = new System.Drawing.Point(1452, 646);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(105, 101);
+            this.pictureBox10.Size = new System.Drawing.Size(140, 109);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 28;
             this.pictureBox10.TabStop = false;
@@ -410,346 +469,384 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(777, 93);
+            this.label1.Location = new System.Drawing.Point(1036, 114);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 23);
+            this.label1.Size = new System.Drawing.Size(92, 30);
             this.label1.TabIndex = 29;
             this.label1.Text = "Pink Salt";
             // 
             // pinkSaltCounter
             // 
             this.pinkSaltCounter.AutoSize = true;
-            this.pinkSaltCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pinkSaltCounter.BackColor = System.Drawing.Color.Transparent;
             this.pinkSaltCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pinkSaltCounter.ForeColor = System.Drawing.Color.White;
-            this.pinkSaltCounter.Location = new System.Drawing.Point(801, 117);
+            this.pinkSaltCounter.Location = new System.Drawing.Point(1061, 144);
+            this.pinkSaltCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pinkSaltCounter.Name = "pinkSaltCounter";
-            this.pinkSaltCounter.Size = new System.Drawing.Size(23, 26);
+            this.pinkSaltCounter.Size = new System.Drawing.Size(53, 33);
             this.pinkSaltCounter.TabIndex = 30;
-            this.pinkSaltCounter.Text = "0";
+            this.pinkSaltCounter.Text = "$20";
+            this.pinkSaltCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pinkSaltCounter.Click += new System.EventHandler(this.pinkSaltCounter_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1091, 93);
+            this.label2.Location = new System.Drawing.Point(1455, 114);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 21);
+            this.label2.Size = new System.Drawing.Size(124, 26);
             this.label2.TabIndex = 31;
             this.label2.Text = "Harpy Feather";
             // 
             // rosemaryCounter
             // 
             this.rosemaryCounter.AutoSize = true;
-            this.rosemaryCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.rosemaryCounter.BackColor = System.Drawing.Color.Transparent;
             this.rosemaryCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rosemaryCounter.ForeColor = System.Drawing.Color.White;
-            this.rosemaryCounter.Location = new System.Drawing.Point(915, 117);
+            this.rosemaryCounter.Location = new System.Drawing.Point(1204, 144);
+            this.rosemaryCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rosemaryCounter.Name = "rosemaryCounter";
-            this.rosemaryCounter.Size = new System.Drawing.Size(23, 26);
+            this.rosemaryCounter.Size = new System.Drawing.Size(53, 33);
             this.rosemaryCounter.TabIndex = 32;
-            this.rosemaryCounter.Text = "0";
+            this.rosemaryCounter.Text = "$40";
             // 
             // varRootCounter
             // 
             this.varRootCounter.AutoSize = true;
-            this.varRootCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.varRootCounter.BackColor = System.Drawing.Color.Transparent;
             this.varRootCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.varRootCounter.ForeColor = System.Drawing.Color.White;
-            this.varRootCounter.Location = new System.Drawing.Point(1021, 117);
+            this.varRootCounter.Location = new System.Drawing.Point(1351, 144);
+            this.varRootCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.varRootCounter.Name = "varRootCounter";
-            this.varRootCounter.Size = new System.Drawing.Size(23, 26);
+            this.varRootCounter.Size = new System.Drawing.Size(53, 33);
             this.varRootCounter.TabIndex = 33;
-            this.varRootCounter.Text = "0";
+            this.varRootCounter.Text = "$35";
             // 
             // harpyCounter
             // 
             this.harpyCounter.AutoSize = true;
-            this.harpyCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.harpyCounter.BackColor = System.Drawing.Color.Transparent;
             this.harpyCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.harpyCounter.ForeColor = System.Drawing.Color.White;
-            this.harpyCounter.Location = new System.Drawing.Point(1130, 117);
+            this.harpyCounter.Location = new System.Drawing.Point(1497, 144);
+            this.harpyCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.harpyCounter.Name = "harpyCounter";
-            this.harpyCounter.Size = new System.Drawing.Size(23, 26);
+            this.harpyCounter.Size = new System.Drawing.Size(53, 33);
             this.harpyCounter.TabIndex = 34;
-            this.harpyCounter.Text = "0";
+            this.harpyCounter.Text = "$50";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(769, 263);
+            this.label6.Location = new System.Drawing.Point(1025, 324);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 23);
+            this.label6.Size = new System.Drawing.Size(124, 30);
             this.label6.TabIndex = 31;
             this.label6.Text = "Rabbit\'s Foot";
             // 
             // rabbitCounter
             // 
             this.rabbitCounter.AutoSize = true;
-            this.rabbitCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.rabbitCounter.BackColor = System.Drawing.Color.Transparent;
             this.rabbitCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rabbitCounter.ForeColor = System.Drawing.Color.White;
-            this.rabbitCounter.Location = new System.Drawing.Point(806, 286);
+            this.rabbitCounter.Location = new System.Drawing.Point(1061, 354);
+            this.rabbitCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rabbitCounter.Name = "rabbitCounter";
-            this.rabbitCounter.Size = new System.Drawing.Size(23, 26);
+            this.rabbitCounter.Size = new System.Drawing.Size(53, 33);
             this.rabbitCounter.TabIndex = 32;
-            this.rabbitCounter.Text = "0";
+            this.rabbitCounter.Text = "$50";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(882, 263);
+            this.label8.Location = new System.Drawing.Point(1176, 324);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 23);
+            this.label8.Size = new System.Drawing.Size(105, 30);
             this.label8.TabIndex = 31;
             this.label8.Text = "Hound Fur";
             // 
             // houndFurCounter
             // 
             this.houndFurCounter.AutoSize = true;
-            this.houndFurCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.houndFurCounter.BackColor = System.Drawing.Color.Transparent;
             this.houndFurCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.houndFurCounter.ForeColor = System.Drawing.Color.White;
-            this.houndFurCounter.Location = new System.Drawing.Point(912, 286);
+            this.houndFurCounter.Location = new System.Drawing.Point(1204, 352);
+            this.houndFurCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.houndFurCounter.Name = "houndFurCounter";
-            this.houndFurCounter.Size = new System.Drawing.Size(23, 26);
+            this.houndFurCounter.Size = new System.Drawing.Size(53, 33);
             this.houndFurCounter.TabIndex = 32;
-            this.houndFurCounter.Text = "0";
+            this.houndFurCounter.Text = "$60";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(997, 263);
+            this.label10.Location = new System.Drawing.Point(1329, 324);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 23);
+            this.label10.Size = new System.Drawing.Size(98, 30);
             this.label10.TabIndex = 31;
             this.label10.Text = "Wolfsbane";
             // 
             // wolfsbaneCounter
             // 
             this.wolfsbaneCounter.AutoSize = true;
-            this.wolfsbaneCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.wolfsbaneCounter.BackColor = System.Drawing.Color.Transparent;
             this.wolfsbaneCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wolfsbaneCounter.ForeColor = System.Drawing.Color.White;
-            this.wolfsbaneCounter.Location = new System.Drawing.Point(1024, 286);
+            this.wolfsbaneCounter.Location = new System.Drawing.Point(1351, 354);
+            this.wolfsbaneCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wolfsbaneCounter.Name = "wolfsbaneCounter";
-            this.wolfsbaneCounter.Size = new System.Drawing.Size(23, 26);
+            this.wolfsbaneCounter.Size = new System.Drawing.Size(53, 33);
             this.wolfsbaneCounter.TabIndex = 32;
-            this.wolfsbaneCounter.Text = "0";
+            this.wolfsbaneCounter.Text = "$70";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(1118, 263);
+            this.label12.Location = new System.Drawing.Point(1491, 324);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 23);
+            this.label12.Size = new System.Drawing.Size(67, 30);
             this.label12.TabIndex = 31;
             this.label12.Text = "Honey";
             // 
             // honeyCounter
             // 
             this.honeyCounter.AutoSize = true;
-            this.honeyCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.honeyCounter.BackColor = System.Drawing.Color.Transparent;
             this.honeyCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.honeyCounter.ForeColor = System.Drawing.Color.White;
-            this.honeyCounter.Location = new System.Drawing.Point(1133, 286);
+            this.honeyCounter.Location = new System.Drawing.Point(1497, 352);
+            this.honeyCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.honeyCounter.Name = "honeyCounter";
-            this.honeyCounter.Size = new System.Drawing.Size(23, 26);
+            this.honeyCounter.Size = new System.Drawing.Size(53, 33);
             this.honeyCounter.TabIndex = 32;
-            this.honeyCounter.Text = "0";
+            this.honeyCounter.Text = "$20";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(983, 94);
+            this.label14.Location = new System.Drawing.Point(1311, 116);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 23);
+            this.label14.Size = new System.Drawing.Size(131, 30);
             this.label14.TabIndex = 31;
             this.label14.Text = "Valerian Root";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(888, 93);
+            this.label15.Location = new System.Drawing.Point(1184, 114);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(74, 23);
+            this.label15.Size = new System.Drawing.Size(97, 30);
             this.label15.TabIndex = 31;
             this.label15.Text = "Rosemary";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(808, 414);
+            this.label16.Location = new System.Drawing.Point(1081, 510);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(102, 21);
+            this.label16.Size = new System.Drawing.Size(124, 26);
             this.label16.TabIndex = 31;
             this.label16.Text = "Dragon\'s Blood";
             // 
             // dbCounter
             // 
             this.dbCounter.AutoSize = true;
-            this.dbCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dbCounter.BackColor = System.Drawing.Color.Transparent;
             this.dbCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbCounter.ForeColor = System.Drawing.Color.White;
-            this.dbCounter.Location = new System.Drawing.Point(847, 437);
+            this.dbCounter.Location = new System.Drawing.Point(1116, 538);
+            this.dbCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dbCounter.Name = "dbCounter";
-            this.dbCounter.Size = new System.Drawing.Size(23, 26);
+            this.dbCounter.Size = new System.Drawing.Size(53, 33);
             this.dbCounter.TabIndex = 32;
-            this.dbCounter.Text = "0";
+            this.dbCounter.Text = "$75";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(946, 414);
+            this.label18.Location = new System.Drawing.Point(1261, 510);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(91, 23);
+            this.label18.Size = new System.Drawing.Size(120, 30);
             this.label18.TabIndex = 31;
             this.label18.Text = "Moon Water";
             // 
             // mwCounter
             // 
             this.mwCounter.AutoSize = true;
-            this.mwCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.mwCounter.BackColor = System.Drawing.Color.Transparent;
             this.mwCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mwCounter.ForeColor = System.Drawing.Color.White;
-            this.mwCounter.Location = new System.Drawing.Point(981, 437);
+            this.mwCounter.Location = new System.Drawing.Point(1299, 538);
+            this.mwCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mwCounter.Name = "mwCounter";
-            this.mwCounter.Size = new System.Drawing.Size(23, 26);
+            this.mwCounter.Size = new System.Drawing.Size(53, 33);
             this.mwCounter.TabIndex = 32;
-            this.mwCounter.Text = "0";
+            this.mwCounter.Text = "$40";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(1091, 414);
+            this.label20.Location = new System.Drawing.Point(1455, 510);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(99, 23);
+            this.label20.Size = new System.Drawing.Size(130, 30);
             this.label20.TabIndex = 31;
             this.label20.Text = "Spring Water";
             // 
             // swCounter
             // 
             this.swCounter.AutoSize = true;
-            this.swCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.swCounter.BackColor = System.Drawing.Color.Transparent;
             this.swCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.swCounter.ForeColor = System.Drawing.Color.White;
-            this.swCounter.Location = new System.Drawing.Point(1130, 437);
+            this.swCounter.Location = new System.Drawing.Point(1497, 538);
+            this.swCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.swCounter.Name = "swCounter";
-            this.swCounter.Size = new System.Drawing.Size(23, 26);
+            this.swCounter.Size = new System.Drawing.Size(53, 33);
             this.swCounter.TabIndex = 32;
-            this.swCounter.Text = "0";
+            this.swCounter.Text = "$30";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(1104, 553);
+            this.label22.Location = new System.Drawing.Point(1472, 681);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(76, 23);
+            this.label22.Size = new System.Drawing.Size(99, 30);
             this.label22.TabIndex = 31;
             this.label22.Text = "SunBloom";
             // 
             // sunBloomCounter
             // 
             this.sunBloomCounter.AutoSize = true;
-            this.sunBloomCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.sunBloomCounter.BackColor = System.Drawing.Color.Transparent;
             this.sunBloomCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sunBloomCounter.ForeColor = System.Drawing.Color.White;
-            this.sunBloomCounter.Location = new System.Drawing.Point(1131, 577);
+            this.sunBloomCounter.Location = new System.Drawing.Point(1497, 710);
+            this.sunBloomCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sunBloomCounter.Name = "sunBloomCounter";
-            this.sunBloomCounter.Size = new System.Drawing.Size(23, 26);
+            this.sunBloomCounter.Size = new System.Drawing.Size(53, 33);
             this.sunBloomCounter.TabIndex = 32;
-            this.sunBloomCounter.Text = "0";
+            this.sunBloomCounter.Text = "$40";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(994, 554);
+            this.label24.Location = new System.Drawing.Point(1325, 682);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(78, 23);
+            this.label24.Size = new System.Drawing.Size(99, 30);
             this.label24.TabIndex = 31;
             this.label24.Text = "Mandrake\r\n";
             // 
             // mandrakeCounter
             // 
             this.mandrakeCounter.AutoSize = true;
-            this.mandrakeCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.mandrakeCounter.BackColor = System.Drawing.Color.Transparent;
             this.mandrakeCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mandrakeCounter.ForeColor = System.Drawing.Color.White;
-            this.mandrakeCounter.Location = new System.Drawing.Point(1023, 577);
+            this.mandrakeCounter.Location = new System.Drawing.Point(1351, 712);
+            this.mandrakeCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mandrakeCounter.Name = "mandrakeCounter";
-            this.mandrakeCounter.Size = new System.Drawing.Size(23, 26);
+            this.mandrakeCounter.Size = new System.Drawing.Size(53, 33);
             this.mandrakeCounter.TabIndex = 32;
-            this.mandrakeCounter.Text = "0";
+            this.mandrakeCounter.Text = "$30";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(876, 555);
+            this.label26.Location = new System.Drawing.Point(1168, 683);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(96, 19);
+            this.label26.Size = new System.Drawing.Size(121, 24);
             this.label26.TabIndex = 31;
             this.label26.Text = "Rainbowshroom";
             // 
             // rbshroomCounter
             // 
             this.rbshroomCounter.AutoSize = true;
-            this.rbshroomCounter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.rbshroomCounter.BackColor = System.Drawing.Color.Transparent;
             this.rbshroomCounter.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbshroomCounter.ForeColor = System.Drawing.Color.White;
-            this.rbshroomCounter.Location = new System.Drawing.Point(914, 577);
+            this.rbshroomCounter.Location = new System.Drawing.Point(1204, 710);
+            this.rbshroomCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rbshroomCounter.Name = "rbshroomCounter";
-            this.rbshroomCounter.Size = new System.Drawing.Size(23, 26);
+            this.rbshroomCounter.Size = new System.Drawing.Size(67, 33);
             this.rbshroomCounter.TabIndex = 32;
-            this.rbshroomCounter.Text = "0";
+            this.rbshroomCounter.Text = "$100";
             // 
             // BrewingStation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1204, 681);
+            this.ClientSize = new System.Drawing.Size(1605, 838);
+            this.Controls.Add(this.Honey);
+            this.Controls.Add(this.Wolfsbane);
+            this.Controls.Add(this.houndFur);
+            this.Controls.Add(this.harpyFeathers);
+            this.Controls.Add(this.rabbitsFoot);
+            this.Controls.Add(this.valRoot);
+            this.Controls.Add(this.Rosemary);
+            this.Controls.Add(this.pinkSalt);
             this.Controls.Add(this.harpyCounter);
             this.Controls.Add(this.varRootCounter);
             this.Controls.Add(this.honeyCounter);
@@ -798,17 +895,10 @@
             this.Controls.Add(this.SpringWater);
             this.Controls.Add(this.MoonWater);
             this.Controls.Add(this.DragonBlood);
-            this.Controls.Add(this.Honey);
-            this.Controls.Add(this.Wolfsbane);
-            this.Controls.Add(this.houndFur);
-            this.Controls.Add(this.rabbitsFoot);
-            this.Controls.Add(this.harpyFeathers);
-            this.Controls.Add(this.valRoot);
-            this.Controls.Add(this.Rosemary);
-            this.Controls.Add(this.pinkSalt);
             this.Controls.Add(this.cauldron);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BrewingStation";
             this.Text = "BrewingStation";
             this.Load += new System.EventHandler(this.BrewingStation_Load);
