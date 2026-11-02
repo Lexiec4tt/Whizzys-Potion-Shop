@@ -11,6 +11,7 @@ namespace Whizzys_Potion_Shop
         protected string name = "";
         protected string description = "";
         protected double cost;
+        protected double brewingTime;
 
         public Dictionary<string, int> recipe = new Dictionary<string, int>()
         {
@@ -54,10 +55,11 @@ namespace Whizzys_Potion_Shop
         {
             name = "Sleep Potion";
             description = "Honk mimimimi~ Makes you sleep soundly!";
-            cost = 0;
+            cost = 150;
             recipe["Moon Water"] = 1;
             recipe["Sun Bloom"] = 1;
             recipe["Valerian Root"] = 1;
+            brewingTime = 5;
         }
     };
 
@@ -67,10 +69,11 @@ namespace Whizzys_Potion_Shop
         {
             name = "Feather Fall Potion";
             description = "Lightens your fall. Fall damage who?";
-            cost = 0;
+            cost = 185;
             recipe["Harpy Feather"] = 1;
             recipe["Valerian Root"] = 1;
-            recipe["Spring Water"] = 1;
+            recipe["Spring Water"] = 2;
+            brewingTime = 6;
         }
     };
 
@@ -80,10 +83,11 @@ namespace Whizzys_Potion_Shop
         {
             name = "Healing Potion";
             description = "A healing potion! Use if a “Get well soon” is too soon for you!";
-            cost = 0;
+            cost = 200;
             recipe["Dragon’s Blood"] = 1;
             recipe["Rosemary"] = 1;
             recipe["Mandrake"] = 1;
+            brewingTime = 7;
         }
     };
 
@@ -93,10 +97,11 @@ namespace Whizzys_Potion_Shop
         {
             name = "Stamina Potion";
             description = "If you need that big stamina boost. Better than energy drinks!";
-            cost = 0;
+            cost = 225;
             recipe["Rabbit’s Foot"] = 1;
-            recipe["Honey"] = 1;
+            recipe["Honey"] = 2;
             recipe["Harpy Feather"] = 1;
+            brewingTime = 7.5;
         }
     };
 
@@ -106,10 +111,11 @@ namespace Whizzys_Potion_Shop
         {
             name = "Love Potion";
             description = "A love potion. Use responsibly.";
-            cost = 0;
+            cost = 200;
             recipe["Moon Water"] = 1;
             recipe["Hound Fur"] = 1;
-            recipe["Pink Salt"] = 1;
+            recipe["Pink Salt"] = 2;
+            brewingTime = 8;
         }
     };
 
@@ -119,10 +125,11 @@ namespace Whizzys_Potion_Shop
         {
             name = "Totally-Not-Evil Potion";
             description = "Trust me.";
-            cost = 0;
+            cost = 300;
             recipe["Rainbowshroom"] = 1;
             recipe["Mandrake"] = 1;
             recipe["Wolfsbane"] = 1;
+            brewingTime = 10;
         }
     };
 

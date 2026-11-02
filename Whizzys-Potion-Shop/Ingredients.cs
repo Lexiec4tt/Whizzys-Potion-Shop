@@ -30,7 +30,7 @@ namespace Whizzys_Potion_Shop
         public MoonWater()
         {
             ingredientName = "Moon Water";
-            cost = 0;
+            cost = 40;
         }
     };
 
@@ -39,7 +39,7 @@ namespace Whizzys_Potion_Shop
         public SunBloom()
         {
             ingredientName = "Sun Bloom";
-            cost = 0;
+            cost = 40;
         }
     };
 
@@ -48,7 +48,7 @@ namespace Whizzys_Potion_Shop
         public ValerianRoot()
         {
             ingredientName = "Valerian Root";
-            cost = 0;
+            cost = 35;
         }
     };
 
@@ -57,7 +57,7 @@ namespace Whizzys_Potion_Shop
         public HarpyFeather()
         {
             ingredientName = "Harpy Feather";
-            cost = 0;
+            cost = 50;
         }
     };
 
@@ -66,7 +66,7 @@ namespace Whizzys_Potion_Shop
         public DragonsBlood()
         {
             ingredientName = "Dragon’s Blood";
-            cost = 0;
+            cost = 75;
         }
     };
 
@@ -75,7 +75,7 @@ namespace Whizzys_Potion_Shop
         public Rosemary()
         {
             ingredientName = "Rosemary";
-            cost = 0;
+            cost = 40;
         }
     };
 
@@ -84,7 +84,7 @@ namespace Whizzys_Potion_Shop
         public Mandrake()
         {
             ingredientName = "Mandrake";
-            cost = 0;
+            cost = 30;
         }
     };
 
@@ -93,7 +93,7 @@ namespace Whizzys_Potion_Shop
         public HoundFur()
         {
             ingredientName = "Hound Fur";
-            cost = 0;
+            cost = 60;
         }
     };
 
@@ -102,7 +102,7 @@ namespace Whizzys_Potion_Shop
         public PinkSalt()
         {
             ingredientName = "Pink Salt";
-            cost = 0;
+            cost = 20;
         }
     };
 
@@ -111,7 +111,7 @@ namespace Whizzys_Potion_Shop
         public RabbitsFoot()
         {
             ingredientName = "Rabbit’s Foot";
-            cost = 0;
+            cost = 50;
         }
     };
 
@@ -120,7 +120,7 @@ namespace Whizzys_Potion_Shop
         public Honey()
         {
             ingredientName = "Honey";
-            cost = 0;
+            cost = 20;
         }
     };
 
@@ -129,7 +129,7 @@ namespace Whizzys_Potion_Shop
         public Rainbowshroom()
         {
             ingredientName = "Rainbowshroom";
-            cost = 0;
+            cost = 100;
         }
     };
 
@@ -138,7 +138,7 @@ namespace Whizzys_Potion_Shop
         public Wolfsbane()
         {
             ingredientName = "Wolfsbane";
-            cost = 0;
+            cost = 70;
         }
     };
 
@@ -147,7 +147,7 @@ namespace Whizzys_Potion_Shop
         public SpringWater()
         {
             ingredientName = "Spring Water";
-            cost = 0;
+            cost = 30;
         }
     };
 }
