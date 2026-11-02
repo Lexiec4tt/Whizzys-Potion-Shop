@@ -12,6 +12,7 @@ namespace Whizzys_Potion_Shop
         protected string description = "";
         protected double cost;
         protected double brewingTime;
+        protected int potionID;
 
         public Dictionary<string, int> recipe = new Dictionary<string, int>()
         {
@@ -60,6 +61,7 @@ namespace Whizzys_Potion_Shop
             recipe["Sun Bloom"] = 1;
             recipe["Valerian Root"] = 1;
             brewingTime = 5;
+            potionID = 1;
         }
     };
 
@@ -74,6 +76,7 @@ namespace Whizzys_Potion_Shop
             recipe["Valerian Root"] = 1;
             recipe["Spring Water"] = 2;
             brewingTime = 6;
+            potionID = 2;
         }
     };
 
@@ -88,6 +91,7 @@ namespace Whizzys_Potion_Shop
             recipe["Rosemary"] = 1;
             recipe["Mandrake"] = 1;
             brewingTime = 7;
+            potionID = 3;
         }
     };
 
@@ -102,6 +106,7 @@ namespace Whizzys_Potion_Shop
             recipe["Honey"] = 2;
             recipe["Harpy Feather"] = 1;
             brewingTime = 7.5;
+            potionID = 4;
         }
     };
 
@@ -116,6 +121,7 @@ namespace Whizzys_Potion_Shop
             recipe["Hound Fur"] = 1;
             recipe["Pink Salt"] = 2;
             brewingTime = 8;
+            potionID = 5;
         }
     };
 
@@ -130,14 +136,18 @@ namespace Whizzys_Potion_Shop
             recipe["Mandrake"] = 1;
             recipe["Wolfsbane"] = 1;
             brewingTime = 10;
+            potionID = 6;
         }
     };
 
     public class UnstablePotion : Potion
     {
-        name = "Unstable Potion";
-        description = "???";
-        cost -= 50;
-        brewingTime = 3;
-    }
+        public UnstablePotion()
+        {
+            name = "Unstable Potion";
+            description = "???";           
+            brewingTime = 3;
+            potionID = 7;
+        } 
+    };
 }
