@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
+using System.Linq.Expressions;
 using System.Runtime.InteropServices;
 
 namespace Whizzys_Potion_Shop
@@ -43,7 +45,7 @@ namespace Whizzys_Potion_Shop
             //something something
         }
 
-        public bool SetIllIntentions()
+        protected bool SetIllIntentions()
         {
             return _random.Next(2) == 0; // Randomly set ill intentions to true or false
         }
@@ -53,9 +55,31 @@ namespace Whizzys_Potion_Shop
             //something something
         }
 
-        public int RandomPotion(int[] potions)
+        protected int RandomPotion(Type customerType)
         {
-            return _random.Next(0, potions.Length); // Randomly select a potion from the array
+            switch(customerType)
+            {
+                case Type t when t == typeof(Wizard):
+                    {
+                        int[] potions = { 1, 2, 3 };
+                        int potionIndex = _random.Next(potions.Length);
+                        return potions[potionIndex];
+                    }
+                case Type t when t == typeof(Apprentice):
+                    {
+                        int[] potions = { 1, 2 };
+                        int potionIndex = _random.Next(potions.Length);
+                        return potions[potionIndex];
+                    }
+                case Type t when t == typeof(Adventurer):
+                    {
+                        int[] potions = { 1, 2, 3, 4 };
+                        int potionIndex = _random.Next(potions.Length);
+                        return potions[potionIndex];
+                    }
+                default:
+                    throw new ArgumentException("Unknown customer type");
+            }
         }
 
     }
@@ -68,10 +92,7 @@ namespace Whizzys_Potion_Shop
         }
         public override void PlaceOrder()
         {
-            int[] potionArray = { 1, 2, 3, 4, 5, 6 };
-            int potionIndex = RandomPotion(potionArray);
-            int selectedPotion = potionArray[potionIndex];
-
+            int potionOrder = RandomPotion(this.GetType()); // Randomly select a potion order
             // Additional logic for placing an order
         }
 
@@ -87,6 +108,7 @@ namespace Whizzys_Potion_Shop
         
         public override void PlaceOrder()
         {
+
             // Additional logic for placing an order
         }
 
