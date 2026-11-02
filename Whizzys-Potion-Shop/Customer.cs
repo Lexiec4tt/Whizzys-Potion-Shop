@@ -22,6 +22,114 @@ namespace Whizzys_Potion_Shop
             HasIllIntentions = SetIllIntentions();
         }
 
+        public virtual string Greet()
+        {
+            if (HasIllIntentions)
+            {
+                return "";
+            }
+            else
+            { 
+                return "";
+            }
+        }
+
+        public virtual string PlaceOrderDialogue()
+        {
+            if (HasIllIntentions)
+            {
+                return "";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        public virtual string ReactToRefusal()
+        {
+            if (HasIllIntentions)
+            {
+                return "";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        public virtual string ReactToAcceptance()
+        {
+            if (HasIllIntentions)
+            {
+                return "";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        public virtual string ReactToCorrectOrder()
+        {
+            if (HasIllIntentions)
+            {
+                return "";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        public virtual string ReactToWrongOrder()
+        {
+            if (HasIllIntentions)
+            {
+                return "";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        public virtual string ReactToPatienceDepletion()
+        {
+            if (HasIllIntentions)
+            {
+                return "";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        public virtual string CompletedOrder()
+        {
+            if (HasIllIntentions)
+            {
+                return "";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        public virtual string LeaveShop()
+        {
+            if (HasIllIntentions)
+            {
+                return "";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
         public int DecreasePatience()
         {
             if (Patience > 0)
