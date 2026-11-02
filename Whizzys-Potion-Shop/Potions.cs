@@ -133,8 +133,11 @@ namespace Whizzys_Potion_Shop
         }
     };
 
-    public class ExPotion : Potion
+    public class UnstablePotion : Potion
     {
-        // PUT EXPLOSION CODE HERE
+        name = "Unstable Potion";
+        description = "???";
+        cost -= 50;
+        brewingTime = 3;
     }
 }
