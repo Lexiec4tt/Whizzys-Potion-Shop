@@ -954,6 +954,7 @@
             this.potionInventory2.TabIndex = 39;
             this.potionInventory2.TabStop = false;
             this.potionInventory2.Tag = "2";
+            this.potionInventory2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.potionInventory2_MouseDown);
             // 
             // potionInventory4
             // 
@@ -966,6 +967,7 @@
             this.potionInventory4.TabIndex = 41;
             this.potionInventory4.TabStop = false;
             this.potionInventory4.Tag = "4";
+            this.potionInventory4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.potionInventory4_MouseDown);
             // 
             // potionInventory3
             // 
@@ -978,6 +980,7 @@
             this.potionInventory3.TabIndex = 40;
             this.potionInventory3.TabStop = false;
             this.potionInventory3.Tag = "3";
+            this.potionInventory3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.potionInventory3_MouseDown);
             // 
             // potionInventory5
             // 
@@ -990,6 +993,7 @@
             this.potionInventory5.TabIndex = 42;
             this.potionInventory5.TabStop = false;
             this.potionInventory5.Tag = "5";
+            this.potionInventory5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.potionInventory5_MouseDown);
             // 
             // serveButton
             // 

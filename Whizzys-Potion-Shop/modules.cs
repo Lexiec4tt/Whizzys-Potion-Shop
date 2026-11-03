@@ -113,5 +113,11 @@ namespace Whizzys_Potion_Shop
 
             return tempPotionCount;
         }
+
+        public static void disposePotion(PictureBox[] potionInventoryImage, Potion[] potionInventory, int potionTag)
+        {
+            potionInventoryImage[potionTag].Image = null;
+            potionInventory[potionTag] = null;
+        }
     }
 }

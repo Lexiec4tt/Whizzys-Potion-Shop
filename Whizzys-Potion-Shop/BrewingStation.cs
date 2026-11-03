@@ -39,7 +39,8 @@ namespace Whizzys_Potion_Shop
         private Potion potionBrewed;
 
         private PictureBox[] potionInventoryImage = new PictureBox[5];
-        private StartScreen startscreen;
+        private Potion[] potionInventory = new Potion[5];
+        private StartScreen startScreen;
 
         public BrewingStation(StartScreen screen)
         {
@@ -357,7 +358,7 @@ namespace Whizzys_Potion_Shop
                 try
                 {
                     potionInventoryImage[potionCount.Sum() - 1].Image = potionCollect.Image;
-
+                    potionInventory[potionCount.Sum() - 1] = potionCollect;
                     potionCollect.Enabled = false;
                     potionCollect.Visible = false;
                     cauldron.Enabled = true;
@@ -412,11 +413,66 @@ namespace Whizzys_Potion_Shop
 
         private void potionInventory1_MouseDown(object sender, MouseEventArgs e)
         {
+            int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
             if (e.Button = MouseButtons.Left)
             {
+                startScreen.GetPotion(potionInventory[tagInt]);
             }
             else if (e.Button == MouseButtons.Right)
             {
+                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+            }
+        }
+
+        private void potionInventory3_MouseDown(object sender, MouseEventArgs e)
+        {
+            int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
+            if (e.Button = MouseButtons.Left)
+            {
+                startScreen.GetPotion(potionInventory[tagInt]);
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+            }
+        }
+
+        private void potionInventory2_MouseDown(object sender, MouseEventArgs e)
+        {
+            int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
+            if (e.Button = MouseButtons.Left)
+            {
+                startScreen.GetPotion(potionInventory[tagInt]);
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+            }
+        }
+
+        private void potionInventory4_MouseDown(object sender, MouseEventArgs e)
+        {
+            int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
+            if (e.Button = MouseButtons.Left)
+            {
+                startScreen.GetPotion(potionInventory[tagInt]);
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+            }
+        }
+
+        private void potionInventory5_MouseDown(object sender, MouseEventArgs e)
+        {
+            int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
+            if (e.Button = MouseButtons.Left)
+            {
+                startScreen.GetPotion(potionInventory[tagInt]);
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
             }
         }
     }
