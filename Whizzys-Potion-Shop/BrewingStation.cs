@@ -35,11 +35,13 @@ namespace Whizzys_Potion_Shop
         private int cauldronState = 1;
 
         private double elapsedTime = 0;
+        private int warningTime = 0;
         private Potion potionBrewed;
 
         private PictureBox[] potionInventoryImage = new PictureBox[5];
+        private StartScreen startscreen;
 
-        public BrewingStation()
+        public BrewingStation(StartScreen screen)
         {
             InitializeComponent();
 
@@ -50,6 +52,7 @@ namespace Whizzys_Potion_Shop
             potionInventoryImage[4] = potionInventory5;
 
             cauldron.AllowDrop = true;
+            startScreen = screen;
         }
 
         private void BrewingStation_Load(object sender, EventArgs e)
@@ -100,6 +103,7 @@ namespace Whizzys_Potion_Shop
             if (e.Data.GetDataPresent(typeof(int)))
             {
                 e.Effect = DragDropEffects.Copy;
+                cauldron.Image = Properties.Resources.yellow;
             }
             else
             {
@@ -347,7 +351,9 @@ namespace Whizzys_Potion_Shop
             if (e.Button == MouseButtons.Left)
             {
                 modules.collectPotion(potionBrewed, potionCount);
-                cauldron.Image = Properties.Resources.pot;
+                cauldron.Image = Properties.Resources.emptycldrn;
+                serveButton.Enabled = true;
+                serveButton.Visible = true;
                 try
                 {
                     potionInventoryImage[potionCount.Sum() - 1].Image = potionCollect.Image;
@@ -358,13 +364,60 @@ namespace Whizzys_Potion_Shop
                 }
                 catch (IndexOutOfRangeException)
                 {
-                    MessageBox.Show("Max of 5 Potions only!");
+                    if (warningTimer.Enabled)
+                    {
+                        warningTimer.Stop(); // Clears the warning timer before starting another timer
+                    }
+
+                    warningLabel.Text = "Max of 5 Potions only!";
+                    warningTimer.Start();
                 }
             }
         }
 
-        private void potionCollect_Click(object sender, EventArgs e)
+        private void cauldron_DragOver(object sender, DragEventArgs e)
         {
+        }
+
+        private void button1_MouseDown(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void serveButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                //modules.ServeCustomer();
+                serveButton.Enabled = false;
+                serveButton.Visible = false;
+            }
+        }
+
+        private void cauldron_DragLeave(object sender, EventArgs e)
+        {
+            cauldron.Image = Properties.Resources.emptycldrn;
+        }
+
+        private void warningTimer_Tick(object sender, EventArgs e)
+        {
+            warningTime++;
+
+            if (warningTime < 3)
+            {
+                warningTimer.Stop();
+
+                warningLabel.Text = "";
+            }
+        }
+
+        private void potionInventory1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button = MouseButtons.Left)
+            {
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+            }
         }
     }
 }

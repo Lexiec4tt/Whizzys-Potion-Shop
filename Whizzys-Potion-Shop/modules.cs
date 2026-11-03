@@ -82,7 +82,7 @@ namespace Whizzys_Potion_Shop
             }
         }
 
-        public static void ServeCustomer(int[] potionCount, int[] customerOrder, PictureBox[] potionInventoryImage)
+        public static bool ServeCustomer(int[] potionCount, int[] customerOrder, PictureBox[] potionInventoryImage)
         {
             bool orderEvaluation = false;
 
@@ -101,6 +101,17 @@ namespace Whizzys_Potion_Shop
             return orderEvaluation;
         }
 
-        public stati
+        public static int[] ServeCustomer(int[] potionCount, PictureBox[] potionInventoryImage)
+        {
+            int[] tempPotionCount = potionCount;
+            Array.Clear(potionCount, 0, potionCount.Length);
+
+            for (int i = 0; i < potionInventoryImage.Length; i++)
+            {
+                potionInventoryImage[i].Image = null;
+            }
+
+            return tempPotionCount;
+        }
     }
 }

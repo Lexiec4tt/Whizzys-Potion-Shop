@@ -207,6 +207,7 @@
     <Content Include="Resources\apprenticeBad_1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\serve.png" />
     <Content Include="Resources\toBrew.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

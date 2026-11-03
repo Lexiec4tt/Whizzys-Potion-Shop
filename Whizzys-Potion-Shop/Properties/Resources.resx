@@ -142,30 +142,6 @@
   <data name="broken" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\broken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cldn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldnff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldnheals" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnheals.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldnlalalove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnlalalove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldnmimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnmimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldnprank" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnprank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldnStam" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnStam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Done mixing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Done mixing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -216,5 +192,41 @@
   </data>
   <data name="Wizard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\witchGood_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnFailed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnFailed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="serve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\serve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emptycldrn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emptycldrn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnheals" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnheals.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnlalalove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnlalalove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnmimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnmimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnprank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnprank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnStam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnStam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

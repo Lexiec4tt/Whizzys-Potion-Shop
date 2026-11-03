@@ -57,7 +57,7 @@ namespace Whizzys_Potion_Shop
     {
         public SleepPotion()
         {
-            name = "Sleep Potion";
+            name = "A~mimir Potion";
             description = "Honk mimimimi~ Makes you sleep soundly!";
             cost = 150;
             recipe["Moon Water"] = 1;
@@ -74,7 +74,7 @@ namespace Whizzys_Potion_Shop
     {
         public FeatherFallPotion()
         {
-            name = "Feather Fall Potion";
+            name = "Feather fall Potion";
             description = "Lightens your fall. Fall damage who?";
             cost = 185;
             recipe["Harpy Feather"] = 1;
@@ -125,7 +125,7 @@ namespace Whizzys_Potion_Shop
     {
         public LovePotion()
         {
-            name = "Love Potion";
+            name = "LalaLove Potion";
             description = "A love potion. Use responsibly.";
             cost = 200;
             recipe["Moon Water"] = 1;
@@ -142,7 +142,7 @@ namespace Whizzys_Potion_Shop
     {
         public TotallyNotEvilPotion()
         {
-            name = "Totally-Not-Evil Potion";
+            name = "Prankster's Potion";
             description = "Trust me.";
             cost = 300;
             recipe["Rainbowshroom"] = 1;
@@ -163,7 +163,7 @@ namespace Whizzys_Potion_Shop
             description = "???";
             brewingTime = 3;
             potionID = 7;
-            cauldronImage = Properties.Resources.cldn;
+            cauldronImage = Properties.Resources.cldnFailed;
             potionImage = Properties.Resources.broken;
         }
     };

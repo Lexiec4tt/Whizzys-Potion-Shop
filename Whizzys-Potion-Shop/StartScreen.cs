@@ -16,12 +16,14 @@ namespace Whizzys_Potion_Shop
         private GameTime gameTime = new GameTime();
         private DayManager dayManager = new DayManager();
         private OrderManager orderManager = new OrderManager();
+
         public StartScreen()
         {
             InitializeComponent();
 
             menuBtn.BackColor = Color.Transparent;
         }
+
         private void UpdateHUDTime()
         {
             topHUD1.UpdateTime(
@@ -90,7 +92,6 @@ namespace Whizzys_Potion_Shop
 
                 if (result == DialogResult.Abort)
                 {
-
                     mainMenu menu = new mainMenu();
                     menu.Show();
                     this.Close();
