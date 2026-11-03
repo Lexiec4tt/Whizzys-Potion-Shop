@@ -90,6 +90,12 @@
     <Compile Include="modules.cs" />
     <Compile Include="OrderItem.cs" />
     <Compile Include="OrderManager.cs" />
+    <Compile Include="orderSlip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="orderSlip.Designer.cs">
+      <DependentUpon>orderSlip.cs</DependentUpon>
+    </Compile>
     <Compile Include="pauseMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderSlip.resx">
+      <DependentUpon>orderSlip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pauseMenu.resx">
       <DependentUpon>pauseMenu.cs</DependentUpon>

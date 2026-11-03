@@ -86,7 +86,11 @@ namespace Whizzys_Potion_Shop
 
         public int DecreasePatience()
         {
-            if (Patience > 0)
+            if (Patience > 0 && HasIllIntentions)
+            {
+                Patience -= 2;
+            }
+            else if (Patience > 0)
             {
                 Patience--;
             }

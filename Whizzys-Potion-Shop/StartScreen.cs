@@ -17,9 +17,11 @@ namespace Whizzys_Potion_Shop
         private DayManager dayManager = new DayManager();
         private OrderManager orderManager = new OrderManager();
         private Queue<string> dialogueQueue = new Queue<string>();
-        List<int> unlockedPotions = new List<int>{ 1, 2, 3 };//placeholder for unlocked potions, will be replaced with actual data from the game state
+        List<int> unlockedPotions = new List<int>{ 1, 2, 3, 4, 5, 6 };//placeholder for unlocked potions, will be replaced with actual data from the game state
         private bool customerLeaving = false;
         private bool orderAccepted = false;
+        private bool dialogueWasRunning;
+        private bool arrivalWasRunning;
         private Potion potion;
         public StartScreen()
         {
@@ -37,6 +39,7 @@ namespace Whizzys_Potion_Shop
             selectedPotionBox.Image = potion.potionImage;
             selectedPotionBox.Visible = true;
             serveBtn.Visible = true;
+            GameTime.AdvanceTime(GameTime.CollectPotionMinutes);
         }
 
         private void UpdateHUDTime()
@@ -150,11 +153,28 @@ namespace Whizzys_Potion_Shop
                 }
             }
         }
+        private void PauseGame()
+        {
+            dialogueWasRunning = DialogueTimer.Enabled;
+            arrivalWasRunning = customerArriveTimer.Enabled;
+
+            DialogueTimer.Stop();
+            customerArriveTimer.Stop();
+        }
+        private void ResumeGame()
+        {
+            if (dialogueWasRunning)
+                DialogueTimer.Start();
+
+            if (arrivalWasRunning)
+                customerArriveTimer.Start();
+        }
 
         private void menuBtn_Click(object sender, EventArgs e)
         {
             using (pauseMenu pauseOverlay = new pauseMenu())
             {
+                PauseGame();
                 DialogResult result = pauseOverlay.ShowDialog(this);
 
                 if (result == DialogResult.Abort)
@@ -164,6 +184,8 @@ namespace Whizzys_Potion_Shop
                     menu.Show();
                     this.Close();
                 }
+
+                ResumeGame();
             }
         }
 
@@ -242,6 +264,10 @@ namespace Whizzys_Potion_Shop
                     showBtns();
                     CustomerNormalSprite(orderManager.CurrentCustomer);
                 }
+                else if (orderManager.CurrentCustomer != null)
+                {
+                    CustomerNormalSprite(orderManager.CurrentCustomer);
+                }   
             }
         }
 
@@ -256,6 +282,7 @@ namespace Whizzys_Potion_Shop
 
             DialogueTimer.Stop();
             dialogueQueue.Clear();
+            UpdateCustomerSprite(orderManager.CurrentCustomer);
             dialogueBox1.ShowMessage(
                 orderManager.CurrentCustomer.ReactToAcceptance()
             );
@@ -296,19 +323,32 @@ namespace Whizzys_Potion_Shop
 
             if (accepted)
             {
-
-
+                dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToCorrectOrder());
+                gameTime.AdvanceTime(GameTime.ServeOrderMinutes);
 
                 if (orderManager.IsOrderComplete())
                 {
+                    dialogueQueue.Enqueue(orderManager.CurrentCustomer.CompletedOrder());
+                    dialogueQueue.Enqueue(orderManager.CurrentCustomer.LeaveShop());
+                    customerLeaving = true;
                     // Customer's order is complete
                 }
             }
             else
             {
-
-                // Handle rejected potion
+                dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToWrongOrder());
+                gameTime.AdvanceTime(GameTime.ServeOrderMinutes);
+                if (orderManager.CurrentCustomer.Patience <= 0)
+                {
+                    dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToPatienceDepletion());
+                    dialogueQueue.Enqueue(orderManager.CurrentCustomer.LeaveShop());
+                    customerLeaving = true;
+                    // Customer leaves due to impatience
+                }
             }
+            UpdateCustomerSprite(orderManager.CurrentCustomer);
+            dialogueBox1.ShowMessage(dialogueQueue.Dequeue());
+            DialogueTimer.Start();
         }
     }
 }
