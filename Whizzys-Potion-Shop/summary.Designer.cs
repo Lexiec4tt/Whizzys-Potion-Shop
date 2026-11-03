@@ -48,9 +48,10 @@
             this.revenue.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.revenue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.revenue.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.revenue.Location = new System.Drawing.Point(242, 189);
+            this.revenue.Location = new System.Drawing.Point(484, 363);
+            this.revenue.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.revenue.Name = "revenue";
-            this.revenue.Size = new System.Drawing.Size(103, 37);
+            this.revenue.Size = new System.Drawing.Size(206, 75);
             this.revenue.TabIndex = 0;
             this.revenue.Text = "Revenue";
             // 
@@ -60,9 +61,10 @@
             this.dayCounter.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dayCounter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dayCounter.Font = new System.Drawing.Font("Segoe Print", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayCounter.Location = new System.Drawing.Point(556, 52);
+            this.dayCounter.Location = new System.Drawing.Point(1112, 100);
+            this.dayCounter.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.dayCounter.Name = "dayCounter";
-            this.dayCounter.Size = new System.Drawing.Size(93, 43);
+            this.dayCounter.Size = new System.Drawing.Size(185, 85);
             this.dayCounter.TabIndex = 1;
             this.dayCounter.Text = "Day 1";
             // 
@@ -72,9 +74,10 @@
             this.customersServed.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.customersServed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customersServed.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customersServed.Location = new System.Drawing.Point(242, 256);
+            this.customersServed.Location = new System.Drawing.Point(484, 492);
+            this.customersServed.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customersServed.Name = "customersServed";
-            this.customersServed.Size = new System.Drawing.Size(207, 37);
+            this.customersServed.Size = new System.Drawing.Size(412, 75);
             this.customersServed.TabIndex = 2;
             this.customersServed.Text = "Customers Served";
             // 
@@ -84,9 +87,10 @@
             this.storeRating.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.storeRating.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.storeRating.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.storeRating.Location = new System.Drawing.Point(242, 332);
+            this.storeRating.Location = new System.Drawing.Point(484, 638);
+            this.storeRating.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.storeRating.Name = "storeRating";
-            this.storeRating.Size = new System.Drawing.Size(151, 37);
+            this.storeRating.Size = new System.Drawing.Size(303, 75);
             this.storeRating.TabIndex = 3;
             this.storeRating.Text = "Store Rating";
             // 
@@ -96,9 +100,10 @@
             this.profitSummary.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.profitSummary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.profitSummary.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profitSummary.Location = new System.Drawing.Point(242, 412);
+            this.profitSummary.Location = new System.Drawing.Point(484, 792);
+            this.profitSummary.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.profitSummary.Name = "profitSummary";
-            this.profitSummary.Size = new System.Drawing.Size(167, 37);
+            this.profitSummary.Size = new System.Drawing.Size(333, 75);
             this.profitSummary.TabIndex = 4;
             this.profitSummary.Text = "Overall Profit:";
             // 
@@ -109,9 +114,10 @@
             this.revenueCount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.revenueCount.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.revenueCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.revenueCount.Location = new System.Drawing.Point(860, 189);
+            this.revenueCount.Location = new System.Drawing.Point(1720, 363);
+            this.revenueCount.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.revenueCount.Name = "revenueCount";
-            this.revenueCount.Size = new System.Drawing.Size(62, 37);
+            this.revenueCount.Size = new System.Drawing.Size(125, 75);
             this.revenueCount.TabIndex = 5;
             this.revenueCount.Text = "150";
             // 
@@ -121,9 +127,10 @@
             this.customersCount.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.customersCount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customersCount.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customersCount.Location = new System.Drawing.Point(860, 256);
+            this.customersCount.Location = new System.Drawing.Point(1720, 492);
+            this.customersCount.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.customersCount.Name = "customersCount";
-            this.customersCount.Size = new System.Drawing.Size(32, 37);
+            this.customersCount.Size = new System.Drawing.Size(63, 75);
             this.customersCount.TabIndex = 6;
             this.customersCount.Text = "3";
             // 
@@ -133,9 +140,10 @@
             this.ratingCount.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ratingCount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ratingCount.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ratingCount.Location = new System.Drawing.Point(860, 332);
+            this.ratingCount.Location = new System.Drawing.Point(1720, 638);
+            this.ratingCount.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ratingCount.Name = "ratingCount";
-            this.ratingCount.Size = new System.Drawing.Size(79, 37);
+            this.ratingCount.Size = new System.Drawing.Size(159, 75);
             this.ratingCount.TabIndex = 7;
             this.ratingCount.Text = "4.5/5";
             // 
@@ -146,18 +154,21 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(860, 412);
+            this.label1.Location = new System.Drawing.Point(1720, 792);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 37);
+            this.label1.Size = new System.Drawing.Size(125, 75);
             this.label1.TabIndex = 8;
             this.label1.Text = "200";
             // 
             // continueBtn
             // 
+            this.continueBtn.BackColor = System.Drawing.Color.Transparent;
             this.continueBtn.Image = ((System.Drawing.Image)(resources.GetObject("continueBtn.Image")));
-            this.continueBtn.Location = new System.Drawing.Point(736, 464);
+            this.continueBtn.Location = new System.Drawing.Point(1472, 892);
+            this.continueBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.continueBtn.Name = "continueBtn";
-            this.continueBtn.Size = new System.Drawing.Size(256, 70);
+            this.continueBtn.Size = new System.Drawing.Size(512, 135);
             this.continueBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.continueBtn.TabIndex = 9;
             this.continueBtn.TabStop = false;
@@ -165,11 +176,11 @@
             // 
             // summary
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1204, 681);
+            this.ClientSize = new System.Drawing.Size(2408, 1310);
             this.Controls.Add(this.continueBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ratingCount);
@@ -181,6 +192,7 @@
             this.Controls.Add(this.dayCounter);
             this.Controls.Add(this.revenue);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "summary";
             this.Text = "Whizzy\'s Potion Shop";
             ((System.ComponentModel.ISupportInitialize)(this.continueBtn)).EndInit();
