@@ -330,6 +330,7 @@ namespace Whizzys_Potion_Shop
                 brewTimer.Stop();
 
                 potionCollect.Image = potionBrewed.potionImage;
+                cauldron.Enabled = false;
                 potionCollect.Enabled = true;
                 potionCollect.Visible = true;
                 cauldron.Image = potionBrewed.cauldronImage;
@@ -353,6 +354,7 @@ namespace Whizzys_Potion_Shop
 
                     potionCollect.Enabled = false;
                     potionCollect.Visible = false;
+                    cauldron.Enabled = true;
                 }
                 catch (IndexOutOfRangeException)
                 {

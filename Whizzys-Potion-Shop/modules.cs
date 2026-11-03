@@ -80,5 +80,17 @@ namespace Whizzys_Potion_Shop
                 ingredientSet[ingredients[ingredientID - 1]]++;
             }
         }
+
+        public static bool EvaluateCustomerOrder(int[] potionCount, int[] customerOrder)
+        {
+            if (potionCount == customerOrder)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
