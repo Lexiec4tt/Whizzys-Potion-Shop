@@ -38,6 +38,8 @@
             this.customersCount = new System.Windows.Forms.Label();
             this.ratingCount = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.continueBtn = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.continueBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // revenue
@@ -94,7 +96,7 @@
             this.profitSummary.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.profitSummary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.profitSummary.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profitSummary.Location = new System.Drawing.Point(242, 456);
+            this.profitSummary.Location = new System.Drawing.Point(242, 412);
             this.profitSummary.Name = "profitSummary";
             this.profitSummary.Size = new System.Drawing.Size(167, 37);
             this.profitSummary.TabIndex = 4;
@@ -144,11 +146,22 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(860, 456);
+            this.label1.Location = new System.Drawing.Point(860, 412);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 37);
             this.label1.TabIndex = 8;
             this.label1.Text = "200";
+            // 
+            // continueBtn
+            // 
+            this.continueBtn.Image = ((System.Drawing.Image)(resources.GetObject("continueBtn.Image")));
+            this.continueBtn.Location = new System.Drawing.Point(736, 464);
+            this.continueBtn.Name = "continueBtn";
+            this.continueBtn.Size = new System.Drawing.Size(256, 70);
+            this.continueBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.continueBtn.TabIndex = 9;
+            this.continueBtn.TabStop = false;
+            this.continueBtn.Click += new System.EventHandler(this.continueBtn_Click);
             // 
             // summary
             // 
@@ -157,6 +170,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1204, 681);
+            this.Controls.Add(this.continueBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ratingCount);
             this.Controls.Add(this.customersCount);
@@ -169,6 +183,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "summary";
             this.Text = "Whizzy\'s Potion Shop";
+            ((System.ComponentModel.ISupportInitialize)(this.continueBtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +200,6 @@
         private System.Windows.Forms.Label customersCount;
         private System.Windows.Forms.Label ratingCount;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox continueBtn;
     }
 }

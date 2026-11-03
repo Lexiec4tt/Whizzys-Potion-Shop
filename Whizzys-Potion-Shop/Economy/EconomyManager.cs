@@ -62,7 +62,7 @@ namespace Economy
         {
             DaySummary Summary = Day.EndDay();
             Summary.NewUnlocks.AddRange(UnlockedPotions.CheckDayUnlocks(Day.CurrentDay));
-            return Day.EndDay();
+            return Summary;
         }
 
         // buy unlocked potions

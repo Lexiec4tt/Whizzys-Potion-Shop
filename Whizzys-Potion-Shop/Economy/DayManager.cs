@@ -8,7 +8,7 @@ namespace Economy
 {
     public class DayManager
     {
-        public int CurrentDay {  get; private set; }
+        public int CurrentDay { get; private set; } = 1;
 
         private int _Earnings;
         private int _Expenses;

@@ -29,7 +29,10 @@ namespace Economy.Unlocks
                 // check if potion is within the day and if it is fully paid
                 if (pair.Value.Cost == 0 && currentDay >= pair.Value.UnlockDay)
                 {
-                    newlyUnlocked.Add(pair.Key);
+                    if (Unlock(pair.Key))
+                    {
+                        newlyUnlocked.Add(pair.Key);
+                    }
                 }
           
             }
@@ -43,8 +46,8 @@ namespace Economy.Unlocks
             if (IsUnlocked(potionId)) return false;
             // if the rules is null, meaning it violates the rules
             if (!_Rules.TryGetValue(potionId, out UnlockRule? rule)) return false;
-            if (!playerBalance.Spend(rule.Cost)) return false;
             if (currentDay < rule.UnlockDay) return false;
+            if (!playerBalance.Spend(rule.Cost)) return false;
 
             return Unlock(potionId);
         }

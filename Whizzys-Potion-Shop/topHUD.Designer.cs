@@ -65,9 +65,9 @@
             this.coins.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.coins.Location = new System.Drawing.Point(1074, 9);
             this.coins.Name = "coins";
-            this.coins.Size = new System.Drawing.Size(111, 35);
+            this.coins.Size = new System.Drawing.Size(83, 35);
             this.coins.TabIndex = 2;
-            this.coins.Text = "250 Gold";
+            this.coins.Text = "0 Gold";
             // 
             // topHUD
             // 

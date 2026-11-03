@@ -61,7 +61,6 @@
     <Compile Include="DayManager.cs" />
     <Compile Include="GameTime.cs" />
     <Compile Include="Customer.cs" />
-    <Compile Include="CustomerOrder.cs" />
     <Compile Include="DialogueBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -259,6 +258,12 @@
     <Content Include="Resources\prankPage.png" />
     <Content Include="Resources\stamina.png" />
     <Content Include="Resources\staminaPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Economy\Economy.csproj">
+      <Project>{e1390763-be03-6bf8-13c1-711bff644ea1}</Project>
+      <Name>Economy</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

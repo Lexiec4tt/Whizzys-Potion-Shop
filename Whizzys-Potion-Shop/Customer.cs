@@ -4,6 +4,7 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Runtime.InteropServices;
+using GameOrder = Economy.Orders.CustomerOrder;
 
 namespace Whizzys_Potion_Shop
 {
@@ -13,6 +14,8 @@ namespace Whizzys_Potion_Shop
         public int CustomerID { get; protected set; }
         public string CustomerName { get; protected set; }
         public int Patience { get; protected set; }
+
+        public int MaxPatience { get; protected set; } = 10;
         public List<int> PreferredItems { get; protected set; }
         public bool HasIllIntentions { get; private set; } 
 
@@ -30,7 +33,7 @@ namespace Whizzys_Potion_Shop
                 : "Ah, what a lovely little shop! Good day to you.";
         }
 
-        public virtual string PlaceOrderDialogue(CustomerOrder order)
+        public virtual string PlaceOrderDialogue(GameOrder order)
         {
             return $"I would like {GetOrderDescription(order)}, if you please.";
         }
@@ -102,13 +105,16 @@ namespace Whizzys_Potion_Shop
             return _random.Next(2) == 0; // Randomly set ill intentions to true or false
         }
 
-        protected string GetOrderDescription(CustomerOrder order)
+        protected string GetOrderDescription(GameOrder order)
         {
             List<string> descriptions = new List<string>();
 
-            foreach (OrderItem item in order.Items)
+            foreach (KeyValuePair<int, int> item in order.Items)
             {
-                descriptions.Add($"{item.quantity} {item.potionName}");
+                OrderItem displayItem = new OrderItem();
+                displayItem.AddOrderItem(item.Key, item.Value);
+
+                descriptions.Add($"{item.Value} {displayItem.potionName}");
             }
 
             if (descriptions.Count == 1)
@@ -128,7 +134,8 @@ namespace Whizzys_Potion_Shop
 
         public Wizard(int customerID, string customerName) : base(customerID, customerName)
         {
-            Patience = 5; // Wizards have a patience level of 5
+            Patience = 6; // Wizards have a patience level of 6
+            MaxPatience = 6;
             PreferredItems = new List<int> { 1, 2, 3 };
         }
 
@@ -139,7 +146,7 @@ namespace Whizzys_Potion_Shop
                 : "Ah, what a lovely little shop! Good day to you.";
         }
 
-        public override string PlaceOrderDialogue(CustomerOrder order)
+        public override string PlaceOrderDialogue(GameOrder order)
         {
             string items = GetOrderDescription(order);
 
@@ -203,7 +210,8 @@ namespace Whizzys_Potion_Shop
     {
         public Apprentice(int customerID, string customerName) : base(customerID, customerName)
         {
-            Patience = 6; // Apprentices have a patience level of 6
+            Patience = 7; // Apprentices have a patience level of 7
+            MaxPatience = 7;
             PreferredItems = new List<int> { 1, 2 };
         }
 
@@ -214,7 +222,7 @@ namespace Whizzys_Potion_Shop
                 : "Hello! What a charming shop! I've never been here before!";
         }
 
-        public override string PlaceOrderDialogue(CustomerOrder order)
+        public override string PlaceOrderDialogue(GameOrder order)
         {
             string items = GetOrderDescription(order);
 
@@ -278,7 +286,8 @@ namespace Whizzys_Potion_Shop
     {
         public Adventurer(int customerID, string customerName) : base(customerID, customerName)
         {
-            Patience = 4; // Adventurers have a patience level of 4
+            Patience = 5; // Adventurers have a patience level of 5
+            MaxPatience = 5;
             PreferredItems = new List<int> { 1, 2, 3, 4 };
         }
 
@@ -289,7 +298,7 @@ namespace Whizzys_Potion_Shop
                 : "Well, well! A potion shop! Just what I was looking for.";
         }
 
-        public override string PlaceOrderDialogue(CustomerOrder order)
+        public override string PlaceOrderDialogue(GameOrder order)
         {
             string items = GetOrderDescription(order);
 

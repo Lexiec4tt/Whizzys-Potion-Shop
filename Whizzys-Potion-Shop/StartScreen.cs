@@ -8,16 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Whizzy_Potion_Shop;
+using Economy;
 
 namespace Whizzys_Potion_Shop
 {
     public partial class StartScreen : Form
     {
+        private EconomyManager economyManager = new EconomyManager();
         private GameTime gameTime = new GameTime();
         private DayManager dayManager = new DayManager();
         private OrderManager orderManager = new OrderManager();
         private Queue<string> dialogueQueue = new Queue<string>();
-        List<int> unlockedPotions = new List<int>{ 1, 2, 3, 4, 5, 6 };//placeholder for unlocked potions, will be replaced with actual data from the game state
+        List<int> unlockedPotions;//placeholder for unlocked potions, will be replaced with actual data from the game state
         private bool customerLeaving = false;
         private bool orderAccepted = false;
         private bool dialogueWasRunning;
@@ -31,15 +33,32 @@ namespace Whizzys_Potion_Shop
             acceptBtn.Hide();
             declineBtn.Hide();
             dialogueBox1.HideMessage();
+            topHUD1.UpdateGold(economyManager.PlayerBalance.Balance);
+
+            //TEMPORARY: MUST BE IMPLEMENTED THROUGH SAVE FILES IN MAIN MENU
+            if (!economyManager.UnlockedPotions.Unlocked.Any())
+            {
+                economyManager.UnlockedPotions.AddStarter(1);
+                economyManager.UnlockedPotions.AddStarter(2);
+                economyManager.UnlockedPotions.AddStarter(3);
+                unlockedPotions = economyManager.UnlockedPotions.Unlocked.ToList();
+            }
         }
 
         public void GetPotion(Potion potion)
         {
             this.potion = potion;
             selectedPotionBox.Image = potion.potionImage;
+            if(orderManager.CurrentCustomer != null && orderAccepted)
+            {
+                serveBtn.Visible = true;
+            }
+            else
+            {
+                serveBtn.Visible = false;
+            }
             selectedPotionBox.Visible = true;
-            serveBtn.Visible = true;
-            GameTime.AdvanceTime(GameTime.CollectPotionMinutes);
+            AdvanceGameTime(GameTime.CollectPotionMinutes);
         }
 
         private void UpdateHUDTime()
@@ -110,6 +129,7 @@ namespace Whizzys_Potion_Shop
             orderAccepted = false;
             customerLeaving = false;
 
+            unlockedPotions = economyManager.UnlockedPotions.Unlocked.ToList();
             orderManager.GenerateCustomerOrder(unlockedPotions);
 
             UpdateCustomerSprite(orderManager.CurrentCustomer);
@@ -137,12 +157,30 @@ namespace Whizzys_Potion_Shop
         private void HandleCustomerDeparture()
         {
             AdvanceGameTime(GameTime.CustomerLeaveMinutes);
+
+            Customer departingCustomer = orderManager.CurrentCustomer;
+
+            if (departingCustomer != null && orderAccepted)
+            {
+                int rating = CalculateCustomerRating(departingCustomer);
+                dayManager.RecordRating(rating);
+            }
+
             dayManager.CustomerLeft();
             orderManager.ClearOrder();
             characterBox.Image = null;
 
             if (dayManager.IsDayComplete)
             {
+                DaySummary summaryData = economyManager.EndDay();
+                summary summaryForm = new summary(summaryData, dayManager.AverageRating);
+                summaryForm.ShowDialog();
+
+                gameTime.NextDay();
+                UpdateHUDTime();
+
+                dayManager.ResetDay();
+                customerArriveTimer.Start();
                 // End-of-day sequence
             }
             else
@@ -168,6 +206,19 @@ namespace Whizzys_Potion_Shop
 
             if (arrivalWasRunning)
                 customerArriveTimer.Start();
+        }
+
+        private int CalculateCustomerRating(Customer customer)
+        {
+            double patiencePercent =
+                (double)customer.Patience / customer.MaxPatience * 100;
+
+            if (patiencePercent >= 80) return 5;
+            if (patiencePercent >= 60) return 4;
+            if (patiencePercent >= 40) return 3;
+            if (patiencePercent >= 20) return 2;
+
+            return 1;
         }
 
         private void menuBtn_Click(object sender, EventArgs e)
@@ -313,8 +364,32 @@ namespace Whizzys_Potion_Shop
         {
             if (potion == null)
                 return;
+            int basePayment = 0;
 
-            bool accepted = orderManager.DeliverPotion(potion);
+            switch (potion.potionID)
+            {
+                case 1:
+                    basePayment = 150;
+                    break;
+                case 2:
+                    basePayment = 185;
+                    break;
+                case 3:
+                    basePayment = 200;
+                    break;
+                case 4:
+                    basePayment = 225;
+                    break;
+                case 5:
+                    basePayment = 200;
+                    break;
+                case 6:
+                    basePayment = 300;
+                    break;
+            }
+
+            bool accepted = orderManager.DeliverPotion(potion, economyManager, basePayment);
+            topHUD1.UpdateGold(economyManager.PlayerBalance.Balance);
 
             selectedPotionBox.Image = null;
             selectedPotionBox.Visible = false;
@@ -324,7 +399,7 @@ namespace Whizzys_Potion_Shop
             if (accepted)
             {
                 dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToCorrectOrder());
-                gameTime.AdvanceTime(GameTime.ServeOrderMinutes);
+                AdvanceGameTime(GameTime.ServeOrderMinutes);
 
                 if (orderManager.IsOrderComplete())
                 {
@@ -337,7 +412,7 @@ namespace Whizzys_Potion_Shop
             else
             {
                 dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToWrongOrder());
-                gameTime.AdvanceTime(GameTime.ServeOrderMinutes);
+                AdvanceGameTime(GameTime.ServeOrderMinutes);
                 if (orderManager.CurrentCustomer.Patience <= 0)
                 {
                     dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToPatienceDepletion());

@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Economy;
+using System;
 using System.Collections.Generic;
+using GameOrder = Economy.Orders.CustomerOrder;
 
 namespace Whizzys_Potion_Shop
 {
 	public class OrderManager
 	{
         public Customer CurrentCustomer { get; set; }
-        public CustomerOrder CurrentOrder { get; set; }
+        public GameOrder CurrentOrder { get; set; }
         private static Random random = new Random();
 
         private int customerIdCounter = 0;
@@ -45,19 +47,30 @@ namespace Whizzys_Potion_Shop
         {
             GenerateCustomer();
 
-            CurrentOrder = new CustomerOrder(++orderIdCounter, CurrentCustomer);
-            CurrentOrder.GenerateRandomOrder(unlockedPotions);
+            CurrentOrder = new GameOrder(
+                ++orderIdCounter,
+                CurrentCustomer.CustomerID,
+                CurrentCustomer.Patience
+            );
+
+            CurrentOrder.Generate(CurrentCustomer.PreferredItems, unlockedPotions);
         }
 
-        public bool DeliverPotion(Potion potion)
+        public bool DeliverPotion(Potion potion, EconomyManager economyManager, int basePayment)
         {
-            bool accepted = CurrentOrder.EvaluatePotions(potion);
-
-            if (!accepted)
+            if (!CurrentOrder.Wants(potion.potionID))
             {
+                int oldPatience = CurrentCustomer.Patience;
+
                 CurrentCustomer.DecreasePatience();
+
+                int lostPatience = oldPatience - CurrentCustomer.Patience;
+                CurrentOrder.Tick(lostPatience);
+
                 return false;
             }
+
+            economyManager.ServePotion(CurrentOrder, potion.potionID, basePayment, 100f);
 
             return true;
         }
@@ -65,7 +78,7 @@ namespace Whizzys_Potion_Shop
         public bool IsOrderComplete()
         {
 
-            return CurrentOrder.Items.Count == 0;
+            return CurrentOrder.IsComplete;
         }
 
         public void ClearOrder()
