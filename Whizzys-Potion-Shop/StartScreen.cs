@@ -16,12 +16,24 @@ namespace Whizzys_Potion_Shop
         private GameTime gameTime = new GameTime();
         private DayManager dayManager = new DayManager();
         private OrderManager orderManager = new OrderManager();
-
+        private Queue<string> dialogueQueue = new Queue<string>();
+        List<int> unlockedPotions = new List<int>{ 1, 2, 3 };//placeholder for unlocked potions, will be replaced with actual data from the game state
+        private bool customerLeaving = false;
+        private bool orderAccepted = false;
+        private Potion potion;
         public StartScreen()
         {
             InitializeComponent();
 
             menuBtn.BackColor = Color.Transparent;
+            acceptBtn.Hide();
+            declineBtn.Hide();
+            dialogueBox1.HideMessage();
+        }
+
+        protected void GetPotion(Potion potion)
+        {
+            this.potion = potion;
         }
 
         private void UpdateHUDTime()
@@ -42,6 +54,22 @@ namespace Whizzys_Potion_Shop
         {
             if (customer is Wizard)
             {
+                characterBox.Image = Properties.Resources.Wizard_Talk;
+            }
+            else if (customer is Apprentice)
+            {
+                characterBox.Image = Properties.Resources.Apprentice_Talk;
+            }
+            else if (customer is Adventurer)
+            {
+                characterBox.Image = Properties.Resources.Adventurer_Talk;
+            }
+        }
+
+        private void CustomerNormalSprite(Customer customer)
+        {
+            if (customer is Wizard)
+            {
                 characterBox.Image = Properties.Resources.Wizard;
             }
             else if (customer is Apprentice)
@@ -54,14 +82,50 @@ namespace Whizzys_Potion_Shop
             }
         }
 
+        private void hideBtns()
+        {
+            acceptBtn.Hide();
+            declineBtn.Hide();
+        }
+
+        private void showBtns()
+        {
+            acceptBtn.Show();
+            declineBtn.Show();
+        }
+
         private void GenerateNextCustomer()
         {
+            hideBtns();
+
             if (!dayManager.CanGenerateCustomer)
                 return;
+
+            orderAccepted = false;
+            customerLeaving = false;
 
             orderManager.GenerateCustomerOrder(unlockedPotions);
 
             UpdateCustomerSprite(orderManager.CurrentCustomer);
+
+            // Display the order details in the UI
+            ShowCustomerDialogue();
+        }
+
+        private void ShowCustomerDialogue()
+        {
+            DialogueTimer.Stop();
+
+            Customer customer = orderManager.CurrentCustomer;
+
+            dialogueQueue.Clear();
+
+            dialogueQueue.Enqueue(customer.Greet());
+            dialogueQueue.Enqueue(customer.PlaceOrderDialogue(orderManager.CurrentOrder));
+
+            dialogueBox1.ShowMessage(dialogueQueue.Dequeue());
+
+            DialogueTimer.Start();
         }
 
         private void HandleCustomerDeparture()
@@ -92,6 +156,7 @@ namespace Whizzys_Potion_Shop
 
                 if (result == DialogResult.Abort)
                 {
+
                     mainMenu menu = new mainMenu();
                     menu.Show();
                     this.Close();
@@ -145,6 +210,65 @@ namespace Whizzys_Potion_Shop
         {
             customerArriveTimer.Stop();
             GenerateNextCustomer();
+        }
+
+        private void DialogueTimer_Tick(object sender, EventArgs e)
+        {
+
+            if (dialogueQueue.Count > 0)
+            {
+                dialogueBox1.ShowMessage(dialogueQueue.Dequeue());
+            }
+            else
+            {
+                DialogueTimer.Stop();
+                dialogueBox1.HideMessage();
+                if (customerLeaving)
+                {
+                    customerLeaving = false;
+                    HandleCustomerDeparture();
+                }
+                else if (orderManager.CurrentCustomer != null && !orderAccepted)
+                {
+                    showBtns();
+                }
+            }
+        }
+
+        private void acceptBtn_Click(object sender, EventArgs e)
+        {
+
+            if (orderManager.CurrentCustomer == null)
+                return;
+            hideBtns();
+            orderAccepted = true;
+            AdvanceGameTime(GameTime.AcceptOrderMinutes);
+
+            DialogueTimer.Stop();
+            dialogueQueue.Clear();
+            dialogueBox1.ShowMessage(
+                orderManager.CurrentCustomer.ReactToAcceptance()
+            );
+
+            DialogueTimer.Start();
+        }
+
+        private void declineBtn_Click(object sender, EventArgs e)
+        {
+            if (orderManager.CurrentCustomer == null)
+                return;
+
+            hideBtns();
+            AdvanceGameTime(GameTime.RefuseOrderMinutes);
+
+            dialogueQueue.Clear();
+            dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToRefusal());
+
+            DialogueTimer.Stop();
+            dialogueBox1.ShowMessage(dialogueQueue.Dequeue());
+            DialogueTimer.Start();
+
+            customerLeaving = true;
         }
     }
 }
