@@ -14,6 +14,7 @@ namespace Whizzys_Potion_Shop
         public double brewingTime;
         public int potionID { get; protected set; }
 
+        public System.Drawing.Image cauldronImage { get; set; }
         public System.Drawing.Image potionImage { get; set; }
 
         public Dictionary<string, int> recipe = new Dictionary<string, int>()
@@ -64,7 +65,8 @@ namespace Whizzys_Potion_Shop
             recipe["Valerian Root"] = 1;
             brewingTime = 5;
             potionID = 1;
-            potionImage = Properties.Resources.cldnmimir;
+            cauldronImage = Properties.Resources.cldnmimir;
+            potionImage = Properties.Resources.amimir;
         }
     };
 
@@ -80,7 +82,8 @@ namespace Whizzys_Potion_Shop
             recipe["Spring Water"] = 2;
             brewingTime = 6;
             potionID = 2;
-            potionImage = Properties.Resources.cldnff;
+            cauldronImage = Properties.Resources.cldnff;
+            potionImage = Properties.Resources.featherFall;
         }
     };
 
@@ -91,12 +94,13 @@ namespace Whizzys_Potion_Shop
             name = "Healing Potion";
             description = "A healing potion! Use if a “Get well soon” is too soon for you!";
             cost = 200;
-            recipe["Dragon’s Blood"] = 1;
+            recipe["Dragon's Blood"] = 1;
             recipe["Rosemary"] = 1;
             recipe["Mandrake"] = 1;
             brewingTime = 7;
             potionID = 3;
-            potionImage = Properties.Resources.cldnheals;
+            cauldronImage = Properties.Resources.cldnheals;
+            potionImage = Properties.Resources.healing;
         }
     };
 
@@ -107,12 +111,13 @@ namespace Whizzys_Potion_Shop
             name = "Stamina Potion";
             description = "If you need that big stamina boost. Better than energy drinks!";
             cost = 225;
-            recipe["Rabbit’s Foot"] = 1;
+            recipe["Rabbit's Foot"] = 1;
             recipe["Honey"] = 2;
             recipe["Harpy Feather"] = 1;
             brewingTime = 7.5;
             potionID = 4;
-            potionImage = Properties.Resources.cldnStam;
+            cauldronImage = Properties.Resources.cldnStam;
+            potionImage = Properties.Resources.stamina;
         }
     };
 
@@ -128,7 +133,8 @@ namespace Whizzys_Potion_Shop
             recipe["Pink Salt"] = 2;
             brewingTime = 8;
             potionID = 5;
-            potionImage = Properties.Resources.cldnlalalove;
+            cauldronImage = Properties.Resources.cldnlalalove;
+            potionImage = Properties.Resources.love;
         }
     };
 
@@ -144,7 +150,8 @@ namespace Whizzys_Potion_Shop
             recipe["Wolfsbane"] = 1;
             brewingTime = 10;
             potionID = 6;
-            potionImage = Properties.Resources.cldnprank;
+            cauldronImage = Properties.Resources.cldnprank;
+            potionImage = Properties.Resources.prank;
         }
     };
 
@@ -156,7 +163,8 @@ namespace Whizzys_Potion_Shop
             description = "???";
             brewingTime = 3;
             potionID = 7;
-            potionImage = Properties.Resources.cldn;
+            cauldronImage = Properties.Resources.cldn;
+            potionImage = Properties.Resources.broken;
         }
     };
 }

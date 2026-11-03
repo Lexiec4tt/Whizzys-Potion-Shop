@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Whizzys_Potion_Shop.Properties;
 
 namespace Whizzys_Potion_Shop
 {
@@ -36,9 +37,17 @@ namespace Whizzys_Potion_Shop
         private double elapsedTime = 0;
         private Potion potionBrewed;
 
+        private PictureBox[] potionInventoryImage = new PictureBox[5];
+
         public BrewingStation()
         {
             InitializeComponent();
+
+            potionInventoryImage[0] = potionInventory1;
+            potionInventoryImage[1] = potionInventory2;
+            potionInventoryImage[2] = potionInventory3;
+            potionInventoryImage[3] = potionInventory4;
+            potionInventoryImage[4] = potionInventory5;
 
             cauldron.AllowDrop = true;
         }
@@ -288,7 +297,7 @@ namespace Whizzys_Potion_Shop
         {
             if (e.Button == MouseButtons.Left)
             {
-                potionBrewed = modules.Brew(cauldronIngredCount, potionCount);
+                potionBrewed = modules.Brew(cauldronIngredCount);
                 brewButton.Enabled = false;
                 brewButton.Visible = false;
                 elapsedTime = 0;
@@ -302,8 +311,6 @@ namespace Whizzys_Potion_Shop
 
         private void brewTimer_Tick(object sender, EventArgs e)
         {
-            elapsedTime += 0.5;
-
             // Cauldron mixing animation
             if (cauldronState == 1)
             {
@@ -316,18 +323,46 @@ namespace Whizzys_Potion_Shop
                 cauldronState = 1;
             }
 
+            elapsedTime += 0.5;
+
             if (elapsedTime >= potionBrewed.brewingTime)
             {
                 brewTimer.Stop();
 
-                cauldron.Image = potionBrewed.potionImage;
+                potionCollect.Image = potionBrewed.potionImage;
+                potionCollect.Enabled = true;
+                potionCollect.Visible = true;
+                cauldron.Image = potionBrewed.cauldronImage;
                 elapsedTime = 0;
             }
         }
 
         private void cauldron_Click(object sender, EventArgs e)
         {
+        }
 
+        private void potionCollect_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                modules.collectPotion(potionBrewed, potionCount);
+                cauldron.Image = Properties.Resources.pot;
+                try
+                {
+                    potionInventoryImage[potionCount.Sum() - 1].Image = potionCollect.Image;
+
+                    potionCollect.Enabled = false;
+                    potionCollect.Visible = false;
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    MessageBox.Show("Max of 5 Potions only!");
+                }
+            }
+        }
+
+        private void potionCollect_Click(object sender, EventArgs e)
+        {
         }
     }
 }

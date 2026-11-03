@@ -90,7 +90,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.brewButton = new System.Windows.Forms.Button();
             this.brewTimer = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.potionCollect = new System.Windows.Forms.PictureBox();
+            this.potionInventory1 = new System.Windows.Forms.PictureBox();
+            this.potionInventory2 = new System.Windows.Forms.PictureBox();
+            this.potionInventory4 = new System.Windows.Forms.PictureBox();
+            this.potionInventory3 = new System.Windows.Forms.PictureBox();
+            this.potionInventory5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cauldron)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pinkSalt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rosemary)).BeginInit();
@@ -120,7 +125,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionCollect)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionInventory1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionInventory2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionInventory4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionInventory3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionInventory5)).BeginInit();
             this.SuspendLayout();
             // 
             // cauldron
@@ -900,13 +910,74 @@
             this.brewTimer.Interval = 500;
             this.brewTimer.Tick += new System.EventHandler(this.brewTimer_Tick);
             // 
-            // pictureBox11
+            // potionCollect
             // 
-            this.pictureBox11.Location = new System.Drawing.Point(607, 360);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox11.TabIndex = 37;
-            this.pictureBox11.TabStop = false;
+            this.potionCollect.BackColor = System.Drawing.Color.Transparent;
+            this.potionCollect.Enabled = false;
+            this.potionCollect.Location = new System.Drawing.Point(725, 488);
+            this.potionCollect.Name = "potionCollect";
+            this.potionCollect.Size = new System.Drawing.Size(100, 100);
+            this.potionCollect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.potionCollect.TabIndex = 37;
+            this.potionCollect.TabStop = false;
+            this.potionCollect.Visible = false;
+            this.potionCollect.Click += new System.EventHandler(this.potionCollect_Click);
+            this.potionCollect.MouseDown += new System.Windows.Forms.MouseEventHandler(this.potionCollect_MouseDown);
+            // 
+            // potionInventory1
+            // 
+            this.potionInventory1.BackColor = System.Drawing.Color.Transparent;
+            this.potionInventory1.Location = new System.Drawing.Point(64, 477);
+            this.potionInventory1.Name = "potionInventory1";
+            this.potionInventory1.Size = new System.Drawing.Size(100, 100);
+            this.potionInventory1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.potionInventory1.TabIndex = 38;
+            this.potionInventory1.TabStop = false;
+            this.potionInventory1.Tag = "1";
+            // 
+            // potionInventory2
+            // 
+            this.potionInventory2.BackColor = System.Drawing.Color.Transparent;
+            this.potionInventory2.Location = new System.Drawing.Point(124, 594);
+            this.potionInventory2.Name = "potionInventory2";
+            this.potionInventory2.Size = new System.Drawing.Size(100, 100);
+            this.potionInventory2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.potionInventory2.TabIndex = 39;
+            this.potionInventory2.TabStop = false;
+            this.potionInventory2.Tag = "2";
+            // 
+            // potionInventory4
+            // 
+            this.potionInventory4.BackColor = System.Drawing.Color.Transparent;
+            this.potionInventory4.Location = new System.Drawing.Point(260, 594);
+            this.potionInventory4.Name = "potionInventory4";
+            this.potionInventory4.Size = new System.Drawing.Size(100, 100);
+            this.potionInventory4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.potionInventory4.TabIndex = 41;
+            this.potionInventory4.TabStop = false;
+            this.potionInventory4.Tag = "4";
+            // 
+            // potionInventory3
+            // 
+            this.potionInventory3.BackColor = System.Drawing.Color.Transparent;
+            this.potionInventory3.Location = new System.Drawing.Point(189, 477);
+            this.potionInventory3.Name = "potionInventory3";
+            this.potionInventory3.Size = new System.Drawing.Size(100, 100);
+            this.potionInventory3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.potionInventory3.TabIndex = 40;
+            this.potionInventory3.TabStop = false;
+            this.potionInventory3.Tag = "3";
+            // 
+            // potionInventory5
+            // 
+            this.potionInventory5.BackColor = System.Drawing.Color.Transparent;
+            this.potionInventory5.Location = new System.Drawing.Point(311, 477);
+            this.potionInventory5.Name = "potionInventory5";
+            this.potionInventory5.Size = new System.Drawing.Size(100, 100);
+            this.potionInventory5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.potionInventory5.TabIndex = 42;
+            this.potionInventory5.TabStop = false;
+            this.potionInventory5.Tag = "5";
             // 
             // BrewingStation
             // 
@@ -915,7 +986,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1605, 838);
-            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.potionInventory5);
+            this.Controls.Add(this.potionInventory4);
+            this.Controls.Add(this.potionInventory3);
+            this.Controls.Add(this.potionInventory2);
+            this.Controls.Add(this.potionInventory1);
+            this.Controls.Add(this.potionCollect);
             this.Controls.Add(this.brewButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Honey);
@@ -1010,7 +1086,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionCollect)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionInventory1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionInventory2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionInventory4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionInventory3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.potionInventory5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1078,6 +1159,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button brewButton;
         private System.Windows.Forms.Timer brewTimer;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox potionCollect;
+        private System.Windows.Forms.PictureBox potionInventory1;
+        private System.Windows.Forms.PictureBox potionInventory2;
+        private System.Windows.Forms.PictureBox potionInventory4;
+        private System.Windows.Forms.PictureBox potionInventory3;
+        private System.Windows.Forms.PictureBox potionInventory5;
     }
 }
