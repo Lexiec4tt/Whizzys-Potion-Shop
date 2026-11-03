@@ -32,8 +32,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -91,6 +97,12 @@
     <Compile Include="Potions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecipeBook.Designer.cs">
+      <DependentUpon>RecipeBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="settings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +161,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RecipeBook.resx">
+      <DependentUpon>RecipeBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="settings.resx">
       <DependentUpon>settings.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,51 +193,61 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\adventurer.png">
+    <Content Include="Resources\adventurer.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Properties\adventurer1.png">
+    <Content Include="Resources\adventurer1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Properties\apprenticeBad.png">
+    <Content Include="Resources\apprenticeBad.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Properties\apprenticeBad_1.png">
+    <Content Include="Resources\apprenticeBad_1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Properties\brew_button.png">
+    <Content Include="Resources\toBrew.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Properties\Dragon_s Blood.png">
+    <Content Include="Resources\toUpgrade.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Properties\image %286%29.png">
+    <Content Include="Resources\witchGood.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Properties\mr.png">
+    <Content Include="Resources\witchGood_2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Properties\OOP.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Properties\pot-cropped.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Properties\pot.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Properties\pot1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Properties\witchGood.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Properties\witchGood_2.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Resources\amimir.png" />
+    <Content Include="Resources\amimirPage.png" />
+    <Content Include="Resources\brew_button.png" />
+    <Content Include="Resources\broken.png" />
+    <Content Include="Resources\cldn.png" />
+    <Content Include="Resources\cldn1.png" />
+    <Content Include="Resources\cldnff.png" />
+    <Content Include="Resources\cldnheals.png" />
+    <Content Include="Resources\cldnlalalove.png" />
+    <Content Include="Resources\cldnmimir.png" />
+    <Content Include="Resources\cldnprank.png" />
+    <Content Include="Resources\cldnStam.png" />
+    <Content Include="Resources\Done mixing.png" />
+    <Content Include="Resources\Dragon_s Blood.png" />
+    <Content Include="Resources\featherFall.png" />
+    <Content Include="Resources\featherfallPage.png" />
+    <Content Include="Resources\healing.png" />
+    <Content Include="Resources\healingPage.png" />
+    <Content Include="Resources\image %286%29.png" />
+    <Content Include="Resources\love.png" />
+    <Content Include="Resources\lovePage.png" />
+    <Content Include="Resources\mr.png" />
+    <Content Include="Resources\OOP.png" />
+    <Content Include="Resources\pot-cropped.png" />
+    <Content Include="Resources\pot.png" />
+    <Content Include="Resources\pot1.png" />
+    <Content Include="Resources\prank.png" />
+    <Content Include="Resources\prankPage.png" />
+    <Content Include="Resources\stamina.png" />
+    <Content Include="Resources\staminaPage.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

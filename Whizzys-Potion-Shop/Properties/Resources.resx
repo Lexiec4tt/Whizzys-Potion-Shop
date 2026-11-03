@@ -121,6 +121,9 @@
   <data name="amimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\amimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="amimirPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\amimirPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="brew_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\brew_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,11 +163,20 @@
   <data name="featherFall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\featherFall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="featherfallPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\featherfallPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="healing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\healing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="healingPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\healingPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="love" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\love.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lovePage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lovePage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,7 +190,13 @@
   <data name="prank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="prankPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prankPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="stamina" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stamina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="staminaPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\staminaPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -73,6 +73,16 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap amimirPage {
+            get {
+                object obj = ResourceManager.GetObject("amimirPage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap brew_button {
             get {
                 object obj = ResourceManager.GetObject("brew_button", resourceCulture);
@@ -203,6 +213,16 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap featherfallPage {
+            get {
+                object obj = ResourceManager.GetObject("featherfallPage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap healing {
             get {
                 object obj = ResourceManager.GetObject("healing", resourceCulture);
@@ -213,9 +233,29 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap healingPage {
+            get {
+                object obj = ResourceManager.GetObject("healingPage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap love {
             get {
                 object obj = ResourceManager.GetObject("love", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap lovePage {
+            get {
+                object obj = ResourceManager.GetObject("lovePage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +303,29 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap prankPage {
+            get {
+                object obj = ResourceManager.GetObject("prankPage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap stamina {
             get {
                 object obj = ResourceManager.GetObject("stamina", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap staminaPage {
+            get {
+                object obj = ResourceManager.GetObject("staminaPage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
