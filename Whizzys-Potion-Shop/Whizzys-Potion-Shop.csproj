@@ -251,6 +251,5 @@
     <Content Include="Resources\stamina.png" />
     <Content Include="Resources\staminaPage.png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
