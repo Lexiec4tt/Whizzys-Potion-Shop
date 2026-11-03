@@ -38,14 +38,18 @@
             this.DialogueTimer = new System.Windows.Forms.Timer(this.components);
             this.acceptBtn = new System.Windows.Forms.PictureBox();
             this.declineBtn = new System.Windows.Forms.PictureBox();
+            this.selectedPotionBox = new System.Windows.Forms.PictureBox();
             this.dialogueBox1 = new Whizzys_Potion_Shop.DialogueBox();
             this.topHUD1 = new Whizzys_Potion_Shop.topHUD();
+            this.serveBtn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.menuBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toUpgradeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toBrewBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.characterBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.acceptBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.declineBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectedPotionBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.serveBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // menuBtn
@@ -130,6 +134,17 @@
             this.declineBtn.TabStop = false;
             this.declineBtn.Click += new System.EventHandler(this.declineBtn_Click);
             // 
+            // selectedPotionBox
+            // 
+            this.selectedPotionBox.BackColor = System.Drawing.Color.Transparent;
+            this.selectedPotionBox.Location = new System.Drawing.Point(233, 416);
+            this.selectedPotionBox.Name = "selectedPotionBox";
+            this.selectedPotionBox.Size = new System.Drawing.Size(138, 142);
+            this.selectedPotionBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.selectedPotionBox.TabIndex = 9;
+            this.selectedPotionBox.TabStop = false;
+            this.selectedPotionBox.Visible = false;
+            // 
             // dialogueBox1
             // 
             this.dialogueBox1.BackColor = System.Drawing.Color.Transparent;
@@ -151,6 +166,19 @@
             this.topHUD1.Size = new System.Drawing.Size(1214, 700);
             this.topHUD1.TabIndex = 0;
             // 
+            // serveBtn
+            // 
+            this.serveBtn.BackColor = System.Drawing.Color.Transparent;
+            this.serveBtn.Image = ((System.Drawing.Image)(resources.GetObject("serveBtn.Image")));
+            this.serveBtn.Location = new System.Drawing.Point(426, 478);
+            this.serveBtn.Name = "serveBtn";
+            this.serveBtn.Size = new System.Drawing.Size(255, 80);
+            this.serveBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.serveBtn.TabIndex = 10;
+            this.serveBtn.TabStop = false;
+            this.serveBtn.Visible = false;
+            this.serveBtn.Click += new System.EventHandler(this.serveBtn_Click);
+            // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +186,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1214, 680);
+            this.Controls.Add(this.serveBtn);
+            this.Controls.Add(this.selectedPotionBox);
             this.Controls.Add(this.declineBtn);
             this.Controls.Add(this.acceptBtn);
             this.Controls.Add(this.dialogueBox1);
@@ -179,6 +209,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.characterBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.acceptBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.declineBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectedPotionBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.serveBtn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,5 +227,7 @@
         private System.Windows.Forms.PictureBox acceptBtn;
         private System.Windows.Forms.PictureBox declineBtn;
         private DialogueBox dialogueBox1;
+        private System.Windows.Forms.PictureBox selectedPotionBox;
+        private System.Windows.Forms.PictureBox serveBtn;
     }
 }

@@ -353,8 +353,6 @@ namespace Whizzys_Potion_Shop
             {
                 modules.collectPotion(potionBrewed, potionCount);
                 cauldron.Image = Properties.Resources.emptycldrn;
-                serveButton.Enabled = true;
-                serveButton.Visible = true;
                 try
                 {
                     potionInventoryImage[potionCount.Sum() - 1].Image = potionCollect.Image;
@@ -386,12 +384,6 @@ namespace Whizzys_Potion_Shop
 
         private void serveButton_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                //modules.ServeCustomer();
-                serveButton.Enabled = false;
-                serveButton.Visible = false;
-            }
         }
 
         private void cauldron_DragLeave(object sender, EventArgs e)
@@ -417,6 +409,11 @@ namespace Whizzys_Potion_Shop
             if (e.Button == MouseButtons.Left)
             {
                 startScreen.GetPotion(potionInventory[tagInt]);
+                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+                startScreen.Show();
+                startScreen.BringToFront();
+                startScreen.Activate();
+                this.Hide();
             }
             else if (e.Button == MouseButtons.Right)
             {
@@ -430,6 +427,11 @@ namespace Whizzys_Potion_Shop
             if (e.Button == MouseButtons.Left)
             {
                 startScreen.GetPotion(potionInventory[tagInt]);
+                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+                startScreen.Show();
+                startScreen.BringToFront();
+                startScreen.Activate();
+                this.Hide();
             }
             else if (e.Button == MouseButtons.Right)
             {
@@ -443,6 +445,11 @@ namespace Whizzys_Potion_Shop
             if (e.Button == MouseButtons.Left)
             {
                 startScreen.GetPotion(potionInventory[tagInt]);
+                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+                startScreen.Show();
+                startScreen.BringToFront();
+                startScreen.Activate();
+                this.Hide();
             }
             else if (e.Button == MouseButtons.Right)
             {
@@ -456,6 +463,11 @@ namespace Whizzys_Potion_Shop
             if (e.Button == MouseButtons.Left)
             {
                 startScreen.GetPotion(potionInventory[tagInt]);
+                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+                startScreen.Show();
+                startScreen.BringToFront();
+                startScreen.Activate();
+                this.Hide();
             }
             else if (e.Button == MouseButtons.Right)
             {
@@ -469,6 +481,11 @@ namespace Whizzys_Potion_Shop
             if (e.Button == MouseButtons.Left)
             {
                 startScreen.GetPotion(potionInventory[tagInt]);
+                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+                startScreen.Show();
+                startScreen.BringToFront();
+                startScreen.Activate();
+                this.Hide();
             }
             else if (e.Button == MouseButtons.Right)
             {

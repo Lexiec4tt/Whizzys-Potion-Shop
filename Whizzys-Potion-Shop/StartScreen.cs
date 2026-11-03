@@ -34,6 +34,9 @@ namespace Whizzys_Potion_Shop
         public void GetPotion(Potion potion)
         {
             this.potion = potion;
+            selectedPotionBox.Image = potion.potionImage;
+            selectedPotionBox.Visible = true;
+            serveBtn.Visible = true;
         }
 
         private void UpdateHUDTime()
@@ -174,11 +177,14 @@ namespace Whizzys_Potion_Shop
             {
                 station = new BrewingStation(this);
                 station.Show();
+                this.Hide();
             }
             else
             {
                 station.Show();
                 station.BringToFront();
+                station.Activate();
+                this.Hide();
             }
         }
 
@@ -192,11 +198,14 @@ namespace Whizzys_Potion_Shop
             {
                 store = new UpgradeStore();
                 store.Show();
+                this.Hide();
             }
             else
             {
                 store.Show();
                 store.BringToFront();
+                store.Activate();
+                this.Hide();
             }
         }
 
@@ -271,6 +280,35 @@ namespace Whizzys_Potion_Shop
             DialogueTimer.Start();
 
             customerLeaving = true;
+        }
+
+        private void serveBtn_Click(object sender, EventArgs e)
+        {
+            if (potion == null)
+                return;
+
+            bool accepted = orderManager.DeliverPotion(potion);
+
+            selectedPotionBox.Image = null;
+            selectedPotionBox.Visible = false;
+            potion = null;
+            serveBtn.Visible = false;
+
+            if (accepted)
+            {
+
+
+
+                if (orderManager.IsOrderComplete())
+                {
+                    // Customer's order is complete
+                }
+            }
+            else
+            {
+
+                // Handle rejected potion
+            }
         }
     }
 }
