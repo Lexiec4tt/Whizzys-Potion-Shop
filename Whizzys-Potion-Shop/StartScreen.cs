@@ -31,7 +31,7 @@ namespace Whizzys_Potion_Shop
             dialogueBox1.HideMessage();
         }
 
-        protected void GetPotion(Potion potion)
+        public void GetPotion(Potion potion)
         {
             this.potion = potion;
         }
@@ -119,7 +119,7 @@ namespace Whizzys_Potion_Shop
             Customer customer = orderManager.CurrentCustomer;
 
             dialogueQueue.Clear();
-
+            UpdateCustomerSprite(customer);
             dialogueQueue.Enqueue(customer.Greet());
             dialogueQueue.Enqueue(customer.PlaceOrderDialogue(orderManager.CurrentOrder));
 
@@ -172,7 +172,7 @@ namespace Whizzys_Potion_Shop
 
             if (station == null)
             {
-                station = new BrewingStation();
+                station = new BrewingStation(this);
                 station.Show();
             }
             else
@@ -231,6 +231,7 @@ namespace Whizzys_Potion_Shop
                 else if (orderManager.CurrentCustomer != null && !orderAccepted)
                 {
                     showBtns();
+                    CustomerNormalSprite(orderManager.CurrentCustomer);
                 }
             }
         }
@@ -251,6 +252,7 @@ namespace Whizzys_Potion_Shop
             );
 
             DialogueTimer.Start();
+            CustomerNormalSprite(orderManager.CurrentCustomer);
         }
 
         private void declineBtn_Click(object sender, EventArgs e)

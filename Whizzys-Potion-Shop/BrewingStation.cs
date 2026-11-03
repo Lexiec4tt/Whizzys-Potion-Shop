@@ -358,7 +358,7 @@ namespace Whizzys_Potion_Shop
                 try
                 {
                     potionInventoryImage[potionCount.Sum() - 1].Image = potionCollect.Image;
-                    potionInventory[potionCount.Sum() - 1] = potionCollect;
+                    potionInventory[potionCount.Sum() - 1] = potionBrewed;
                     potionCollect.Enabled = false;
                     potionCollect.Visible = false;
                     cauldron.Enabled = true;
@@ -414,7 +414,7 @@ namespace Whizzys_Potion_Shop
         private void potionInventory1_MouseDown(object sender, MouseEventArgs e)
         {
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
-            if (e.Button = MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 startScreen.GetPotion(potionInventory[tagInt]);
             }
@@ -427,7 +427,7 @@ namespace Whizzys_Potion_Shop
         private void potionInventory3_MouseDown(object sender, MouseEventArgs e)
         {
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
-            if (e.Button = MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 startScreen.GetPotion(potionInventory[tagInt]);
             }
@@ -440,7 +440,7 @@ namespace Whizzys_Potion_Shop
         private void potionInventory2_MouseDown(object sender, MouseEventArgs e)
         {
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
-            if (e.Button = MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 startScreen.GetPotion(potionInventory[tagInt]);
             }
@@ -453,7 +453,7 @@ namespace Whizzys_Potion_Shop
         private void potionInventory4_MouseDown(object sender, MouseEventArgs e)
         {
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
-            if (e.Button = MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 startScreen.GetPotion(potionInventory[tagInt]);
             }
@@ -466,7 +466,7 @@ namespace Whizzys_Potion_Shop
         private void potionInventory5_MouseDown(object sender, MouseEventArgs e)
         {
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
-            if (e.Button = MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 startScreen.GetPotion(potionInventory[tagInt]);
             }
