@@ -39,7 +39,7 @@
             this.time.BackColor = System.Drawing.Color.Lavender;
             this.time.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.time.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.time.Location = new System.Drawing.Point(103, 9);
+            this.time.Location = new System.Drawing.Point(125, 9);
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(136, 35);
             this.time.TabIndex = 0;

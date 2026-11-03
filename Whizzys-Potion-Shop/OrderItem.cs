@@ -24,16 +24,16 @@ namespace Whizzys_Potion_Shop {
                     potionName = "Healing Potion";
                     break;
                 case 4:
-                    potionName = "Love Potion";
-                    break;
-                case 5:
                     potionName = "Stamina Potion";
                     break;
+                case 5:
+                    potionName = "Love Potion";
+                    break;
                 case 6:
-                    potionName = "Totally Not Evil Potion";
+                    potionName = "Totally-Not-Evil Potion";
                     break;
                 default:
-                    potionName = "Ex Potion";
+                    potionName = "Unstable Potion";
                     break;
             }
         }

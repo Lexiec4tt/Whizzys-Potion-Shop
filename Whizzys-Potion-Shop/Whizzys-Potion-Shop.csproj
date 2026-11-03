@@ -58,6 +58,8 @@
     <Compile Include="BrewingStation.Designer.cs">
       <DependentUpon>BrewingStation.cs</DependentUpon>
     </Compile>
+    <Compile Include="DayManager.cs" />
+    <Compile Include="GameTime.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerOrder.cs" />
     <Compile Include="DialogueBox.cs">

@@ -55,13 +55,7 @@ namespace Whizzys_Potion_Shop
 
             if (!accepted)
             {
-                bool stillWaiting = (CurrentCustomer.DecreasePatience() > 0);
-
-                if (!stillWaiting)
-                {
-                    ClearOrder();
-                }
-
+                CurrentCustomer.DecreasePatience();
                 return false;
             }
 

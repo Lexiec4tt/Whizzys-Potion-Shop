@@ -63,6 +63,26 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Adventurer {
+            get {
+                object obj = ResourceManager.GetObject("Adventurer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Adventurer_Talk {
+            get {
+                object obj = ResourceManager.GetObject("Adventurer_Talk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap amimir {
             get {
                 object obj = ResourceManager.GetObject("amimir", resourceCulture);
@@ -76,6 +96,26 @@ namespace Whizzys_Potion_Shop.Properties {
         public static System.Drawing.Bitmap amimirPage {
             get {
                 object obj = ResourceManager.GetObject("amimirPage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Apprentice {
+            get {
+                object obj = ResourceManager.GetObject("Apprentice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Apprentice_Talk {
+            get {
+                object obj = ResourceManager.GetObject("Apprentice_Talk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +366,26 @@ namespace Whizzys_Potion_Shop.Properties {
         public static System.Drawing.Bitmap staminaPage {
             get {
                 object obj = ResourceManager.GetObject("staminaPage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Wizard {
+            get {
+                object obj = ResourceManager.GetObject("Wizard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Wizard_Talk {
+            get {
+                object obj = ResourceManager.GetObject("Wizard_Talk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -74,6 +74,8 @@ namespace Whizzys_Potion_Shop {
             }
         }
 
+
+
         protected int RandomPotion(List<int> availablePotions){
             int index = random.Next(availablePotions.Count);
             return availablePotions[index];
