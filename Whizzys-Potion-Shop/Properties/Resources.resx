@@ -121,6 +121,33 @@
   <data name="brew_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\brew_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cldn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnheals" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnheals.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnlalalove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnlalalove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnmimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnmimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnprank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnprank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnStam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnStam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Done mixing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Done mixing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dragon_s Blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dragon_s Blood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

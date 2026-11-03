@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrewingStation));
             this.cauldron = new System.Windows.Forms.PictureBox();
             this.pinkSalt = new System.Windows.Forms.PictureBox();
@@ -88,6 +89,8 @@
             this.rbshroomCounter = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.brewButton = new System.Windows.Forms.Button();
+            this.brewTimer = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cauldron)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pinkSalt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rosemary)).BeginInit();
@@ -117,6 +120,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // cauldron
@@ -130,6 +134,7 @@
             this.cauldron.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cauldron.TabIndex = 0;
             this.cauldron.TabStop = false;
+            this.cauldron.Click += new System.EventHandler(this.cauldron_Click);
             this.cauldron.DragDrop += new System.Windows.Forms.DragEventHandler(this.cauldron_DragDrop);
             this.cauldron.DragEnter += new System.Windows.Forms.DragEventHandler(this.cauldron_DragEnter);
             // 
@@ -886,8 +891,22 @@
             this.brewButton.TabIndex = 36;
             this.brewButton.UseVisualStyleBackColor = false;
             this.brewButton.Visible = false;
+            this.brewButton.Click += new System.EventHandler(this.brewButton_Click);
             this.brewButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.brewButton_KeyDown);
             this.brewButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.brewButton_MouseDown);
+            // 
+            // brewTimer
+            // 
+            this.brewTimer.Interval = 500;
+            this.brewTimer.Tick += new System.EventHandler(this.brewTimer_Tick);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Location = new System.Drawing.Point(607, 360);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox11.TabIndex = 37;
+            this.pictureBox11.TabStop = false;
             // 
             // BrewingStation
             // 
@@ -896,6 +915,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1605, 838);
+            this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.brewButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Honey);
@@ -990,6 +1010,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1056,5 +1077,7 @@
         private System.Windows.Forms.Label rbshroomCounter;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button brewButton;
+        private System.Windows.Forms.Timer brewTimer;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

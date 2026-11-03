@@ -31,6 +31,10 @@ namespace Whizzys_Potion_Shop
         };
 
         private int[] potionCount = new int[7];
+        private int cauldronState = 1;
+
+        private double elapsedTime = 0;
+        private Potion potionBrewed;
 
         public BrewingStation()
         {
@@ -284,10 +288,46 @@ namespace Whizzys_Potion_Shop
         {
             if (e.Button == MouseButtons.Left)
             {
-                modules.Brew(cauldronIngredCount, potionCount);
+                potionBrewed = modules.Brew(cauldronIngredCount, potionCount);
                 brewButton.Enabled = false;
                 brewButton.Visible = false;
+                elapsedTime = 0;
+                brewTimer.Start();
             }
+        }
+
+        private void brewButton_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void brewTimer_Tick(object sender, EventArgs e)
+        {
+            elapsedTime += 0.5;
+
+            // Cauldron mixing animation
+            if (cauldronState == 1)
+            {
+                cauldron.Image = Properties.Resources.cldn;
+                cauldronState = 2;
+            }
+            else
+            {
+                cauldron.Image = Properties.Resources.cldn1;
+                cauldronState = 1;
+            }
+
+            if (elapsedTime >= potionBrewed.brewingTime)
+            {
+                brewTimer.Stop();
+
+                cauldron.Image = potionBrewed.potionImage;
+                elapsedTime = 0;
+            }
+        }
+
+        private void cauldron_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

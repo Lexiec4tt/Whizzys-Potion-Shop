@@ -22,7 +22,7 @@ namespace Whizzys_Potion_Shop.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Whizzys_Potion_Shop.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Whizzys_Potion_Shop.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Whizzys_Potion_Shop.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap brew_button {
+        public static System.Drawing.Bitmap brew_button {
             get {
                 object obj = ResourceManager.GetObject("brew_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,97 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dragon_s_Blood {
+        public static System.Drawing.Bitmap cldn {
+            get {
+                object obj = ResourceManager.GetObject("cldn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cldn1 {
+            get {
+                object obj = ResourceManager.GetObject("cldn1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cldnff {
+            get {
+                object obj = ResourceManager.GetObject("cldnff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cldnheals {
+            get {
+                object obj = ResourceManager.GetObject("cldnheals", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cldnlalalove {
+            get {
+                object obj = ResourceManager.GetObject("cldnlalalove", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cldnmimir {
+            get {
+                object obj = ResourceManager.GetObject("cldnmimir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cldnprank {
+            get {
+                object obj = ResourceManager.GetObject("cldnprank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap cldnStam {
+            get {
+                object obj = ResourceManager.GetObject("cldnStam", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Done_mixing {
+            get {
+                object obj = ResourceManager.GetObject("Done mixing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Dragon_s_Blood {
             get {
                 object obj = ResourceManager.GetObject("Dragon_s Blood", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +173,7 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mr {
+        public static System.Drawing.Bitmap mr {
             get {
                 object obj = ResourceManager.GetObject("mr", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +183,7 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pot {
+        public static System.Drawing.Bitmap pot {
             get {
                 object obj = ResourceManager.GetObject("pot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +193,7 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pot_cropped {
+        public static System.Drawing.Bitmap pot_cropped {
             get {
                 object obj = ResourceManager.GetObject("pot-cropped", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
