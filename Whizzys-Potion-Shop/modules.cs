@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Whizzys_Potion_Shop
 {
@@ -81,16 +82,25 @@ namespace Whizzys_Potion_Shop
             }
         }
 
-        public static bool EvaluateCustomerOrder(int[] potionCount, int[] customerOrder)
+        public static void ServeCustomer(int[] potionCount, int[] customerOrder, PictureBox[] potionInventoryImage)
         {
+            bool orderEvaluation = false;
+
             if (potionCount == customerOrder)
             {
-                return true;
+                orderEvaluation = true;
             }
-            else
+
+            Array.Clear(potionCount, 0, potionCount.Length);
+
+            for (int i = 0; i < potionInventoryImage.Length; i++)
             {
-                return false;
+                potionInventoryImage[i].Image = null;
             }
+
+            return orderEvaluation;
         }
+
+        public stati
     }
 }
