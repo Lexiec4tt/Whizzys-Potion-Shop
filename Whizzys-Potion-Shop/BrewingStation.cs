@@ -475,5 +475,15 @@ namespace Whizzys_Potion_Shop
                 modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbshroomCounter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
