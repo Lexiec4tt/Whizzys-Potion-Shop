@@ -136,7 +136,7 @@ namespace Whizzys_Potion_Shop
         {
             Patience = 6; // Wizards have a patience level of 6
             MaxPatience = 6;
-            PreferredItems = new List<int> { 1, 2, 3 };
+            PreferredItems = new List<int> { 1, 2, 3, 4 };
         }
 
         public override string Greet()
@@ -212,7 +212,7 @@ namespace Whizzys_Potion_Shop
         {
             Patience = 7; // Apprentices have a patience level of 7
             MaxPatience = 7;
-            PreferredItems = new List<int> { 1, 2 };
+            PreferredItems = new List<int> { 1, 4, 5, 6 };
         }
 
         public override string Greet()
@@ -288,7 +288,7 @@ namespace Whizzys_Potion_Shop
         {
             Patience = 5; // Adventurers have a patience level of 5
             MaxPatience = 5;
-            PreferredItems = new List<int> { 1, 2, 3, 4 };
+            PreferredItems = new List<int> { 1, 2, 3, 4, 6 };
         }
 
         public override string Greet()
