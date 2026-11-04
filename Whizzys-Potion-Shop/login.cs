@@ -8,16 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Economy;
 
 namespace Whizzys_Potion_Shop
 {
     public partial class login : Form
     {
         public string PlayerName { get; private set; } = "Player Guest";
+        public EconomyManager ecoManager;
 
-        public login()
+        public login(EconomyManager ecoManager)
         {
             InitializeComponent();
+            this.ecoManager = ecoManager;
         }
 
         public login(string playerName)
@@ -27,7 +30,6 @@ namespace Whizzys_Potion_Shop
 
         private void login_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -37,17 +39,25 @@ namespace Whizzys_Potion_Shop
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(enterName.Text))
+            if (enterName.Text.Length > 10)
             {
-                PlayerName = enterName.Text.Trim();
+                MessageBox.Show("Enter a name shorter than 10 characters!");
             }
             else
             {
-                PlayerName = "Player Guest";
-            }
+                if (!string.IsNullOrWhiteSpace(enterName.Text))
+                {
+                    PlayerName = enterName.Text.Trim();
+                }
+                else
+                {
+                    PlayerName = "Player Guest";
+                }
 
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+                ecoManager.PlayerName = PlayerName;
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
     }
 }

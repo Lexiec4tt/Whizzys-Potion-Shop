@@ -41,9 +41,10 @@
             this.backBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backBtn.BackgroundImage")));
             this.backBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backBtn.Location = new System.Drawing.Point(894, 581);
+            this.backBtn.Location = new System.Drawing.Point(1192, 715);
+            this.backBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(280, 77);
+            this.backBtn.Size = new System.Drawing.Size(373, 95);
             this.backBtn.TabIndex = 0;
             this.backBtn.UseVisualStyleBackColor = true;
             this.backBtn.Click += new System.EventHandler(this.button1_Click);
@@ -58,13 +59,15 @@
             this.playerMoney});
             this.saveList.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveList.HideSelection = false;
-            this.saveList.Location = new System.Drawing.Point(148, 54);
+            this.saveList.Location = new System.Drawing.Point(197, 66);
+            this.saveList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.saveList.Name = "saveList";
-            this.saveList.Size = new System.Drawing.Size(933, 508);
+            this.saveList.Size = new System.Drawing.Size(1244, 625);
             this.saveList.TabIndex = 1;
             this.saveList.TileSize = new System.Drawing.Size(168, 30);
             this.saveList.UseCompatibleStateImageBehavior = false;
             this.saveList.View = System.Windows.Forms.View.Details;
+            this.saveList.SelectedIndexChanged += new System.EventHandler(this.saveList_SelectedIndexChanged);
             // 
             // playerName
             // 
@@ -85,15 +88,16 @@
             // 
             // savefiles
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1209, 681);
+            this.ClientSize = new System.Drawing.Size(1612, 838);
             this.Controls.Add(this.saveList);
             this.Controls.Add(this.backBtn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "savefiles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";

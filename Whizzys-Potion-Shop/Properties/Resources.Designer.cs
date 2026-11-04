@@ -183,9 +183,9 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap cldnheals {
+        public static System.Drawing.Bitmap cldnHeals__1_ {
             get {
-                object obj = ResourceManager.GetObject("cldnheals", resourceCulture);
+                object obj = ResourceManager.GetObject("cldnHeals (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

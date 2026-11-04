@@ -9,7 +9,7 @@ namespace Economy.FileHandling
     public class SaveData
     {
         public string PlayerName { get; set; } = "";
-        public int Balance {  get; set; }
+        public int Balance { get; set; }
         public int CurrentDay { get; set; }
         public Dictionary<string, int> UpgradeLevels { get; set; } = new();
         public Dictionary<int, int> Inventory { get; set; } = new();
@@ -20,43 +20,53 @@ namespace Economy.FileHandling
     public static class DataHandling
     {
         private static readonly JsonSerializerOptions Options = new() { WriteIndented = true };
+
         public static bool Save(SaveData saveData, string PATH)
         {
             try
             {
                 string folder = Path.GetDirectoryName(PATH) ?? "";
-                if (folder != "") Directory.CreateDirectory(folder);
+                if (folder != "")
+                    Directory.CreateDirectory(folder);
 
-                File.WriteAllText(PATH, JsonSerializer.Serialize(saveData, Options));
+                string json = JsonSerializer.Serialize(saveData, Options);
+
+                File.AppendAllText(PATH, json + Environment.NewLine);
+
                 return true;
             }
-            catch (Exception) { return false; }
+            catch (Exception)
+            {
+                return false;
+            }
         }
+
         public static SaveData? Load(string PATH)
         {
             try
             {
                 if (!File.Exists(PATH)) return null;
                 return JsonSerializer.Deserialize<SaveData>(File.ReadAllText(PATH));
-            
-            } catch (Exception) { return null; }
+            }
+            catch (Exception) { return null; }
         }
 
         public static string DefaultPath()
         {
             string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            return Path.Combine(appData, "WhizzyPotionShop", "save.json");
+            return Path.Combine(appData, "Whizzys-Potion-Shop", "save.json");
         }
 
         public static string SavesFolder()
         {
             string appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            return Path.Combine(appData, "WhizzyPotionShop", "Saves");
+            return Path.Combine(appData, "Whizzys-Potion-Shop", "Saves");
         }
 
         public static string PathFor(string playerName)
         {
-            foreach (char c in Path.GetInvalidFileNameChars()) { playerName.Replace(c, '_'); };
+            foreach (char c in Path.GetInvalidFileNameChars()) { playerName.Replace(c, '_'); }
+            ;
             return Path.Combine(SavesFolder(), playerName + ".json");
         }
 
@@ -73,8 +83,6 @@ namespace Economy.FileHandling
             }
 
             return saves;
-
         }
-
     }
 }

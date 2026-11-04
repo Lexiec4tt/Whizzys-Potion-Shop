@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Economy;
 
 namespace Whizzys_Potion_Shop
 {
     public partial class mainMenu : Form
     {
-
         private string enteredName;
+        private StartScreen screen;
+        private EconomyManager ecoManager;
 
         public mainMenu()
         {
@@ -53,20 +55,19 @@ namespace Whizzys_Potion_Shop
         {
             savefiles saves = new savefiles();
             this.Hide();
-            saves.ShowDialog();
-            this.Show();
+            saves.Show();
         }
 
         private void start_Click(object sender, EventArgs e)
         {
-            using (login nameModal = new login())
+            EconomyManager ecoManager = new EconomyManager();
+            using (login nameModal = new login(ecoManager))
             {
                 if (nameModal.ShowDialog(this) == DialogResult.OK)
                 {
-
                     string enteredName = nameModal.PlayerName;
 
-                    StartScreen gameScreen = new StartScreen();
+                    StartScreen gameScreen = new StartScreen(ecoManager);
                     gameScreen.Show();
                     this.Hide();
                 }
@@ -83,7 +84,7 @@ namespace Whizzys_Potion_Shop
 
         private void OpenPauseMenu()
         {
-            using (pauseMenu pauseOverlay = new pauseMenu())
+            using (pauseMenu pauseOverlay = new pauseMenu(screen, ecoManager))
             {
                 DialogResult result = pauseOverlay.ShowDialog(this);
 

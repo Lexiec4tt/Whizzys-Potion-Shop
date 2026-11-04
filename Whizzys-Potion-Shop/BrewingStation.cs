@@ -124,7 +124,6 @@ namespace Whizzys_Potion_Shop
 
         public void getOrderItems(List<int> orderItems)
         {
-
         }
 
         private void BrewingStation_Load(object sender, EventArgs e)
@@ -503,7 +502,7 @@ namespace Whizzys_Potion_Shop
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
             if (e.Button == MouseButtons.Left)
             {
-                if(startScreen.orderAccepted)
+                if (startScreen.orderAccepted)
                 {
                     startScreen.GetPotion(potionInventory[tagInt]);
                     modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
@@ -633,7 +632,7 @@ namespace Whizzys_Potion_Shop
 
         private void menuBtn_Click(object sender, EventArgs e)
         {
-            using (pauseMenu pauseOverlay = new pauseMenu())
+            using (pauseMenu pauseOverlay = new pauseMenu(startScreen, economyManager))
             {
                 PauseGame();
                 DialogResult result = pauseOverlay.ShowDialog(this);
@@ -657,7 +656,7 @@ namespace Whizzys_Potion_Shop
 
             if (station == null)
             {
-                station = new StartScreen();
+                station = new StartScreen(economyManager);
                 station.Show();
                 this.Hide();
             }
@@ -681,6 +680,14 @@ namespace Whizzys_Potion_Shop
         }
 
         private void orderSlip1_Enter(object sender, EventArgs e)
+        {
+        }
+
+        private void orderSlip1_Load_1(object sender, EventArgs e)
+        {
+        }
+
+        private void BrewingStation_Activated(object sender, EventArgs e)
         {
             orderSlip1.DisplayOrder(startScreen.requestedPotions);
         }

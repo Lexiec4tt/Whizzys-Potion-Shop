@@ -9,9 +9,9 @@ namespace Whizzys_Potion_Shop
 {
     public abstract class Ingredients
     {
-        public string ingredientName = "";
-        public int cost { get; set; }
-        public int IngredientID { get; set; }
+        public string ingredientName { get; protected set; }
+        public int cost { get; protected set; }
+        public int IngredientID { get; protected set; }
     }
 
     public class MoonWater : Ingredients

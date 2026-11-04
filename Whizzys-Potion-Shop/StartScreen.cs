@@ -14,7 +14,7 @@ namespace Whizzys_Potion_Shop
 {
     public partial class StartScreen : Form
     {
-        public EconomyManager economyManager = new EconomyManager();
+        private EconomyManager economyManager;
         private GameTime gameTime = new GameTime();
         private DayManager dayManager = new DayManager();
         private OrderManager orderManager = new OrderManager();
@@ -29,7 +29,7 @@ namespace Whizzys_Potion_Shop
         public string requestedPotions { get; private set; }
         private Potion potion;
 
-        public StartScreen()
+        public StartScreen(EconomyManager ecoManager)
         {
             InitializeComponent();
 
@@ -37,6 +37,8 @@ namespace Whizzys_Potion_Shop
             acceptBtn.Hide();
             declineBtn.Hide();
             dialogueBox1.HideMessage();
+
+            economyManager = ecoManager;
 
             HUD = topHUD1;
 
@@ -54,7 +56,6 @@ namespace Whizzys_Potion_Shop
 
         public void GetPotion(Potion potion)
         {
-
             this.potion = potion;
             selectedPotionBox.Image = potion.potionImage;
             serveBtn.Visible = true;
@@ -246,7 +247,7 @@ namespace Whizzys_Potion_Shop
 
         private void menuBtn_Click(object sender, EventArgs e)
         {
-            using (pauseMenu pauseOverlay = new pauseMenu())
+            using (pauseMenu pauseOverlay = new pauseMenu(this, economyManager))
             {
                 PauseGame();
                 DialogResult result = pauseOverlay.ShowDialog(this);
@@ -285,14 +286,13 @@ namespace Whizzys_Potion_Shop
 
         private void toUpgradeBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(economyManager.Balance.ToString());
             UpgradeStore store = Application.OpenForms
                 .OfType<UpgradeStore>()
                 .FirstOrDefault();
 
             if (store == null)
             {
-                store = new UpgradeStore();
+                store = new UpgradeStore(this, economyManager);
                 store.Show();
                 this.Hide();
             }

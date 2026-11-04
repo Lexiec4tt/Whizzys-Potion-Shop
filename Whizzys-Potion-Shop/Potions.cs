@@ -99,7 +99,7 @@ namespace Whizzys_Potion_Shop
             recipe["Mandrake"] = 1;
             brewingTime = 7;
             potionID = 3;
-            cauldronImage = Properties.Resources.cldnheals;
+            cauldronImage = Properties.Resources.cldnHeals__1_;
             potionImage = Properties.Resources.healing;
         }
     };

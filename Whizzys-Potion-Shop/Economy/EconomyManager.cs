@@ -12,6 +12,7 @@ namespace Economy
 {
     public class EconomyManager
     {
+        public string PlayerName { get; set; } = "No Name";
         public Wallet PlayerBalance { get; }
         public UpgradeManager UpgradeSystem { get; }
         public DayManager Day { get; }
@@ -93,20 +94,20 @@ namespace Economy
             return cost;
         }
 
-        public bool Save(string PATH, Dictionary<int, int>? inventory = null, List<int>? unlockedPotions = null)
-        {
-            SaveData saveData = new SaveData
-            {
-                Balance = PlayerBalance.Balance,
-                CurrentDay = Day.CurrentDay,
-                Inventory = inventory ?? new Dictionary<int, int>(), // if there is no items in inventory
-                UnlockedPotions = UnlockedPotions.Unlocked.ToList() // if there are no unlocked potion
-            };
+        //public bool Save(string PATH, Dictionary<int, int>? inventory = null, List<int>? unlockedPotions = null)
+        //{
+        //    SaveData saveData = new SaveData
+        //    {
+        //        Balance = PlayerBalance.Balance,
+        //        CurrentDay = Day.CurrentDay,
+        //        Inventory = inventory ?? new Dictionary<int, int>(), // if there is no items in inventory
+        //        UnlockedPotions = UnlockedPotions.Unlocked.ToList() // if there are no unlocked potion
+        //    };
 
-            foreach (Upgrade upgrade in UpgradeSystem.All) { saveData.UpgradeLevels[upgrade.Type.ToString()] = upgrade.Level; }
+        //    foreach (Upgrade upgrade in UpgradeSystem.All) { saveData.UpgradeLevels[upgrade.Type.ToString()] = upgrade.Level; }
 
-            return DataHandling.Save(saveData, PATH);
-        }
+        //    return DataHandling.Save(saveData, PATH);
+        //}
 
         // list all saves in load saves screen
 

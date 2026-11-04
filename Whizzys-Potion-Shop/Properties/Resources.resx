@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cldnff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cldnprank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldnprank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,9 +175,6 @@
   <data name="Dragon_s Blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dragon_s Blood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cldnheals" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnheals.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="staminaPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\staminaPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -192,9 +186,6 @@
   </data>
   <data name="toCashier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toCashier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldnlalalove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnlalalove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="prankPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prankPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -237,5 +228,14 @@
   </data>
   <data name="toRecipe1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toRecipe1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnFeather.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnlalalove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnLove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnHeals (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnHeals (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

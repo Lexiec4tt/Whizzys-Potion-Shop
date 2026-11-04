@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Economy;
+using Economy.FileHandling;
 
 namespace Whizzys_Potion_Shop
 {
     public partial class pauseMenu : Form
     {
-        public pauseMenu()
+        private EconomyManager economyManager;
+        private StartScreen startScreen;
+
+        public pauseMenu(StartScreen screen, EconomyManager ecoManager)
         {
             InitializeComponent();
+
+            startScreen = screen;
+            economyManager = ecoManager;
 
             pauseIcon.BackColor = Color.Transparent;
             resume.BackColor = Color.Transparent;
@@ -46,9 +54,9 @@ namespace Whizzys_Potion_Shop
         private void saveExit_Click(object sender, EventArgs e)
         {
             //save game data method here
+            economyManager.Save(economyManager.PlayerName);
 
             Application.Exit();
         }
-
     }
 }
