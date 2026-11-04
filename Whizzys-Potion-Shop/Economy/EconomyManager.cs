@@ -1,4 +1,4 @@
-﻿using Economy.Orders;
+using Economy.Orders;
 using Economy.Upgrades;
 using Economy.Currency;
 using Economy.FileHandling;
@@ -20,9 +20,7 @@ namespace Economy
 
         // readonly variables
         public int Balance => PlayerBalance.Balance;
-
         public bool CanAfford(int amount) => PlayerBalance.CanAfford(amount);
-
         public EconomyManager()
         {
             PlayerBalance = new Wallet(EconomyConfig.StartingBalance);
@@ -36,10 +34,11 @@ namespace Economy
             if (!order.Serve(potionId)) return 0;
 
             int earning = PaymentCalculator.Calculate(order, basePayment, quality, UpgradeSystem);
-            if (earning > 0)
+            if(earning > 0)
             {
                 PlayerBalance.Receive(earning);
                 Day.RecordEarning(earning);
+
             }
             if (order.IsComplete) Day.RecordCustomer();
             return earning;
@@ -55,14 +54,15 @@ namespace Economy
             if (!UpgradeSystem.Buy(upgrade, PlayerBalance)) return false;
             Day.RecordExpenses(cost);
             return true;
-        }
+        
+        }   
 
         // end the day
         public DaySummary EndDay()
         {
             DaySummary Summary = Day.EndDay();
             Summary.NewUnlocks.AddRange(UnlockedPotions.CheckDayUnlocks(Day.CurrentDay));
-            return Summary;
+            return Day.EndDay();
         }
 
         // buy unlocked potions
@@ -76,15 +76,15 @@ namespace Economy
         }
 
         // MULTIPLIERS
-        public float BrewTimeMultiplier =>
+        public float BrewTimeMultiplier => 
             (1f - UpgradeSystem.GetBonus(UpgradeType.Kindling)) *
             (1f - UpgradeSystem.GetBonus(UpgradeType.Cauldron));
 
         public float StirTimeMultiplier => 1f - UpgradeSystem.GetBonus(UpgradeType.StirringSpoon);
         public float PatienceMultiplier => 1f - UpgradeSystem.GetBonus(UpgradeType.Incense);
-
+        
         // when buying ingredients
-        public int BuyIngredient(int basePrice, int quality = 1)
+        public int BuyIngredient(int basePrice, int quality)
         {
             int cost = Shop.GetPrice(basePrice, Day.CurrentDay) * quality;
             if (!PlayerBalance.Spend(cost)) return -1;
@@ -92,6 +92,7 @@ namespace Economy
             Day.RecordExpenses(cost);
             return cost;
         }
+
 
         public bool Save(string PATH, Dictionary<int, int>? inventory = null, List<int>? unlockedPotions = null)
         {
@@ -103,29 +104,55 @@ namespace Economy
                 UnlockedPotions = UnlockedPotions.Unlocked.ToList() // if there are no unlocked potion
             };
 
-            foreach (Upgrade upgrade in UpgradeSystem.All) { saveData.UpgradeLevels[upgrade.Type.ToString()] = upgrade.Level; }
+            foreach( Upgrade upgrade in UpgradeSystem.All) { saveData.UpgradeLevels[upgrade.Type.ToString()] = upgrade.Level;  }
 
             return DataHandling.Save(saveData, PATH);
         }
 
-        public SaveData? Load(string PATH)
+
+
+        // list all saves in load saves screen
+
+        public static List<SaveData> GetAllSaves() => DataHandling.LoadAll();
+
+        // save bby player name
+        public bool Save(string playerName, Dictionary<int, int>? Inventory = null)
         {
-            SaveData? saveData = DataHandling.Load(PATH);
-            if (saveData == null) return null;
-
-            PlayerBalance.SetBalance(saveData.Balance);
-            Day.SetDay(saveData.CurrentDay);
-            UnlockedPotions.SetUnlocked(saveData.UnlockedPotions);
-
-            foreach (var pair in saveData.UpgradeLevels)
+            SaveData saveData = new SaveData
             {
-                if (Enum.TryParse(pair.Key, out UpgradeType upgradeType))
-                {
-                    UpgradeSystem.SetLevel(upgradeType, pair.Value);
-                }
+                PlayerName = playerName,
+                Balance = PlayerBalance.Balance,
+                CurrentDay = Day.CurrentDay,
+                Inventory = Inventory ?? new Dictionary<int, int>(),
+                UnlockedPotions = UnlockedPotions.Unlocked.ToList()
+            };
+
+            foreach(Upgrade upgrade in UpgradeSystem.All) 
+            { 
+                saveData.UpgradeLevels[upgrade.Type.ToString()] = upgrade.Level; 
             }
 
-            return saveData;
+            return DataHandling.Save(saveData, DataHandling.PathFor(playerName));
         }
+
+        // load by playerName
+        public SaveData? Load(string playerName)
+        {
+            SaveData? loadData = DataHandling.Load(DataHandling.PathFor(playerName));
+            if (loadData == null) return null;
+
+            PlayerBalance.SetBalance(loadData.Balance);
+            Day.SetDay(loadData.CurrentDay);
+            UnlockedPotions.SetUnlocked(loadData.UnlockedPotions);
+
+            foreach(var pair in loadData.UpgradeLevels)
+            {
+                if (Enum.TryParse(pair.Key, out UpgradeType upgradeType)) UpgradeSystem.SetLevel(upgradeType, pair.Value);
+
+            }
+            return loadData;
+        }
+
+        
     }
 }
