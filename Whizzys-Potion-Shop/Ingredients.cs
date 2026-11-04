@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Economy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,21 +9,9 @@ namespace Whizzys_Potion_Shop
 {
     public abstract class Ingredients
     {
-        protected string ingredientName = "";
-        protected double cost;
-
-        public bool Buy(ref double balance)
-        {
-            if (balance >= cost)
-            {
-                balance -= cost;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+        public string ingredientName = "";
+        public int cost { get; set; }
+        public int IngredientID { get; set; }
     }
 
     public class MoonWater : Ingredients
@@ -31,6 +20,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Moon Water";
             cost = 40;
+            IngredientID = 1;
         }
     };
 
@@ -40,6 +30,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Sun Bloom";
             cost = 40;
+            IngredientID = 2;
         }
     };
 
@@ -49,6 +40,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Valerian Root";
             cost = 35;
+            IngredientID = 3;
         }
     };
 
@@ -58,6 +50,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Harpy Feather";
             cost = 50;
+            IngredientID = 4;
         }
     };
 
@@ -67,6 +60,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Dragon's Blood";
             cost = 75;
+            IngredientID = 5;
         }
     };
 
@@ -76,6 +70,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Rosemary";
             cost = 40;
+            IngredientID = 6;
         }
     };
 
@@ -85,6 +80,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Mandrake";
             cost = 30;
+            IngredientID = 7;
         }
     };
 
@@ -94,6 +90,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Hound Fur";
             cost = 60;
+            IngredientID = 8;
         }
     };
 
@@ -103,6 +100,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Pink Salt";
             cost = 20;
+            IngredientID = 9;
         }
     };
 
@@ -112,6 +110,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Rabbit's Foot";
             cost = 50;
+            IngredientID = 10;
         }
     };
 
@@ -121,6 +120,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Honey";
             cost = 20;
+            IngredientID = 11;
         }
     };
 
@@ -130,6 +130,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Rainbowshroom";
             cost = 100;
+            IngredientID = 12;
         }
     };
 
@@ -139,6 +140,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Wolfsbane";
             cost = 70;
+            IngredientID = 13;
         }
     };
 
@@ -148,6 +150,7 @@ namespace Whizzys_Potion_Shop
         {
             ingredientName = "Spring Water";
             cost = 30;
+            IngredientID = 14;
         }
     };
 }

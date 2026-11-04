@@ -55,9 +55,10 @@
             // menuBtn
             // 
             this.menuBtn.Image = ((System.Drawing.Image)(resources.GetObject("menuBtn.Image")));
-            this.menuBtn.Location = new System.Drawing.Point(12, 604);
+            this.menuBtn.Location = new System.Drawing.Point(16, 743);
+            this.menuBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.menuBtn.Name = "menuBtn";
-            this.menuBtn.Size = new System.Drawing.Size(66, 65);
+            this.menuBtn.Size = new System.Drawing.Size(88, 80);
             this.menuBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menuBtn.TabIndex = 1;
             this.menuBtn.TabStop = false;
@@ -67,10 +68,10 @@
             // 
             this.toUpgradeBtn.BackColor = System.Drawing.Color.Transparent;
             this.toUpgradeBtn.Image = ((System.Drawing.Image)(resources.GetObject("toUpgradeBtn.Image")));
-            this.toUpgradeBtn.Location = new System.Drawing.Point(207, 604);
-            this.toUpgradeBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.toUpgradeBtn.Location = new System.Drawing.Point(276, 743);
+            this.toUpgradeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.toUpgradeBtn.Name = "toUpgradeBtn";
-            this.toUpgradeBtn.Size = new System.Drawing.Size(64, 65);
+            this.toUpgradeBtn.Size = new System.Drawing.Size(85, 80);
             this.toUpgradeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.toUpgradeBtn.TabIndex = 3;
             this.toUpgradeBtn.TabStop = false;
@@ -80,10 +81,10 @@
             // 
             this.toBrewBtn.BackColor = System.Drawing.Color.Transparent;
             this.toBrewBtn.Image = ((System.Drawing.Image)(resources.GetObject("toBrewBtn.Image")));
-            this.toBrewBtn.Location = new System.Drawing.Point(112, 604);
-            this.toBrewBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.toBrewBtn.Location = new System.Drawing.Point(149, 743);
+            this.toBrewBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.toBrewBtn.Name = "toBrewBtn";
-            this.toBrewBtn.Size = new System.Drawing.Size(64, 65);
+            this.toBrewBtn.Size = new System.Drawing.Size(85, 80);
             this.toBrewBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.toBrewBtn.TabIndex = 4;
             this.toBrewBtn.TabStop = false;
@@ -92,10 +93,10 @@
             // characterBox
             // 
             this.characterBox.BackColor = System.Drawing.Color.Transparent;
-            this.characterBox.Location = new System.Drawing.Point(426, 87);
-            this.characterBox.Margin = new System.Windows.Forms.Padding(2);
+            this.characterBox.Location = new System.Drawing.Point(568, 107);
+            this.characterBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.characterBox.Name = "characterBox";
-            this.characterBox.Size = new System.Drawing.Size(420, 352);
+            this.characterBox.Size = new System.Drawing.Size(560, 433);
             this.characterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.characterBox.TabIndex = 5;
             this.characterBox.TabStop = false;
@@ -114,9 +115,10 @@
             // 
             this.acceptBtn.BackColor = System.Drawing.Color.Transparent;
             this.acceptBtn.Image = ((System.Drawing.Image)(resources.GetObject("acceptBtn.Image")));
-            this.acceptBtn.Location = new System.Drawing.Point(66, 111);
+            this.acceptBtn.Location = new System.Drawing.Point(88, 137);
+            this.acceptBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.acceptBtn.Name = "acceptBtn";
-            this.acceptBtn.Size = new System.Drawing.Size(255, 80);
+            this.acceptBtn.Size = new System.Drawing.Size(340, 98);
             this.acceptBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.acceptBtn.TabIndex = 7;
             this.acceptBtn.TabStop = false;
@@ -126,9 +128,10 @@
             // 
             this.declineBtn.BackColor = System.Drawing.Color.Transparent;
             this.declineBtn.Image = ((System.Drawing.Image)(resources.GetObject("declineBtn.Image")));
-            this.declineBtn.Location = new System.Drawing.Point(66, 232);
+            this.declineBtn.Location = new System.Drawing.Point(88, 286);
+            this.declineBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.declineBtn.Name = "declineBtn";
-            this.declineBtn.Size = new System.Drawing.Size(255, 80);
+            this.declineBtn.Size = new System.Drawing.Size(340, 98);
             this.declineBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.declineBtn.TabIndex = 8;
             this.declineBtn.TabStop = false;
@@ -137,9 +140,10 @@
             // selectedPotionBox
             // 
             this.selectedPotionBox.BackColor = System.Drawing.Color.Transparent;
-            this.selectedPotionBox.Location = new System.Drawing.Point(233, 416);
+            this.selectedPotionBox.Location = new System.Drawing.Point(311, 512);
+            this.selectedPotionBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.selectedPotionBox.Name = "selectedPotionBox";
-            this.selectedPotionBox.Size = new System.Drawing.Size(138, 142);
+            this.selectedPotionBox.Size = new System.Drawing.Size(184, 175);
             this.selectedPotionBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.selectedPotionBox.TabIndex = 9;
             this.selectedPotionBox.TabStop = false;
@@ -150,9 +154,10 @@
             this.dialogueBox1.BackColor = System.Drawing.Color.Transparent;
             this.dialogueBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dialogueBox1.BackgroundImage")));
             this.dialogueBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.dialogueBox1.Location = new System.Drawing.Point(707, 87);
+            this.dialogueBox1.Location = new System.Drawing.Point(943, 107);
+            this.dialogueBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dialogueBox1.Name = "dialogueBox1";
-            this.dialogueBox1.Size = new System.Drawing.Size(478, 236);
+            this.dialogueBox1.Size = new System.Drawing.Size(637, 290);
             this.dialogueBox1.TabIndex = 6;
             // 
             // topHUD1
@@ -161,18 +166,20 @@
             this.topHUD1.Dock = System.Windows.Forms.DockStyle.Top;
             this.topHUD1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topHUD1.Location = new System.Drawing.Point(0, 0);
-            this.topHUD1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.topHUD1.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
             this.topHUD1.Name = "topHUD1";
-            this.topHUD1.Size = new System.Drawing.Size(1214, 700);
+            this.topHUD1.Size = new System.Drawing.Size(1619, 862);
             this.topHUD1.TabIndex = 0;
+            this.topHUD1.Load += new System.EventHandler(this.topHUD1_Load);
             // 
             // serveBtn
             // 
             this.serveBtn.BackColor = System.Drawing.Color.Transparent;
             this.serveBtn.Image = ((System.Drawing.Image)(resources.GetObject("serveBtn.Image")));
-            this.serveBtn.Location = new System.Drawing.Point(426, 478);
+            this.serveBtn.Location = new System.Drawing.Point(568, 588);
+            this.serveBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.serveBtn.Name = "serveBtn";
-            this.serveBtn.Size = new System.Drawing.Size(255, 80);
+            this.serveBtn.Size = new System.Drawing.Size(340, 98);
             this.serveBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.serveBtn.TabIndex = 10;
             this.serveBtn.TabStop = false;
@@ -181,11 +188,11 @@
             // 
             // StartScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1214, 680);
+            this.ClientSize = new System.Drawing.Size(1619, 837);
             this.Controls.Add(this.serveBtn);
             this.Controls.Add(this.selectedPotionBox);
             this.Controls.Add(this.declineBtn);
@@ -199,6 +206,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "StartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartScreen";

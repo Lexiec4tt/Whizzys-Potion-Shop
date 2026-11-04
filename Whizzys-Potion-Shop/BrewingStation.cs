@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Economy;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,8 @@ namespace Whizzys_Potion_Shop
             {"Spring Water", 0 }
         };
 
+        private EconomyManager economyManager;
+        private GameTime gameTime;
         private int[] potionCount = new int[7];
         private int cauldronState = 1;
 
@@ -42,18 +45,48 @@ namespace Whizzys_Potion_Shop
         private Potion[] potionInventory = new Potion[5];
         private StartScreen startScreen;
 
-        public BrewingStation(StartScreen screen)
+        private Ingredients[] ingredients;
+
+        public BrewingStation(StartScreen screen, EconomyManager ecoManager, GameTime gameTime)
         {
             InitializeComponent();
 
-            potionInventoryImage[0] = potionInventory1;
-            potionInventoryImage[1] = potionInventory2;
-            potionInventoryImage[2] = potionInventory3;
-            potionInventoryImage[3] = potionInventory4;
-            potionInventoryImage[4] = potionInventory5;
+            potionInventoryImage = new[]
+                        {
+                            potionInventory1,
+                            potionInventory2,
+                            potionInventory3,
+                            potionInventory4,
+                            potionInventory5
+                        };
+
+            ingredients = new Ingredients[]
+                {
+                    new MoonWater(),
+                    new SunBloom(),
+                    new ValerianRoot(),
+                    new HarpyFeather(),
+                    new DragonsBlood(),
+                    new Rosemary(),
+                    new Mandrake(),
+                    new HoundFur(),
+                    new PinkSalt(),
+                    new RabbitsFoot(),
+                    new Honey(),
+                    new Rainbowshroom(),
+                    new Wolfsbane(),
+                    new SpringWater()
+                };
 
             cauldron.AllowDrop = true;
             startScreen = screen;
+            this.economyManager = ecoManager;
+            this.gameTime = gameTime;
+            topHUD1.UpdateGold(economyManager.Balance);
+            topHUD1.UpdateTime(
+                gameTime.FormattedDay,
+                gameTime.FormattedTime
+            );
         }
 
         private void BrewingStation_Load(object sender, EventArgs e)
@@ -117,11 +150,23 @@ namespace Whizzys_Potion_Shop
             if (e.Data.GetDataPresent(typeof(int)))
             {
                 int ingredientTag = (int)e.Data.GetData(typeof(int));
+                cauldron.Image = Properties.Resources.emptycldrn;
 
-                modules.AddIngredient(cauldronIngredCount, ingredientTag);
+                Ingredients ingredient = ingredients[ingredientTag - 1];
 
-                brewButton.Enabled = true;
-                brewButton.Visible = true;
+                if (economyManager.CanAfford(ingredient.cost))
+                {
+                    modules.AddIngredient(cauldronIngredCount, ingredientTag);
+                    int newBalance = economyManager.Balance - economyManager.BuyIngredient(ingredient.cost);
+                    topHUD1.UpdateGold(newBalance);
+                    brewButton.Enabled = true;
+                    brewButton.Visible = true;
+                }
+                else
+                {
+                    warningLabel.Text = "Insufficient funds!";
+                    warningTimer.Start();
+                }
             }
         }
 
@@ -316,6 +361,7 @@ namespace Whizzys_Potion_Shop
 
         private void brewTimer_Tick(object sender, EventArgs e)
         {
+            cauldron.Enabled = false;
             // Cauldron mixing animation
             if (cauldronState == 1)
             {
@@ -355,8 +401,17 @@ namespace Whizzys_Potion_Shop
                 cauldron.Image = Properties.Resources.emptycldrn;
                 try
                 {
-                    potionInventoryImage[potionCount.Sum() - 1].Image = potionCollect.Image;
-                    potionInventory[potionCount.Sum() - 1] = potionBrewed;
+                    int freePotionIndex = 0;
+                    foreach (Potion potion in potionInventory)
+                    {
+                        if (potion == null)
+                        {
+                            break;
+                        }
+                        freePotionIndex++;
+                    }
+                    potionInventoryImage[freePotionIndex].Image = potionCollect.Image;
+                    potionInventory[freePotionIndex] = potionBrewed;
                     potionCollect.Enabled = false;
                     potionCollect.Visible = false;
                     cauldron.Enabled = true;
@@ -365,6 +420,7 @@ namespace Whizzys_Potion_Shop
                 {
                     if (warningTimer.Enabled)
                     {
+                        warningTime = 0;
                         warningTimer.Stop(); // Clears the warning timer before starting another timer
                     }
 
@@ -398,7 +454,7 @@ namespace Whizzys_Potion_Shop
             if (warningTime < 3)
             {
                 warningTimer.Stop();
-
+                warningTime = 0;
                 warningLabel.Text = "";
             }
         }
@@ -495,12 +551,10 @@ namespace Whizzys_Potion_Shop
 
         private void label4_Click(object sender, EventArgs e)
         {
-
         }
 
         private void rbshroomCounter_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

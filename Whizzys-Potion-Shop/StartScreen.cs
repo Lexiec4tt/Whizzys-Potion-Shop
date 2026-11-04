@@ -19,12 +19,13 @@ namespace Whizzys_Potion_Shop
         private DayManager dayManager = new DayManager();
         private OrderManager orderManager = new OrderManager();
         private Queue<string> dialogueQueue = new Queue<string>();
-        List<int> unlockedPotions;//placeholder for unlocked potions, will be replaced with actual data from the game state
+        private List<int> unlockedPotions;//placeholder for unlocked potions, will be replaced with actual data from the game state
         private bool customerLeaving = false;
         private bool orderAccepted = false;
         private bool dialogueWasRunning;
         private bool arrivalWasRunning;
         private Potion potion;
+
         public StartScreen()
         {
             InitializeComponent();
@@ -49,7 +50,7 @@ namespace Whizzys_Potion_Shop
         {
             this.potion = potion;
             selectedPotionBox.Image = potion.potionImage;
-            if(orderManager.CurrentCustomer != null && orderAccepted)
+            if (orderManager.CurrentCustomer != null && orderAccepted)
             {
                 serveBtn.Visible = true;
             }
@@ -191,6 +192,7 @@ namespace Whizzys_Potion_Shop
                 }
             }
         }
+
         private void PauseGame()
         {
             dialogueWasRunning = DialogueTimer.Enabled;
@@ -199,6 +201,7 @@ namespace Whizzys_Potion_Shop
             DialogueTimer.Stop();
             customerArriveTimer.Stop();
         }
+
         private void ResumeGame()
         {
             if (dialogueWasRunning)
@@ -230,7 +233,6 @@ namespace Whizzys_Potion_Shop
 
                 if (result == DialogResult.Abort)
                 {
-
                     mainMenu menu = new mainMenu();
                     menu.Show();
                     this.Close();
@@ -248,7 +250,7 @@ namespace Whizzys_Potion_Shop
 
             if (station == null)
             {
-                station = new BrewingStation(this);
+                station = new BrewingStation(this, economyManager, gameTime);
                 station.Show();
                 this.Hide();
             }
@@ -296,7 +298,6 @@ namespace Whizzys_Potion_Shop
 
         private void DialogueTimer_Tick(object sender, EventArgs e)
         {
-
             if (dialogueQueue.Count > 0)
             {
                 dialogueBox1.ShowMessage(dialogueQueue.Dequeue());
@@ -318,13 +319,12 @@ namespace Whizzys_Potion_Shop
                 else if (orderManager.CurrentCustomer != null)
                 {
                     CustomerNormalSprite(orderManager.CurrentCustomer);
-                }   
+                }
             }
         }
 
         private void acceptBtn_Click(object sender, EventArgs e)
         {
-
             if (orderManager.CurrentCustomer == null)
                 return;
             hideBtns();
@@ -371,18 +371,23 @@ namespace Whizzys_Potion_Shop
                 case 1:
                     basePayment = 150;
                     break;
+
                 case 2:
                     basePayment = 185;
                     break;
+
                 case 3:
                     basePayment = 200;
                     break;
+
                 case 4:
                     basePayment = 225;
                     break;
+
                 case 5:
                     basePayment = 200;
                     break;
+
                 case 6:
                     basePayment = 300;
                     break;
@@ -424,6 +429,10 @@ namespace Whizzys_Potion_Shop
             UpdateCustomerSprite(orderManager.CurrentCustomer);
             dialogueBox1.ShowMessage(dialogueQueue.Dequeue());
             DialogueTimer.Start();
+        }
+
+        private void topHUD1_Load(object sender, EventArgs e)
+        {
         }
     }
 }

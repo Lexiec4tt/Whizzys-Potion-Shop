@@ -10,7 +10,7 @@ namespace Whizzys_Potion_Shop
     {
         protected string name = "";
         protected string description = "";
-        protected double cost;
+        public double cost;
         public double brewingTime;
         public int potionID { get; protected set; }
 

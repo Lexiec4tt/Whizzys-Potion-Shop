@@ -82,38 +82,6 @@ namespace Whizzys_Potion_Shop
             }
         }
 
-        public static bool ServeCustomer(int[] potionCount, int[] customerOrder, PictureBox[] potionInventoryImage)
-        {
-            bool orderEvaluation = false;
-
-            if (potionCount == customerOrder)
-            {
-                orderEvaluation = true;
-            }
-
-            Array.Clear(potionCount, 0, potionCount.Length);
-
-            for (int i = 0; i < potionInventoryImage.Length; i++)
-            {
-                potionInventoryImage[i].Image = null;
-            }
-
-            return orderEvaluation;
-        }
-
-        public static int[] ServeCustomer(int[] potionCount, PictureBox[] potionInventoryImage)
-        {
-            int[] tempPotionCount = potionCount;
-            Array.Clear(potionCount, 0, potionCount.Length);
-
-            for (int i = 0; i < potionInventoryImage.Length; i++)
-            {
-                potionInventoryImage[i].Image = null;
-            }
-
-            return tempPotionCount;
-        }
-
         public static void disposePotion(PictureBox[] potionInventoryImage, Potion[] potionInventory, int potionTag)
         {
             potionInventoryImage[potionTag].Image = null;
