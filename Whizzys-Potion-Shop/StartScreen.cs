@@ -26,6 +26,7 @@ namespace Whizzys_Potion_Shop
         public bool orderAccepted { get; private set; } = false;
         private bool dialogueWasRunning;
         private bool arrivalWasRunning;
+        public string requestedPotions { get; private set; }
         private Potion potion;
 
         public StartScreen()
@@ -151,6 +152,8 @@ namespace Whizzys_Potion_Shop
             orderManager.GenerateCustomerOrder(unlockedPotions);
 
             UpdateCustomerSprite(orderManager.CurrentCustomer);
+
+            requestedPotions = orderManager.CurrentCustomer.GetOrderDescriptionForUI(orderManager.CurrentOrder);
 
             // Display the order details in the UI
             ShowCustomerDialogue();

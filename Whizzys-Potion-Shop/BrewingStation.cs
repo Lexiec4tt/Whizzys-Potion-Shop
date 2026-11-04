@@ -122,6 +122,11 @@ namespace Whizzys_Potion_Shop
                 brewTimer.Start();
         }
 
+        public void getOrderItems(List<int> orderItems)
+        {
+
+        }
+
         private void BrewingStation_Load(object sender, EventArgs e)
         {
         }
@@ -669,6 +674,15 @@ namespace Whizzys_Potion_Shop
         {
             RecipeBook book = new RecipeBook();
             book.Show();
+        }
+
+        private void orderSlip1_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void orderSlip1_Enter(object sender, EventArgs e)
+        {
+            orderSlip1.DisplayOrder(startScreen.requestedPotions);
         }
     }
 }

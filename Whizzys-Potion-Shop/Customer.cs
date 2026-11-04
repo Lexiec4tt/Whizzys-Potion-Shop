@@ -127,6 +127,18 @@ namespace Whizzys_Potion_Shop
                    + ", and " + descriptions[descriptions.Count - 1];
         }
 
+        public string GetOrderDescriptionForUI(GameOrder order)
+        {
+            List<string> descriptions = new List<string>();
+            foreach (KeyValuePair<int, int> item in order.Items)
+            {
+                OrderItem displayItem = new OrderItem();
+                displayItem.AddOrderItem(item.Key, item.Value);
+                descriptions.Add($"{item.Value} {displayItem.potionName}");
+            }
+            return string.Join(", ", descriptions);
+        }
+
     }
 
     public class Wizard : Customer

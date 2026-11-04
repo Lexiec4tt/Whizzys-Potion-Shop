@@ -42,9 +42,8 @@
             this.orderQty.ForeColor = System.Drawing.Color.Black;
             this.orderQty.Location = new System.Drawing.Point(32, 17);
             this.orderQty.Name = "orderQty";
-            this.orderQty.Size = new System.Drawing.Size(40, 26);
+            this.orderQty.Size = new System.Drawing.Size(0, 26);
             this.orderQty.TabIndex = 0;
-            this.orderQty.Text = "Qty";
             // 
             // ptnName
             // 
@@ -52,7 +51,7 @@
             this.ptnName.BackColor = System.Drawing.Color.Transparent;
             this.ptnName.Font = new System.Drawing.Font("Segoe Print", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ptnName.ForeColor = System.Drawing.Color.Black;
-            this.ptnName.Location = new System.Drawing.Point(111, 18);
+            this.ptnName.Location = new System.Drawing.Point(26, 17);
             this.ptnName.Name = "ptnName";
             this.ptnName.Size = new System.Drawing.Size(58, 26);
             this.ptnName.TabIndex = 1;
@@ -66,7 +65,6 @@
             this.orderList.Name = "orderList";
             this.orderList.Size = new System.Drawing.Size(166, 163);
             this.orderList.TabIndex = 2;
-            this.orderList.Text = "x1        Stamina Potion\r\n";
             // 
             // orderSlip
             // 

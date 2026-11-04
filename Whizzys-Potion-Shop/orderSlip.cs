@@ -19,16 +19,16 @@ namespace Test1
             this.BackColor = Color.Transparent;
         }
 
-        //public void DisplayOrder(List<(thePotionOrdershere?)> activeOrder)
-        //{
-            //string orderText = "";
+        public void DisplayOrder(string activeOrder)
+        {
+            string orderText = "";
 
             //foreach (var item in activeOrder)
             //{
                 //orderText += $"{item.PotionName}  {item.Quantity}\n";
             //}
 
-            //orderList.Text = orderText;
-        //}
+            orderList.Text = activeOrder;
+        }
     }
 }
