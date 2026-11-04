@@ -498,12 +498,19 @@ namespace Whizzys_Potion_Shop
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
             if (e.Button == MouseButtons.Left)
             {
-                startScreen.GetPotion(potionInventory[tagInt]);
-                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
-                startScreen.Show();
-                startScreen.BringToFront();
-                startScreen.Activate();
-                this.Hide();
+                if(startScreen.orderAccepted)
+                {
+                    startScreen.GetPotion(potionInventory[tagInt]);
+                    modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+                    startScreen.Show();
+                    startScreen.BringToFront();
+                    startScreen.Activate();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("You must accept an order before serving a potion.", "Order Not Accepted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else if (e.Button == MouseButtons.Right)
             {
@@ -516,12 +523,19 @@ namespace Whizzys_Potion_Shop
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
             if (e.Button == MouseButtons.Left)
             {
-                startScreen.GetPotion(potionInventory[tagInt]);
-                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
-                startScreen.Show();
-                startScreen.BringToFront();
-                startScreen.Activate();
-                this.Hide();
+                if (startScreen.orderAccepted)
+                {
+                    startScreen.GetPotion(potionInventory[tagInt]);
+                    modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+                    startScreen.Show();
+                    startScreen.BringToFront();
+                    startScreen.Activate();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("You must accept an order before serving a potion.", "Order Not Accepted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else if (e.Button == MouseButtons.Right)
             {
@@ -534,12 +548,19 @@ namespace Whizzys_Potion_Shop
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
             if (e.Button == MouseButtons.Left)
             {
-                startScreen.GetPotion(potionInventory[tagInt]);
-                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
-                startScreen.Show();
-                startScreen.BringToFront();
-                startScreen.Activate();
-                this.Hide();
+                if (startScreen.orderAccepted)
+                {
+                    startScreen.GetPotion(potionInventory[tagInt]);
+                    modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+                    startScreen.Show();
+                    startScreen.BringToFront();
+                    startScreen.Activate();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("You must accept an order before serving a potion.", "Order Not Accepted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else if (e.Button == MouseButtons.Right)
             {
@@ -552,12 +573,19 @@ namespace Whizzys_Potion_Shop
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
             if (e.Button == MouseButtons.Left)
             {
-                startScreen.GetPotion(potionInventory[tagInt]);
-                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
-                startScreen.Show();
-                startScreen.BringToFront();
-                startScreen.Activate();
-                this.Hide();
+                if (startScreen.orderAccepted)
+                {
+                    startScreen.GetPotion(potionInventory[tagInt]);
+                    modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+                    startScreen.Show();
+                    startScreen.BringToFront();
+                    startScreen.Activate();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("You must accept an order before serving a potion.", "Order Not Accepted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else if (e.Button == MouseButtons.Right)
             {
@@ -570,12 +598,19 @@ namespace Whizzys_Potion_Shop
             int tagInt = Convert.ToInt32(((Control)sender).Tag) - 1;
             if (e.Button == MouseButtons.Left)
             {
-                startScreen.GetPotion(potionInventory[tagInt]);
-                modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
-                startScreen.Show();
-                startScreen.BringToFront();
-                startScreen.Activate();
-                this.Hide();
+                if (startScreen.orderAccepted)
+                {
+                    startScreen.GetPotion(potionInventory[tagInt]);
+                    modules.disposePotion(potionInventoryImage, potionInventory, tagInt);
+                    startScreen.Show();
+                    startScreen.BringToFront();
+                    startScreen.Activate();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("You must accept an order before serving a potion.", "Order Not Accepted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else if (e.Button == MouseButtons.Right)
             {

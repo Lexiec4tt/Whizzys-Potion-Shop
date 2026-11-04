@@ -23,7 +23,7 @@ namespace Whizzys_Potion_Shop
         private topHUD HUD;
         private List<int> unlockedPotions;//placeholder for unlocked potions, will be replaced with actual data from the game state
         private bool customerLeaving = false;
-        private bool orderAccepted = false;
+        public bool orderAccepted { get; private set; } = false;
         private bool dialogueWasRunning;
         private bool arrivalWasRunning;
         private Potion potion;
@@ -53,15 +53,17 @@ namespace Whizzys_Potion_Shop
 
         public void GetPotion(Potion potion)
         {
+
             this.potion = potion;
             selectedPotionBox.Image = potion.potionImage;
+            serveBtn.Visible = true;
             if (orderManager.CurrentCustomer != null && orderAccepted)
             {
-                serveBtn.Visible = true;
+                serveBtn.Enabled = true;
             }
             else
             {
-                serveBtn.Visible = false;
+                serveBtn.Enabled = false;
             }
             selectedPotionBox.Visible = true;
             AdvanceGameTime(GameTime.CollectPotionMinutes);
@@ -420,9 +422,6 @@ namespace Whizzys_Potion_Shop
 
             if (accepted)
             {
-                dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToCorrectOrder());
-                AdvanceGameTime(GameTime.ServeOrderMinutes);
-
                 if (orderManager.IsOrderComplete())
                 {
                     dialogueQueue.Enqueue(orderManager.CurrentCustomer.CompletedOrder());
@@ -431,11 +430,14 @@ namespace Whizzys_Potion_Shop
                     customerLeaving = true;
                     // Customer's order is complete
                 }
+                else
+                {
+                    dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToCorrectOrder());
+                }
+                AdvanceGameTime(GameTime.ServeOrderMinutes);
             }
             else
             {
-                dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToWrongOrder());
-                AdvanceGameTime(GameTime.ServeOrderMinutes);
                 if (orderManager.CurrentCustomer.Patience <= 0)
                 {
                     dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToPatienceDepletion());
@@ -443,7 +445,13 @@ namespace Whizzys_Potion_Shop
                     customerLeaving = true;
                     // Customer leaves due to impatience
                 }
+                else
+                {
+                    dialogueQueue.Enqueue(orderManager.CurrentCustomer.ReactToWrongOrder());
+                }
+                AdvanceGameTime(GameTime.ServeOrderMinutes);
             }
+
             UpdateCustomerSprite(orderManager.CurrentCustomer);
             dialogueBox1.ShowMessage(dialogueQueue.Dequeue());
             DialogueTimer.Start();
