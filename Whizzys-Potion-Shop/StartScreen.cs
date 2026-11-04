@@ -14,7 +14,7 @@ namespace Whizzys_Potion_Shop
 {
     public partial class StartScreen : Form
     {
-        private EconomyManager economyManager = new EconomyManager();
+        protected EconomyManager economyManager = new EconomyManager();
         private GameTime gameTime = new GameTime();
         private DayManager dayManager = new DayManager();
         private OrderManager orderManager = new OrderManager();

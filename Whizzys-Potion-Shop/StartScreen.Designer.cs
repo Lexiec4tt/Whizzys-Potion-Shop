@@ -54,9 +54,10 @@
             // 
             // menuBtn
             // 
+            this.menuBtn.BackColor = System.Drawing.Color.Transparent;
             this.menuBtn.Image = ((System.Drawing.Image)(resources.GetObject("menuBtn.Image")));
             this.menuBtn.Location = new System.Drawing.Point(16, 743);
-            this.menuBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menuBtn.Margin = new System.Windows.Forms.Padding(4);
             this.menuBtn.Name = "menuBtn";
             this.menuBtn.Size = new System.Drawing.Size(88, 80);
             this.menuBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -116,7 +117,7 @@
             this.acceptBtn.BackColor = System.Drawing.Color.Transparent;
             this.acceptBtn.Image = ((System.Drawing.Image)(resources.GetObject("acceptBtn.Image")));
             this.acceptBtn.Location = new System.Drawing.Point(88, 137);
-            this.acceptBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.acceptBtn.Margin = new System.Windows.Forms.Padding(4);
             this.acceptBtn.Name = "acceptBtn";
             this.acceptBtn.Size = new System.Drawing.Size(340, 98);
             this.acceptBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -129,7 +130,7 @@
             this.declineBtn.BackColor = System.Drawing.Color.Transparent;
             this.declineBtn.Image = ((System.Drawing.Image)(resources.GetObject("declineBtn.Image")));
             this.declineBtn.Location = new System.Drawing.Point(88, 286);
-            this.declineBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.declineBtn.Margin = new System.Windows.Forms.Padding(4);
             this.declineBtn.Name = "declineBtn";
             this.declineBtn.Size = new System.Drawing.Size(340, 98);
             this.declineBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -141,7 +142,7 @@
             // 
             this.selectedPotionBox.BackColor = System.Drawing.Color.Transparent;
             this.selectedPotionBox.Location = new System.Drawing.Point(311, 512);
-            this.selectedPotionBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.selectedPotionBox.Margin = new System.Windows.Forms.Padding(4);
             this.selectedPotionBox.Name = "selectedPotionBox";
             this.selectedPotionBox.Size = new System.Drawing.Size(184, 175);
             this.selectedPotionBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -155,7 +156,7 @@
             this.dialogueBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dialogueBox1.BackgroundImage")));
             this.dialogueBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.dialogueBox1.Location = new System.Drawing.Point(943, 107);
-            this.dialogueBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dialogueBox1.Margin = new System.Windows.Forms.Padding(5);
             this.dialogueBox1.Name = "dialogueBox1";
             this.dialogueBox1.Size = new System.Drawing.Size(637, 290);
             this.dialogueBox1.TabIndex = 6;
@@ -177,7 +178,7 @@
             this.serveBtn.BackColor = System.Drawing.Color.Transparent;
             this.serveBtn.Image = ((System.Drawing.Image)(resources.GetObject("serveBtn.Image")));
             this.serveBtn.Location = new System.Drawing.Point(568, 588);
-            this.serveBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.serveBtn.Margin = new System.Windows.Forms.Padding(4);
             this.serveBtn.Name = "serveBtn";
             this.serveBtn.Size = new System.Drawing.Size(340, 98);
             this.serveBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,7 +207,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartScreen";

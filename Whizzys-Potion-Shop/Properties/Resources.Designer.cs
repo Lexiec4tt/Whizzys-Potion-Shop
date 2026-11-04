@@ -403,6 +403,16 @@ namespace Whizzys_Potion_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap toCashier {
+            get {
+                object obj = ResourceManager.GetObject("toCashier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Wizard {
             get {
                 object obj = ResourceManager.GetObject("Wizard", resourceCulture);

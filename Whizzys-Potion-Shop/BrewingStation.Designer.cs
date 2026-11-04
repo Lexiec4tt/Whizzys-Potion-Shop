@@ -101,6 +101,8 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.topHUD1 = new Whizzys_Potion_Shop.topHUD();
+            this.menuBtn = new System.Windows.Forms.PictureBox();
+            this.cashierButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cauldron)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pinkSalt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rosemary)).BeginInit();
@@ -137,6 +139,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.potionInventory3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.potionInventory5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cashierButton)).BeginInit();
             this.SuspendLayout();
             // 
             // cauldron
@@ -144,7 +148,7 @@
             this.cauldron.BackColor = System.Drawing.Color.Transparent;
             this.cauldron.Image = ((System.Drawing.Image)(resources.GetObject("cauldron.Image")));
             this.cauldron.Location = new System.Drawing.Point(419, 532);
-            this.cauldron.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cauldron.Margin = new System.Windows.Forms.Padding(4);
             this.cauldron.Name = "cauldron";
             this.cauldron.Size = new System.Drawing.Size(684, 342);
             this.cauldron.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -161,7 +165,7 @@
             this.pinkSalt.BackColor = System.Drawing.Color.Transparent;
             this.pinkSalt.Image = ((System.Drawing.Image)(resources.GetObject("pinkSalt.Image")));
             this.pinkSalt.Location = new System.Drawing.Point(971, 186);
-            this.pinkSalt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pinkSalt.Margin = new System.Windows.Forms.Padding(4);
             this.pinkSalt.Name = "pinkSalt";
             this.pinkSalt.Size = new System.Drawing.Size(137, 113);
             this.pinkSalt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -175,7 +179,7 @@
             this.Rosemary.BackColor = System.Drawing.Color.Transparent;
             this.Rosemary.Image = ((System.Drawing.Image)(resources.GetObject("Rosemary.Image")));
             this.Rosemary.Location = new System.Drawing.Point(1116, 186);
-            this.Rosemary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Rosemary.Margin = new System.Windows.Forms.Padding(4);
             this.Rosemary.Name = "Rosemary";
             this.Rosemary.Size = new System.Drawing.Size(137, 113);
             this.Rosemary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -189,7 +193,7 @@
             this.valRoot.BackColor = System.Drawing.Color.Transparent;
             this.valRoot.Image = ((System.Drawing.Image)(resources.GetObject("valRoot.Image")));
             this.valRoot.Location = new System.Drawing.Point(1261, 186);
-            this.valRoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.valRoot.Margin = new System.Windows.Forms.Padding(4);
             this.valRoot.Name = "valRoot";
             this.valRoot.Size = new System.Drawing.Size(137, 113);
             this.valRoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -203,7 +207,7 @@
             this.harpyFeathers.BackColor = System.Drawing.Color.Transparent;
             this.harpyFeathers.Image = ((System.Drawing.Image)(resources.GetObject("harpyFeathers.Image")));
             this.harpyFeathers.Location = new System.Drawing.Point(1405, 186);
-            this.harpyFeathers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.harpyFeathers.Margin = new System.Windows.Forms.Padding(4);
             this.harpyFeathers.Name = "harpyFeathers";
             this.harpyFeathers.Size = new System.Drawing.Size(137, 113);
             this.harpyFeathers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,7 +221,7 @@
             this.rabbitsFoot.BackColor = System.Drawing.Color.Transparent;
             this.rabbitsFoot.Image = ((System.Drawing.Image)(resources.GetObject("rabbitsFoot.Image")));
             this.rabbitsFoot.Location = new System.Drawing.Point(971, 398);
-            this.rabbitsFoot.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rabbitsFoot.Margin = new System.Windows.Forms.Padding(4);
             this.rabbitsFoot.Name = "rabbitsFoot";
             this.rabbitsFoot.Size = new System.Drawing.Size(137, 76);
             this.rabbitsFoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -231,7 +235,7 @@
             this.houndFur.BackColor = System.Drawing.Color.Transparent;
             this.houndFur.Image = ((System.Drawing.Image)(resources.GetObject("houndFur.Image")));
             this.houndFur.Location = new System.Drawing.Point(1116, 398);
-            this.houndFur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.houndFur.Margin = new System.Windows.Forms.Padding(4);
             this.houndFur.Name = "houndFur";
             this.houndFur.Size = new System.Drawing.Size(137, 76);
             this.houndFur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -245,7 +249,7 @@
             this.Wolfsbane.BackColor = System.Drawing.Color.Transparent;
             this.Wolfsbane.Image = ((System.Drawing.Image)(resources.GetObject("Wolfsbane.Image")));
             this.Wolfsbane.Location = new System.Drawing.Point(1261, 398);
-            this.Wolfsbane.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Wolfsbane.Margin = new System.Windows.Forms.Padding(4);
             this.Wolfsbane.Name = "Wolfsbane";
             this.Wolfsbane.Size = new System.Drawing.Size(137, 76);
             this.Wolfsbane.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -259,7 +263,7 @@
             this.Honey.BackColor = System.Drawing.Color.Transparent;
             this.Honey.Image = ((System.Drawing.Image)(resources.GetObject("Honey.Image")));
             this.Honey.Location = new System.Drawing.Point(1405, 398);
-            this.Honey.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Honey.Margin = new System.Windows.Forms.Padding(4);
             this.Honey.Name = "Honey";
             this.Honey.Size = new System.Drawing.Size(137, 76);
             this.Honey.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -273,7 +277,7 @@
             this.DragonBlood.BackColor = System.Drawing.Color.Transparent;
             this.DragonBlood.Image = ((System.Drawing.Image)(resources.GetObject("DragonBlood.Image")));
             this.DragonBlood.Location = new System.Drawing.Point(1119, 532);
-            this.DragonBlood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DragonBlood.Margin = new System.Windows.Forms.Padding(4);
             this.DragonBlood.Name = "DragonBlood";
             this.DragonBlood.Size = new System.Drawing.Size(137, 113);
             this.DragonBlood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -287,7 +291,7 @@
             this.MoonWater.BackColor = System.Drawing.Color.Transparent;
             this.MoonWater.Image = ((System.Drawing.Image)(resources.GetObject("MoonWater.Image")));
             this.MoonWater.Location = new System.Drawing.Point(1260, 532);
-            this.MoonWater.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MoonWater.Margin = new System.Windows.Forms.Padding(4);
             this.MoonWater.Name = "MoonWater";
             this.MoonWater.Size = new System.Drawing.Size(137, 113);
             this.MoonWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -301,7 +305,7 @@
             this.SpringWater.BackColor = System.Drawing.Color.Transparent;
             this.SpringWater.Image = ((System.Drawing.Image)(resources.GetObject("SpringWater.Image")));
             this.SpringWater.Location = new System.Drawing.Point(1405, 532);
-            this.SpringWater.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SpringWater.Margin = new System.Windows.Forms.Padding(4);
             this.SpringWater.Name = "SpringWater";
             this.SpringWater.Size = new System.Drawing.Size(137, 113);
             this.SpringWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -315,7 +319,7 @@
             this.SunBloom.BackColor = System.Drawing.Color.Transparent;
             this.SunBloom.Image = ((System.Drawing.Image)(resources.GetObject("SunBloom.Image")));
             this.SunBloom.Location = new System.Drawing.Point(1405, 716);
-            this.SunBloom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SunBloom.Margin = new System.Windows.Forms.Padding(4);
             this.SunBloom.Name = "SunBloom";
             this.SunBloom.Size = new System.Drawing.Size(137, 113);
             this.SunBloom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -329,7 +333,7 @@
             this.Mandrake.BackColor = System.Drawing.Color.Transparent;
             this.Mandrake.Image = ((System.Drawing.Image)(resources.GetObject("Mandrake.Image")));
             this.Mandrake.Location = new System.Drawing.Point(1261, 716);
-            this.Mandrake.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Mandrake.Margin = new System.Windows.Forms.Padding(4);
             this.Mandrake.Name = "Mandrake";
             this.Mandrake.Size = new System.Drawing.Size(137, 113);
             this.Mandrake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -343,7 +347,7 @@
             this.RBShroom.BackColor = System.Drawing.Color.Transparent;
             this.RBShroom.Image = ((System.Drawing.Image)(resources.GetObject("RBShroom.Image")));
             this.RBShroom.Location = new System.Drawing.Point(1116, 716);
-            this.RBShroom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RBShroom.Margin = new System.Windows.Forms.Padding(4);
             this.RBShroom.Name = "RBShroom";
             this.RBShroom.Size = new System.Drawing.Size(137, 113);
             this.RBShroom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -357,7 +361,7 @@
             this.saltSign.BackColor = System.Drawing.Color.Transparent;
             this.saltSign.Image = ((System.Drawing.Image)(resources.GetObject("saltSign.Image")));
             this.saltSign.Location = new System.Drawing.Point(971, 79);
-            this.saltSign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saltSign.Margin = new System.Windows.Forms.Padding(4);
             this.saltSign.Name = "saltSign";
             this.saltSign.Size = new System.Drawing.Size(144, 143);
             this.saltSign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -369,7 +373,7 @@
             this.rosemarySign.BackColor = System.Drawing.Color.Transparent;
             this.rosemarySign.Image = ((System.Drawing.Image)(resources.GetObject("rosemarySign.Image")));
             this.rosemarySign.Location = new System.Drawing.Point(1116, 79);
-            this.rosemarySign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rosemarySign.Margin = new System.Windows.Forms.Padding(4);
             this.rosemarySign.Name = "rosemarySign";
             this.rosemarySign.Size = new System.Drawing.Size(144, 143);
             this.rosemarySign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -381,7 +385,7 @@
             this.valRootSign.BackColor = System.Drawing.Color.Transparent;
             this.valRootSign.Image = ((System.Drawing.Image)(resources.GetObject("valRootSign.Image")));
             this.valRootSign.Location = new System.Drawing.Point(1259, 79);
-            this.valRootSign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.valRootSign.Margin = new System.Windows.Forms.Padding(4);
             this.valRootSign.Name = "valRootSign";
             this.valRootSign.Size = new System.Drawing.Size(144, 143);
             this.valRootSign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -393,7 +397,7 @@
             this.harpySign.BackColor = System.Drawing.Color.Transparent;
             this.harpySign.Image = ((System.Drawing.Image)(resources.GetObject("harpySign.Image")));
             this.harpySign.Location = new System.Drawing.Point(1401, 79);
-            this.harpySign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.harpySign.Margin = new System.Windows.Forms.Padding(4);
             this.harpySign.Name = "harpySign";
             this.harpySign.Size = new System.Drawing.Size(144, 143);
             this.harpySign.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -405,7 +409,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(975, 286);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(157, 153);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -417,7 +421,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(1099, 287);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(177, 140);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -429,7 +433,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(1261, 287);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(144, 140);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -441,7 +445,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(1401, 287);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(148, 140);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -454,7 +458,7 @@
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(1099, 481);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(177, 103);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -467,7 +471,7 @@
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(1260, 481);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(137, 107);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -479,7 +483,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(1405, 481);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(137, 107);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -491,7 +495,7 @@
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(1116, 652);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(140, 110);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -503,7 +507,7 @@
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(1261, 652);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(140, 110);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -515,7 +519,7 @@
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(1405, 652);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(140, 110);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1023,8 +1027,8 @@
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(109, 700);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox11.Location = new System.Drawing.Point(240, 700);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(196, 155);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1037,7 +1041,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(65)))), ((int)(((byte)(24)))));
             this.label4.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(144, 752);
+            this.label4.Location = new System.Drawing.Point(278, 753);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(124, 52);
@@ -1056,6 +1060,32 @@
             this.topHUD1.Size = new System.Drawing.Size(1619, 862);
             this.topHUD1.TabIndex = 47;
             // 
+            // menuBtn
+            // 
+            this.menuBtn.BackColor = System.Drawing.Color.Transparent;
+            this.menuBtn.Image = ((System.Drawing.Image)(resources.GetObject("menuBtn.Image")));
+            this.menuBtn.Location = new System.Drawing.Point(16, 743);
+            this.menuBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.menuBtn.Name = "menuBtn";
+            this.menuBtn.Size = new System.Drawing.Size(88, 80);
+            this.menuBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.menuBtn.TabIndex = 48;
+            this.menuBtn.TabStop = false;
+            this.menuBtn.Click += new System.EventHandler(this.menuBtn_Click);
+            // 
+            // cashierButton
+            // 
+            this.cashierButton.BackColor = System.Drawing.Color.Transparent;
+            this.cashierButton.Image = global::Whizzys_Potion_Shop.Properties.Resources.toCashier;
+            this.cashierButton.Location = new System.Drawing.Point(149, 743);
+            this.cashierButton.Margin = new System.Windows.Forms.Padding(4);
+            this.cashierButton.Name = "cashierButton";
+            this.cashierButton.Size = new System.Drawing.Size(88, 80);
+            this.cashierButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cashierButton.TabIndex = 49;
+            this.cashierButton.TabStop = false;
+            this.cashierButton.Click += new System.EventHandler(this.cashierButton_Click);
+            // 
             // BrewingStation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1063,6 +1093,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1573, 838);
+            this.Controls.Add(this.cashierButton);
+            this.Controls.Add(this.menuBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.warningLabel);
@@ -1134,7 +1166,7 @@
             this.Controls.Add(this.topHUD1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BrewingStation";
             this.Text = "BrewingStation";
             this.Load += new System.EventHandler(this.BrewingStation_Load);
@@ -1174,6 +1206,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.potionInventory3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.potionInventory5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cashierButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1252,5 +1286,7 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label4;
         private topHUD topHUD1;
+        private System.Windows.Forms.PictureBox menuBtn;
+        private System.Windows.Forms.PictureBox cashierButton;
     }
 }

@@ -47,7 +47,7 @@ namespace Whizzys_Potion_Shop
 
         private Ingredients[] ingredients;
 
-        public BrewingStation(StartScreen screen, EconomyManager ecoManager, GameTime gameTime)
+        public BrewingStation(StartScreen screen, EconomyManager ecoManager, GameTime gTime)
         {
             InitializeComponent();
 
@@ -80,13 +80,36 @@ namespace Whizzys_Potion_Shop
 
             cauldron.AllowDrop = true;
             startScreen = screen;
-            this.economyManager = ecoManager;
-            this.gameTime = gameTime;
+            economyManager = startScreen.economyManager;
+            gameTime = gTime;
             topHUD1.UpdateGold(economyManager.Balance);
             topHUD1.UpdateTime(
                 gameTime.FormattedDay,
                 gameTime.FormattedTime
             );
+
+            warningLabel.ForeColor = Color.White;
+        }
+
+        private bool warningWasRunning;
+        private bool wasBrewing;
+
+        private void PauseGame()
+        {
+            warningWasRunning = warningTimer.Enabled;
+            wasBrewing = brewTimer.Enabled;
+
+            warningTimer.Stop();
+            brewTimer.Stop();
+        }
+
+        private void ResumeGame()
+        {
+            if (warningWasRunning)
+                warningTimer.Start();
+
+            if (wasBrewing)
+                brewTimer.Start();
         }
 
         private void BrewingStation_Load(object sender, EventArgs e)
@@ -555,6 +578,45 @@ namespace Whizzys_Potion_Shop
 
         private void rbshroomCounter_Click(object sender, EventArgs e)
         {
+        }
+
+        private void menuBtn_Click(object sender, EventArgs e)
+        {
+            using (pauseMenu pauseOverlay = new pauseMenu())
+            {
+                PauseGame();
+                DialogResult result = pauseOverlay.ShowDialog(this);
+
+                if (result == DialogResult.Abort)
+                {
+                    mainMenu menu = new mainMenu();
+                    menu.Show();
+                    this.Close();
+                }
+
+                ResumeGame();
+            }
+        }
+
+        private void cashierButton_Click(object sender, EventArgs e)
+        {
+            StartScreen station = Application.OpenForms
+                .OfType<StartScreen>()
+                .FirstOrDefault();
+
+            if (station == null)
+            {
+                station = new StartScreen();
+                station.Show();
+                this.Hide();
+            }
+            else
+            {
+                station.Show();
+                station.BringToFront();
+                station.Activate();
+                this.Hide();
+            }
         }
     }
 }
