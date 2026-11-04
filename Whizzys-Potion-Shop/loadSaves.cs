@@ -43,7 +43,7 @@ namespace Whizzys_Potion_Shop
 
                 item.SubItems.Add(saveData.CurrentDay.ToString());
                 item.SubItems.Add(saveData.Balance.ToString());
-                item.Tag = save;
+                item.Tag = saveData;
 
                 saveList.Items.Add(item);
             }
