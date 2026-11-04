@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Economy;
+using Economy.FileHandling;
 
 namespace Whizzys_Potion_Shop
 {
@@ -20,6 +22,8 @@ namespace Whizzys_Potion_Shop
             backBtn.FlatStyle = FlatStyle.Flat;
             backBtn.FlatAppearance.BorderSize = 0;
             backBtn.BackColor = Color.Transparent;
+
+            LoadSaveFile();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,20 +33,21 @@ namespace Whizzys_Potion_Shop
             this.Hide();
         }
 
-        //private void LoadSaveFile() 
-        //{
-            //var allSaves = //saveMethod here
+        private void LoadSaveFile() 
+        {
+            saveList.Items.Clear();
 
-           //foreach (var save in allSaves) 
-            //{
-               //ListViewItem item = new ListViewItem(save.PlayerName);
+            foreach(SaveData saveData in EconomyManager.GetAllSaves())
+            {
+                ListViewItem item = new ListViewItem(saveData.PlayerName);
 
-                //item.SubItems.Add(save.DayNumber.ToString());
-                //item.SubItems.Add(save.GoldAmount);
-                //item.Tag = save;
+                item.SubItems.Add(saveData.CurrentDay.ToString());
+                item.SubItems.Add(saveData.Balance.ToString());
+                item.Tag = save;
 
-                //saveList.Items.Add(item);
-            //}
-        //}
+                saveList.Items.Add(item);
+            }
+        }
+        
     }
 }
