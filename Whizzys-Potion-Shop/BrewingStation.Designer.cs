@@ -100,9 +100,10 @@
             this.warningTimer = new System.Windows.Forms.Timer(this.components);
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.topHUD1 = new Whizzys_Potion_Shop.topHUD();
             this.menuBtn = new System.Windows.Forms.PictureBox();
             this.cashierButton = new System.Windows.Forms.PictureBox();
+            this.topHUD1 = new Whizzys_Potion_Shop.topHUD();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cauldron)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pinkSalt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rosemary)).BeginInit();
@@ -141,6 +142,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cashierButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // cauldron
@@ -1050,16 +1052,6 @@
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // topHUD1
-            // 
-            this.topHUD1.BackColor = System.Drawing.Color.Transparent;
-            this.topHUD1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.topHUD1.Location = new System.Drawing.Point(0, 0);
-            this.topHUD1.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
-            this.topHUD1.Name = "topHUD1";
-            this.topHUD1.Size = new System.Drawing.Size(1619, 862);
-            this.topHUD1.TabIndex = 47;
-            // 
             // menuBtn
             // 
             this.menuBtn.BackColor = System.Drawing.Color.Transparent;
@@ -1086,6 +1078,24 @@
             this.cashierButton.TabStop = false;
             this.cashierButton.Click += new System.EventHandler(this.cashierButton_Click);
             // 
+            // topHUD1
+            // 
+            this.topHUD1.BackColor = System.Drawing.Color.Transparent;
+            this.topHUD1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topHUD1.Location = new System.Drawing.Point(0, 0);
+            this.topHUD1.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
+            this.topHUD1.Name = "topHUD1";
+            this.topHUD1.Size = new System.Drawing.Size(1619, 862);
+            this.topHUD1.TabIndex = 47;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Location = new System.Drawing.Point(43, 58);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(166, 164);
+            this.pictureBox12.TabIndex = 50;
+            this.pictureBox12.TabStop = false;
+            // 
             // BrewingStation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1093,6 +1103,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1573, 838);
+            this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.cashierButton);
             this.Controls.Add(this.menuBtn);
             this.Controls.Add(this.label4);
@@ -1208,6 +1219,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cashierButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1288,5 +1300,6 @@
         private topHUD topHUD1;
         private System.Windows.Forms.PictureBox menuBtn;
         private System.Windows.Forms.PictureBox cashierButton;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }

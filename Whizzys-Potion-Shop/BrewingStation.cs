@@ -33,7 +33,9 @@ namespace Whizzys_Potion_Shop
         };
 
         private EconomyManager economyManager;
+
         private GameTime gameTime;
+        private topHUD HUD;
         private int[] potionCount = new int[7];
         private int cauldronState = 1;
 
@@ -47,10 +49,14 @@ namespace Whizzys_Potion_Shop
 
         private Ingredients[] ingredients;
 
-        public BrewingStation(StartScreen screen, EconomyManager ecoManager, GameTime gTime)
+        public BrewingStation(StartScreen screen, EconomyManager ecoManager, GameTime gTime, topHUD hud)
         {
             InitializeComponent();
 
+            startScreen = screen;
+            economyManager = ecoManager;
+            gameTime = gTime;
+            HUD = topHUD1;
             potionInventoryImage = new[]
                         {
                             potionInventory1,
@@ -79,16 +85,20 @@ namespace Whizzys_Potion_Shop
                 };
 
             cauldron.AllowDrop = true;
-            startScreen = screen;
-            economyManager = startScreen.economyManager;
-            gameTime = gTime;
-            topHUD1.UpdateGold(economyManager.Balance);
-            topHUD1.UpdateTime(
+
+            UpdateHUD();
+
+            warningLabel.ForeColor = Color.White;
+        }
+
+        public void UpdateHUD()
+        {
+            HUD.UpdateGold(economyManager.Balance);
+
+            HUD.UpdateTime(
                 gameTime.FormattedDay,
                 gameTime.FormattedTime
             );
-
-            warningLabel.ForeColor = Color.White;
         }
 
         private bool warningWasRunning;
@@ -181,7 +191,8 @@ namespace Whizzys_Potion_Shop
                 {
                     modules.AddIngredient(cauldronIngredCount, ingredientTag);
                     int newBalance = economyManager.Balance - economyManager.BuyIngredient(ingredient.cost);
-                    topHUD1.UpdateGold(newBalance);
+                    HUD.UpdateGold(newBalance);
+                    startScreen.UpdateHUD();
                     brewButton.Enabled = true;
                     brewButton.Visible = true;
                 }

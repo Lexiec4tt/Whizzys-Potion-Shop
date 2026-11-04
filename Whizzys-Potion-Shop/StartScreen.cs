@@ -14,11 +14,13 @@ namespace Whizzys_Potion_Shop
 {
     public partial class StartScreen : Form
     {
-        protected EconomyManager economyManager = new EconomyManager();
+        public EconomyManager economyManager = new EconomyManager();
         private GameTime gameTime = new GameTime();
         private DayManager dayManager = new DayManager();
         private OrderManager orderManager = new OrderManager();
         private Queue<string> dialogueQueue = new Queue<string>();
+
+        private topHUD HUD;
         private List<int> unlockedPotions;//placeholder for unlocked potions, will be replaced with actual data from the game state
         private bool customerLeaving = false;
         private bool orderAccepted = false;
@@ -34,7 +36,10 @@ namespace Whizzys_Potion_Shop
             acceptBtn.Hide();
             declineBtn.Hide();
             dialogueBox1.HideMessage();
-            topHUD1.UpdateGold(economyManager.PlayerBalance.Balance);
+
+            HUD = topHUD1;
+
+            HUD.UpdateGold(economyManager.Balance);
 
             //TEMPORARY: MUST BE IMPLEMENTED THROUGH SAVE FILES IN MAIN MENU
             if (!economyManager.UnlockedPotions.Unlocked.Any())
@@ -60,6 +65,16 @@ namespace Whizzys_Potion_Shop
             }
             selectedPotionBox.Visible = true;
             AdvanceGameTime(GameTime.CollectPotionMinutes);
+        }
+
+        public void UpdateHUD()
+        {
+            topHUD1.UpdateGold(economyManager.Balance);
+
+            topHUD1.UpdateTime(
+                gameTime.FormattedDay,
+                gameTime.FormattedTime
+            );
         }
 
         private void UpdateHUDTime()
@@ -250,7 +265,7 @@ namespace Whizzys_Potion_Shop
 
             if (station == null)
             {
-                station = new BrewingStation(this, economyManager, gameTime);
+                station = new BrewingStation(this, economyManager, gameTime, HUD);
                 station.Show();
                 this.Hide();
             }
@@ -265,6 +280,7 @@ namespace Whizzys_Potion_Shop
 
         private void toUpgradeBtn_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(economyManager.Balance.ToString());
             UpgradeStore store = Application.OpenForms
                 .OfType<UpgradeStore>()
                 .FirstOrDefault();
@@ -394,7 +410,8 @@ namespace Whizzys_Potion_Shop
             }
 
             bool accepted = orderManager.DeliverPotion(potion, economyManager, basePayment);
-            topHUD1.UpdateGold(economyManager.PlayerBalance.Balance);
+
+            HUD.UpdateGold(economyManager.Balance);
 
             selectedPotionBox.Image = null;
             selectedPotionBox.Visible = false;
