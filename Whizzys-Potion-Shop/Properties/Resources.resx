@@ -118,26 +118,41 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Adventurer_Talk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\adventurer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cldnff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Adventurer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\adventurer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cldnprank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnprank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="amimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\amimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="toRecipe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toRecipe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="amimirPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\amimirPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cldn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="love" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\love.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Apprentice_Talk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\apprenticeBad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Apprentice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\apprenticeBad_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="prank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="brew_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\brew_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Wizard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\witchGood_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="serve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\serve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnFailed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnFailed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="featherFall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\featherFall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="broken" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\broken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,29 +160,14 @@
   <data name="Done mixing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Done mixing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dragon_s Blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dragon_s Blood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stamina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stamina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="featherFall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\featherFall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Wizard_Talk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\witchGood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="featherfallPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\featherfallPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="healing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\healing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="healingPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\healingPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="love" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\love.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lovePage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lovePage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Apprentice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apprenticeBad_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,53 +175,17 @@
   <data name="pot-cropped" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pot-cropped.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="prank" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\prank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="prankPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\prankPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="stamina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stamina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="staminaPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\staminaPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Wizard_Talk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\witchGood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Wizard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\witchGood_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldnFailed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnFailed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="serve" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\serve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="emptycldrn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\emptycldrn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cldnff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dragon_s Blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dragon_s Blood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cldnheals" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldnheals.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cldnlalalove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnlalalove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="staminaPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\staminaPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cldnprank" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnprank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="healing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\healing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cldnStam" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldnStam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,7 +193,49 @@
   <data name="toCashier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toCashier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cldnlalalove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnlalalove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prankPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prankPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cldnmimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldnAmimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\amimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emptycldrn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emptycldrn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adventurer_Talk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adventurer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brew_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brew_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lovePage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lovePage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adventurer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adventurer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="featherfallPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\featherfallPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amimirPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\amimirPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="healingPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\healingPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toRecipe1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toRecipe1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

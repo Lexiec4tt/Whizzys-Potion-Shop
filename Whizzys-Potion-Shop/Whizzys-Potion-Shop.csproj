@@ -219,6 +219,8 @@
     <Content Include="Resources\toBrew.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\toRecipe.png" />
+    <None Include="Resources\toRecipe1.png" />
     <Content Include="Resources\toUpgrade.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

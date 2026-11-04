@@ -103,7 +103,7 @@
             this.menuBtn = new System.Windows.Forms.PictureBox();
             this.cashierButton = new System.Windows.Forms.PictureBox();
             this.topHUD1 = new Whizzys_Potion_Shop.topHUD();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cauldron)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pinkSalt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rosemary)).BeginInit();
@@ -142,7 +142,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cashierButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // cauldron
@@ -1088,13 +1088,18 @@
             this.topHUD1.Size = new System.Drawing.Size(1619, 862);
             this.topHUD1.TabIndex = 47;
             // 
-            // pictureBox12
+            // pictureBox13
             // 
-            this.pictureBox12.Location = new System.Drawing.Point(43, 58);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(166, 164);
-            this.pictureBox12.TabIndex = 50;
-            this.pictureBox12.TabStop = false;
+            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox13.Image = global::Whizzys_Potion_Shop.Properties.Resources.toRecipe;
+            this.pictureBox13.Location = new System.Drawing.Point(51, 67);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(88, 80);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 51;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // BrewingStation
             // 
@@ -1103,7 +1108,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1573, 838);
-            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.cashierButton);
             this.Controls.Add(this.menuBtn);
             this.Controls.Add(this.label4);
@@ -1219,7 +1224,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cashierButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1300,6 +1305,6 @@
         private topHUD topHUD1;
         private System.Windows.Forms.PictureBox menuBtn;
         private System.Windows.Forms.PictureBox cashierButton;
-        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }

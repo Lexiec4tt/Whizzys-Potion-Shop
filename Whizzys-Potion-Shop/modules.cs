@@ -9,7 +9,7 @@ namespace Whizzys_Potion_Shop
 {
     internal class modules
     {
-        public static Potion Brew(Dictionary<string, int> ingredientSet)
+        public static Potion Brew(Dictionary<string, int> ingredientSet, int day)
         {
             Potion newPotion;
 
@@ -25,15 +25,15 @@ namespace Whizzys_Potion_Shop
             {
                 newPotion = new HealingPotion();
             }
-            else if (new LovePotion().EvaluatePotionIngredients(ingredientSet))
+            else if (day >= 2 && new LovePotion().EvaluatePotionIngredients(ingredientSet))
             {
                 newPotion = new LovePotion();
             }
-            else if (new StaminaPotion().EvaluatePotionIngredients(ingredientSet))
+            else if (day >= 3 && new StaminaPotion().EvaluatePotionIngredients(ingredientSet))
             {
                 newPotion = new StaminaPotion();
             }
-            else if (new TotallyNotEvilPotion().EvaluatePotionIngredients(ingredientSet))
+            else if (day >= 4 && new TotallyNotEvilPotion().EvaluatePotionIngredients(ingredientSet))
             {
                 newPotion = new TotallyNotEvilPotion();
             }

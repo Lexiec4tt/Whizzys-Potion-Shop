@@ -381,7 +381,7 @@ namespace Whizzys_Potion_Shop
         {
             if (e.Button == MouseButtons.Left)
             {
-                potionBrewed = modules.Brew(cauldronIngredCount);
+                potionBrewed = modules.Brew(cauldronIngredCount, gameTime.CurrentDay);
                 brewButton.Enabled = false;
                 brewButton.Visible = false;
                 elapsedTime = 0;
@@ -628,6 +628,12 @@ namespace Whizzys_Potion_Shop
                 station.Activate();
                 this.Hide();
             }
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            RecipeBook book = new RecipeBook();
+            book.Show();
         }
     }
 }
