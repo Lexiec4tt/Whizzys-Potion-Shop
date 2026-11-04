@@ -220,9 +220,6 @@
   <data name="cldnlalalove" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldnlalalove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cldnmimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cldnmimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cldnprank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cldnprank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -231,5 +228,8 @@
   </data>
   <data name="toCashier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toCashier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cldnmimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cldnAmimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

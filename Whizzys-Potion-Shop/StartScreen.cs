@@ -427,6 +427,7 @@ namespace Whizzys_Potion_Shop
                 {
                     dialogueQueue.Enqueue(orderManager.CurrentCustomer.CompletedOrder());
                     dialogueQueue.Enqueue(orderManager.CurrentCustomer.LeaveShop());
+                    HUD.UpdateGold(economyManager.Balance);
                     customerLeaving = true;
                     // Customer's order is complete
                 }

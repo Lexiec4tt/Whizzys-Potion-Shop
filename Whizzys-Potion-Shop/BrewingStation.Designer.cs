@@ -552,7 +552,7 @@
             this.pinkSaltCounter.Name = "pinkSaltCounter";
             this.pinkSaltCounter.Size = new System.Drawing.Size(53, 33);
             this.pinkSaltCounter.TabIndex = 30;
-            this.pinkSaltCounter.Text = "$20";
+            this.pinkSaltCounter.Text = "$10";
             this.pinkSaltCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.pinkSaltCounter.Click += new System.EventHandler(this.pinkSaltCounter_Click);
             // 
@@ -580,7 +580,7 @@
             this.rosemaryCounter.Name = "rosemaryCounter";
             this.rosemaryCounter.Size = new System.Drawing.Size(53, 33);
             this.rosemaryCounter.TabIndex = 32;
-            this.rosemaryCounter.Text = "$40";
+            this.rosemaryCounter.Text = "$30";
             // 
             // varRootCounter
             // 
@@ -593,7 +593,7 @@
             this.varRootCounter.Name = "varRootCounter";
             this.varRootCounter.Size = new System.Drawing.Size(53, 33);
             this.varRootCounter.TabIndex = 33;
-            this.varRootCounter.Text = "$35";
+            this.varRootCounter.Text = "$25";
             // 
             // harpyCounter
             // 
@@ -606,7 +606,7 @@
             this.harpyCounter.Name = "harpyCounter";
             this.harpyCounter.Size = new System.Drawing.Size(53, 33);
             this.harpyCounter.TabIndex = 34;
-            this.harpyCounter.Text = "$50";
+            this.harpyCounter.Text = "$40";
             // 
             // label6
             // 
@@ -632,7 +632,7 @@
             this.rabbitCounter.Name = "rabbitCounter";
             this.rabbitCounter.Size = new System.Drawing.Size(53, 33);
             this.rabbitCounter.TabIndex = 32;
-            this.rabbitCounter.Text = "$50";
+            this.rabbitCounter.Text = "$40";
             // 
             // label8
             // 
@@ -658,7 +658,7 @@
             this.houndFurCounter.Name = "houndFurCounter";
             this.houndFurCounter.Size = new System.Drawing.Size(53, 33);
             this.houndFurCounter.TabIndex = 32;
-            this.houndFurCounter.Text = "$60";
+            this.houndFurCounter.Text = "$50";
             // 
             // label10
             // 
@@ -684,7 +684,7 @@
             this.wolfsbaneCounter.Name = "wolfsbaneCounter";
             this.wolfsbaneCounter.Size = new System.Drawing.Size(53, 33);
             this.wolfsbaneCounter.TabIndex = 32;
-            this.wolfsbaneCounter.Text = "$70";
+            this.wolfsbaneCounter.Text = "$60";
             // 
             // label12
             // 
@@ -710,7 +710,7 @@
             this.honeyCounter.Name = "honeyCounter";
             this.honeyCounter.Size = new System.Drawing.Size(53, 33);
             this.honeyCounter.TabIndex = 32;
-            this.honeyCounter.Text = "$20";
+            this.honeyCounter.Text = "$10";
             // 
             // label14
             // 
@@ -762,7 +762,7 @@
             this.dbCounter.Name = "dbCounter";
             this.dbCounter.Size = new System.Drawing.Size(53, 33);
             this.dbCounter.TabIndex = 32;
-            this.dbCounter.Text = "$75";
+            this.dbCounter.Text = "$65";
             // 
             // label18
             // 
@@ -788,7 +788,7 @@
             this.mwCounter.Name = "mwCounter";
             this.mwCounter.Size = new System.Drawing.Size(53, 33);
             this.mwCounter.TabIndex = 32;
-            this.mwCounter.Text = "$40";
+            this.mwCounter.Text = "$30";
             // 
             // label20
             // 
@@ -814,7 +814,7 @@
             this.swCounter.Name = "swCounter";
             this.swCounter.Size = new System.Drawing.Size(53, 33);
             this.swCounter.TabIndex = 32;
-            this.swCounter.Text = "$30";
+            this.swCounter.Text = "$20";
             // 
             // label22
             // 
@@ -840,7 +840,7 @@
             this.sunBloomCounter.Name = "sunBloomCounter";
             this.sunBloomCounter.Size = new System.Drawing.Size(53, 33);
             this.sunBloomCounter.TabIndex = 32;
-            this.sunBloomCounter.Text = "$40";
+            this.sunBloomCounter.Text = "$30";
             // 
             // label24
             // 
@@ -866,7 +866,7 @@
             this.mandrakeCounter.Name = "mandrakeCounter";
             this.mandrakeCounter.Size = new System.Drawing.Size(53, 33);
             this.mandrakeCounter.TabIndex = 32;
-            this.mandrakeCounter.Text = "$30";
+            this.mandrakeCounter.Text = "$20";
             // 
             // label26
             // 
@@ -890,9 +890,9 @@
             this.rbshroomCounter.Location = new System.Drawing.Point(1157, 716);
             this.rbshroomCounter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rbshroomCounter.Name = "rbshroomCounter";
-            this.rbshroomCounter.Size = new System.Drawing.Size(67, 33);
+            this.rbshroomCounter.Size = new System.Drawing.Size(53, 33);
             this.rbshroomCounter.TabIndex = 32;
-            this.rbshroomCounter.Text = "$100";
+            this.rbshroomCounter.Text = "$90";
             this.rbshroomCounter.Click += new System.EventHandler(this.rbshroomCounter_Click);
             // 
             // label3
